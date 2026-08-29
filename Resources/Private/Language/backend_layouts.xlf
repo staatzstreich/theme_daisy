@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:theme_daisy/Resources/Private/Language/backend_layouts.xlf" date="2026-08-29T00:00:00Z" product-name="theme_daisy">
+        <header/>
+        <body>
+            <trans-unit id="backend_layout.daisydefault.title" resname="backend_layout.daisydefault.title">
+                <source>daisyUI: Default</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.daisystartpage.title" resname="backend_layout.daisystartpage.title">
+                <source>daisyUI: Startpage</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.daisysidebar.title" resname="backend_layout.daisysidebar.title">
+                <source>daisyUI: Sidebar</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.daisyfooter.title" resname="backend_layout.daisyfooter.title">
+                <source>daisyUI: Footer</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.daisycomponentreference.title" resname="backend_layout.daisycomponentreference.title">
+                <source>daisyUI: Component Reference (Developer)</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.main.name" resname="backend_layout.column.main.name">
+                <source>Main</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.stage.name" resname="backend_layout.column.stage.name">
+                <source>Stage</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.sidebar.name" resname="backend_layout.column.sidebar.name">
+                <source>Sidebar</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.footer1.name" resname="backend_layout.column.footer1.name">
+                <source>Footer 1</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.footer2.name" resname="backend_layout.column.footer2.name">
+                <source>Footer 2</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.footer3.name" resname="backend_layout.column.footer3.name">
+                <source>Footer 3</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

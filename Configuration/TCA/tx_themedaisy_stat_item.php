@@ -18,7 +18,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'Statistic item',
+        'title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_stat_item.title',
         'label' => 'title',
         'sortby' => 'sorting',
         'delete' => 'deleted',
@@ -29,14 +29,14 @@ return [
     ],
     'columns' => [
         'title' => [
-            'label' => 'Title',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_stat_item.title',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
             ],
         ],
         'value' => [
-            'label' => 'Value',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_stat_item.value',
             'config' => [
                 'type' => 'input',
                 'size' => 20,
@@ -44,7 +44,7 @@ return [
             ],
         ],
         'description' => [
-            'label' => 'Description',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_stat_item.description',
             'config' => [
                 'type' => 'input',
                 'size' => 40,

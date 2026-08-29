@@ -18,7 +18,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'Tab item',
+        'title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_tab_item.title',
         'label' => 'title',
         'sortby' => 'sorting',
         'delete' => 'deleted',
@@ -29,7 +29,7 @@ return [
     ],
     'columns' => [
         'title' => [
-            'label' => 'Title',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_tab_item.title',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -37,7 +37,7 @@ return [
             ],
         ],
         'bodytext' => [
-            'label' => 'Content',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_tab_item.content',
             'config' => [
                 'type' => 'text',
                 'rows' => 5,

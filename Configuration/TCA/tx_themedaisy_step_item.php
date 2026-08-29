@@ -18,7 +18,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'Step',
+        'title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_step_item.title',
         'label' => 'label',
         'sortby' => 'sorting',
         'delete' => 'deleted',
@@ -29,7 +29,7 @@ return [
     ],
     'columns' => [
         'label' => [
-            'label' => 'Label',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_step_item.label',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -37,7 +37,7 @@ return [
             ],
         ],
         'done' => [
-            'label' => 'Done',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_step_item.done',
             'config' => [
                 'type' => 'check',
                 'default' => 0,

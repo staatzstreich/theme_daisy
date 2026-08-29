@@ -18,7 +18,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'Timeline item',
+        'title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_timeline_item.title',
         'label' => 'title',
         'sortby' => 'sorting',
         'delete' => 'deleted',
@@ -29,7 +29,7 @@ return [
     ],
     'columns' => [
         'title' => [
-            'label' => 'Title',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_timeline_item.title',
             'config' => [
                 'type' => 'input',
                 'size' => 20,
@@ -37,20 +37,20 @@ return [
             ],
         ],
         'content' => [
-            'label' => 'Content',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_timeline_item.content',
             'config' => [
                 'type' => 'text',
                 'rows' => 3,
             ],
         ],
         'side' => [
-            'label' => 'Side',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_timeline_item.side',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['label' => 'Start', 'value' => 'start'],
-                    ['label' => 'End', 'value' => 'end'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_timeline_item.side.I.start', 'value' => 'start'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_timeline_item.side.I.end', 'value' => 'end'],
                 ],
                 'default' => 'start',
             ],

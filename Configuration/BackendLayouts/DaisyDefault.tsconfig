@@ -2,7 +2,7 @@ mod {
     web_layout {
         BackendLayouts {
             daisydefault {
-                title = daisyUI: Default
+                title = LLL:EXT:theme_daisy/Resources/Private/Language/backend_layouts.xlf:backend_layout.daisydefault.title
                 config {
                     backend_layout {
                         colCount = 1
@@ -11,7 +11,7 @@ mod {
                             1 {
                                 columns {
                                     1 {
-                                        name = Main
+                                        name = LLL:EXT:theme_daisy/Resources/Private/Language/backend_layouts.xlf:backend_layout.column.main.name
                                         colPos = 0
                                         colspan = 1
                                         identifier = main

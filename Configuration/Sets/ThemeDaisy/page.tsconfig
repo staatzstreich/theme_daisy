@@ -1,3 +1,3 @@
 @import 'EXT:theme_daisy/Configuration/BackendLayouts/*.tsconfig'
 
-mod.wizards.newContentElement.wizardItems.daisyui.header = daisyUI Komponenten
+mod.wizards.newContentElement.wizardItems.daisyui.header = LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.group.daisyui

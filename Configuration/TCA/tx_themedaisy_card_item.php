@@ -18,7 +18,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'Card item',
+        'title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_card_item.title',
         'label' => 'title',
         'sortby' => 'sorting',
         'delete' => 'deleted',
@@ -29,7 +29,7 @@ return [
     ],
     'columns' => [
         'icon' => [
-            'label' => 'Symbol (emoji or character)',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_card_item.icon',
             'config' => [
                 'type' => 'input',
                 'size' => 10,
@@ -37,7 +37,7 @@ return [
             ],
         ],
         'title' => [
-            'label' => 'Title',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_card_item.title',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -45,20 +45,20 @@ return [
             ],
         ],
         'description' => [
-            'label' => 'Description',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_card_item.description',
             'config' => [
                 'type' => 'text',
                 'rows' => 3,
             ],
         ],
         'link' => [
-            'label' => 'Link',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_card_item.link',
             'config' => [
                 'type' => 'link',
             ],
         ],
         'link_label' => [
-            'label' => 'Link text',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_card_item.link_label',
             'config' => [
                 'type' => 'input',
                 'size' => 30,

@@ -2,7 +2,7 @@ mod {
     web_layout {
         BackendLayouts {
             daisysidebar {
-                title = daisyUI: Sidebar
+                title = LLL:EXT:theme_daisy/Resources/Private/Language/backend_layouts.xlf:backend_layout.daisysidebar.title
                 config {
                     backend_layout {
                         colCount = 4
@@ -11,13 +11,13 @@ mod {
                             1 {
                                 columns {
                                     1 {
-                                        name = Main
+                                        name = LLL:EXT:theme_daisy/Resources/Private/Language/backend_layouts.xlf:backend_layout.column.main.name
                                         colPos = 0
                                         colspan = 3
                                         identifier = main
                                     }
                                     2 {
-                                        name = Sidebar
+                                        name = LLL:EXT:theme_daisy/Resources/Private/Language/backend_layouts.xlf:backend_layout.column.sidebar.name
                                         colPos = 1
                                         identifier = sidebar
                                         slideMode = slide

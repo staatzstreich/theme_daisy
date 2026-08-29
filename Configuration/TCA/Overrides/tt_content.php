@@ -28,96 +28,96 @@ call_user_func(static function (): void {
     // -----------------------------------------------------------------
     $GLOBALS['TCA']['tt_content']['columns'] += [
         'tx_themedaisy_variant' => [
-            'label' => 'Variant',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_variant',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['label' => 'Primary', 'value' => 'primary'],
-                    ['label' => 'Secondary', 'value' => 'secondary'],
-                    ['label' => 'Accent', 'value' => 'accent'],
-                    ['label' => 'Neutral', 'value' => 'neutral'],
-                    ['label' => 'Info', 'value' => 'info'],
-                    ['label' => 'Success', 'value' => 'success'],
-                    ['label' => 'Warning', 'value' => 'warning'],
-                    ['label' => 'Error', 'value' => 'error'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_variant.I.primary', 'value' => 'primary'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_variant.I.secondary', 'value' => 'secondary'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_variant.I.accent', 'value' => 'accent'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_variant.I.neutral', 'value' => 'neutral'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_variant.I.info', 'value' => 'info'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_variant.I.success', 'value' => 'success'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_variant.I.warning', 'value' => 'warning'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_variant.I.error', 'value' => 'error'],
                 ],
                 'default' => 'info',
             ],
         ],
         'tx_themedaisy_soft' => [
-            'label' => 'Soft background',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_soft',
             'config' => [
                 'type' => 'check',
                 'default' => 1,
             ],
         ],
         'tx_themedaisy_size' => [
-            'label' => 'Size',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_size',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['label' => 'Extra small', 'value' => 'xs'],
-                    ['label' => 'Small', 'value' => 'sm'],
-                    ['label' => 'Medium', 'value' => 'md'],
-                    ['label' => 'Large', 'value' => 'lg'],
-                    ['label' => 'Extra large', 'value' => 'xl'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_size.I.xs', 'value' => 'xs'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_size.I.sm', 'value' => 'sm'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_size.I.md', 'value' => 'md'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_size.I.lg', 'value' => 'lg'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_size.I.xl', 'value' => 'xl'],
                 ],
                 'default' => 'md',
             ],
         ],
         'tx_themedaisy_link' => [
-            'label' => 'Link',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_link',
             'config' => [
                 'type' => 'link',
                 'size' => 40,
             ],
         ],
         'tx_themedaisy_link_label' => [
-            'label' => 'Link label',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_link_label',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
             ],
         ],
         'tx_themedaisy_countdown_value' => [
-            'label' => 'Number',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_countdown_value',
             'config' => [
                 'type' => 'number',
                 'default' => 0,
             ],
         ],
         'tx_themedaisy_countdown_label' => [
-            'label' => 'Caption',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_countdown_label',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
             ],
         ],
         'tx_themedaisy_mockup_type' => [
-            'label' => 'Mockup type',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_mockup_type',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['label' => 'Browser', 'value' => 'browser'],
-                    ['label' => 'Code', 'value' => 'code'],
-                    ['label' => 'Phone', 'value' => 'phone'],
-                    ['label' => 'Window', 'value' => 'window'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_mockup_type.I.browser', 'value' => 'browser'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_mockup_type.I.code', 'value' => 'code'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_mockup_type.I.phone', 'value' => 'phone'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_mockup_type.I.window', 'value' => 'window'],
                 ],
                 'default' => 'browser',
             ],
         ],
         'tx_themedaisy_mockup_url' => [
-            'label' => 'URL (with type "Browser")',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_mockup_url',
             'config' => [
                 'type' => 'input',
                 'size' => 40,
             ],
         ],
         'tx_themedaisy_accordion_items' => [
-            'label' => 'Questions & answers',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_accordion_items',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_themedaisy_accordion_item',
@@ -126,7 +126,7 @@ call_user_func(static function (): void {
             ],
         ],
         'tx_themedaisy_stat_items' => [
-            'label' => 'Statistics',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_stat_items',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_themedaisy_stat_item',
@@ -135,7 +135,7 @@ call_user_func(static function (): void {
             ],
         ],
         'tx_themedaisy_timeline_items' => [
-            'label' => 'Timeline items',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_timeline_items',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_themedaisy_timeline_item',
@@ -144,7 +144,7 @@ call_user_func(static function (): void {
             ],
         ],
         'tx_themedaisy_step_items' => [
-            'label' => 'Steps',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_step_items',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_themedaisy_step_item',
@@ -153,7 +153,7 @@ call_user_func(static function (): void {
             ],
         ],
         'tx_themedaisy_tab_items' => [
-            'label' => 'Tabs',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_tab_items',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_themedaisy_tab_item',
@@ -162,7 +162,7 @@ call_user_func(static function (): void {
             ],
         ],
         'tx_themedaisy_chat_items' => [
-            'label' => 'Messages',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_chat_items',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_themedaisy_chat_item',
@@ -171,7 +171,7 @@ call_user_func(static function (): void {
             ],
         ],
         'tx_themedaisy_card_items' => [
-            'label' => 'Cards',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.tx_themedaisy_card_items',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_themedaisy_card_item',
@@ -182,6 +182,15 @@ call_user_func(static function (): void {
         ],
     ];
 
+    // Item group for all daisyUI content elements (CType dropdown + wizard)
+    ExtensionManagementUtility::addTcaSelectItemGroup(
+        'tt_content',
+        'CType',
+        'daisyui',
+        'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.group.daisyui',
+        'after:default'
+    );
+
     // -----------------------------------------------------------------
     // Register CTypes (auto-registers into the "New Content Element"
     // wizard via TCA select items since TYPO3 v13)
@@ -190,20 +199,20 @@ call_user_func(static function (): void {
     // (T3Icons, EXT:core/Resources/Public/Icons/T3Icons/) and therefore
     // already registered core-side -- no custom Icons.php needed.
     $elements = [
-        'daisy_alert' => ['title' => 'Alert', 'description' => 'Callout box in four states (info/success/warning/error).', 'icon' => 'content-info'],
-        'daisy_card' => ['title' => 'Card', 'description' => 'Card with image, title, text and optional button.', 'icon' => 'content-card'],
-        'daisy_hero' => ['title' => 'Hero', 'description' => 'Large hero section with title, text, image and call-to-action.', 'icon' => 'content-panel'],
-        'daisy_button' => ['title' => 'CTA button', 'description' => 'A single call-to-action button.', 'icon' => 'content-widget-calltoaction'],
-        'daisy_countdown' => ['title' => 'Countdown', 'description' => 'Number display, e.g. for a countdown.', 'icon' => 'content-clock'],
-        'daisy_mockup' => ['title' => 'Mockup', 'description' => 'Browser, code, phone or window frame around image or code.', 'icon' => 'content-device-desktop'],
-        'daisy_accordion' => ['title' => 'Accordion / FAQ', 'description' => 'Expandable question-and-answer list.', 'icon' => 'content-accordion'],
-        'daisy_stats' => ['title' => 'Stats', 'description' => 'Row of key figures.', 'icon' => 'content-widget-number'],
-        'daisy_timeline' => ['title' => 'Timeline', 'description' => 'Chronological list of events.', 'icon' => 'content-timeline'],
-        'daisy_steps' => ['title' => 'Steps', 'description' => 'Numbered sequence of steps, e.g. for processes.', 'icon' => 'content-listgroup'],
-        'daisy_tabs' => ['title' => 'Tabs', 'description' => 'Content in switchable tabs.', 'icon' => 'content-tab'],
-        'daisy_carousel' => ['title' => 'Carousel', 'description' => 'Swipeable image gallery.', 'icon' => 'content-carousel-image'],
-        'daisy_chat' => ['title' => 'Chat / Testimonial', 'description' => 'Chat-style dialog, e.g. for testimonials.', 'icon' => 'content-message-dots'],
-        'daisy_cardgrid' => ['title' => 'Card Grid', 'description' => 'Responsive grid of cards with icon, title, text and link.', 'icon' => 'content-grid-container'],
+        'daisy_alert' => ['title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_alert.title', 'description' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_alert.description', 'icon' => 'content-info'],
+        'daisy_card' => ['title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_card.title', 'description' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_card.description', 'icon' => 'content-card'],
+        'daisy_hero' => ['title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_hero.title', 'description' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_hero.description', 'icon' => 'content-panel'],
+        'daisy_button' => ['title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_button.title', 'description' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_button.description', 'icon' => 'content-widget-calltoaction'],
+        'daisy_countdown' => ['title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_countdown.title', 'description' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_countdown.description', 'icon' => 'content-clock'],
+        'daisy_mockup' => ['title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_mockup.title', 'description' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_mockup.description', 'icon' => 'content-device-desktop'],
+        'daisy_accordion' => ['title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_accordion.title', 'description' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_accordion.description', 'icon' => 'content-accordion'],
+        'daisy_stats' => ['title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_stats.title', 'description' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_stats.description', 'icon' => 'content-widget-number'],
+        'daisy_timeline' => ['title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_timeline.title', 'description' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_timeline.description', 'icon' => 'content-timeline'],
+        'daisy_steps' => ['title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_steps.title', 'description' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_steps.description', 'icon' => 'content-listgroup'],
+        'daisy_tabs' => ['title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_tabs.title', 'description' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_tabs.description', 'icon' => 'content-tab'],
+        'daisy_carousel' => ['title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_carousel.title', 'description' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_carousel.description', 'icon' => 'content-carousel-image'],
+        'daisy_chat' => ['title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_chat.title', 'description' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_chat.description', 'icon' => 'content-message-dots'],
+        'daisy_cardgrid' => ['title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_cardgrid.title', 'description' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.daisy_cardgrid.description', 'icon' => 'content-grid-container'],
     ];
 
     foreach ($elements as $cType => $config) {
@@ -224,7 +233,7 @@ call_user_func(static function (): void {
     // Field layout (showitem) per CType
     // -----------------------------------------------------------------
     $GLOBALS['TCA']['tt_content']['types']['daisy_alert'] = [
-        'showitem' => 'CType, header;Title (optional), bodytext;Message, tx_themedaisy_variant, tx_themedaisy_soft',
+        'showitem' => 'CType, header;LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.title.optional, bodytext;LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.message, tx_themedaisy_variant, tx_themedaisy_soft',
         'columnsOverrides' => [
             'bodytext' => ['config' => ['enableRichtext' => false, 'rows' => 3]],
         ],
@@ -242,39 +251,39 @@ call_user_func(static function (): void {
         ],
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_button'] = [
-        'showitem' => 'CType, header;Label, tx_themedaisy_link, tx_themedaisy_variant, tx_themedaisy_size',
+        'showitem' => 'CType, header;LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.label, tx_themedaisy_link, tx_themedaisy_variant, tx_themedaisy_size',
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_countdown'] = [
-        'showitem' => 'CType, header;Title (optional), tx_themedaisy_countdown_value, tx_themedaisy_countdown_label',
+        'showitem' => 'CType, header;LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.title.optional, tx_themedaisy_countdown_value, tx_themedaisy_countdown_label',
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_mockup'] = [
-        'showitem' => 'CType, header;Title (optional), tx_themedaisy_mockup_type, tx_themedaisy_mockup_url, bodytext;Code (with type "Code"), image',
+        'showitem' => 'CType, header;LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.title.optional, tx_themedaisy_mockup_type, tx_themedaisy_mockup_url, bodytext;LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.code, image',
         'columnsOverrides' => [
             'bodytext' => ['config' => ['enableRichtext' => false, 'rows' => 6]],
         ],
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_accordion'] = [
-        'showitem' => 'CType, header;Title (optional), tx_themedaisy_accordion_items',
+        'showitem' => 'CType, header;LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.title.optional, tx_themedaisy_accordion_items',
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_stats'] = [
-        'showitem' => 'CType, header;Title (optional), tx_themedaisy_stat_items',
+        'showitem' => 'CType, header;LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.title.optional, tx_themedaisy_stat_items',
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_timeline'] = [
-        'showitem' => 'CType, header;Title (optional), tx_themedaisy_timeline_items',
+        'showitem' => 'CType, header;LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.title.optional, tx_themedaisy_timeline_items',
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_steps'] = [
-        'showitem' => 'CType, header;Title (optional), tx_themedaisy_step_items',
+        'showitem' => 'CType, header;LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.title.optional, tx_themedaisy_step_items',
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_tabs'] = [
-        'showitem' => 'CType, header;Title (optional), tx_themedaisy_tab_items',
+        'showitem' => 'CType, header;LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.title.optional, tx_themedaisy_tab_items',
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_carousel'] = [
-        'showitem' => 'CType, header;Title (optional), image',
+        'showitem' => 'CType, header;LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.title.optional, image',
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_chat'] = [
-        'showitem' => 'CType, header;Title (optional), tx_themedaisy_chat_items',
+        'showitem' => 'CType, header;LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.title.optional, tx_themedaisy_chat_items',
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_cardgrid'] = [
-        'showitem' => 'CType, header;Title (optional), tx_themedaisy_card_items',
+        'showitem' => 'CType, header;LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.title.optional, tx_themedaisy_card_items',
     ];
 });

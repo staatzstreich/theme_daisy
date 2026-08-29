@@ -18,7 +18,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'Accordion item',
+        'title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_accordion_item.title',
         'label' => 'question',
         'sortby' => 'sorting',
         'delete' => 'deleted',
@@ -29,7 +29,7 @@ return [
     ],
     'columns' => [
         'question' => [
-            'label' => 'Question',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_accordion_item.question',
             'config' => [
                 'type' => 'input',
                 'size' => 40,
@@ -37,7 +37,7 @@ return [
             ],
         ],
         'answer' => [
-            'label' => 'Answer',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_accordion_item.answer',
             'config' => [
                 'type' => 'text',
                 'rows' => 5,

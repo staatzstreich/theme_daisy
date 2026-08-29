@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf" date="2026-08-29T00:00:00Z" product-name="theme_daisy">
+        <header/>
+        <body>
+            <trans-unit id="tt_content.group.daisyui" resname="tt_content.group.daisyui">
+                <source>daisyUI elements</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_alert.title" resname="tt_content.daisy_alert.title">
+                <source>Alert</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_alert.description" resname="tt_content.daisy_alert.description">
+                <source>Callout box in four states (info/success/warning/error).</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_card.title" resname="tt_content.daisy_card.title">
+                <source>Card</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_card.description" resname="tt_content.daisy_card.description">
+                <source>Card with image, title, text and optional button.</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_hero.title" resname="tt_content.daisy_hero.title">
+                <source>Hero</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_hero.description" resname="tt_content.daisy_hero.description">
+                <source>Large hero section with title, text, image and call-to-action.</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_button.title" resname="tt_content.daisy_button.title">
+                <source>CTA button</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_button.description" resname="tt_content.daisy_button.description">
+                <source>A single call-to-action button.</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_countdown.title" resname="tt_content.daisy_countdown.title">
+                <source>Countdown</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_countdown.description" resname="tt_content.daisy_countdown.description">
+                <source>Number display, e.g. for a countdown.</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_mockup.title" resname="tt_content.daisy_mockup.title">
+                <source>Mockup</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_mockup.description" resname="tt_content.daisy_mockup.description">
+                <source>Browser, code, phone or window frame around image or code.</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_accordion.title" resname="tt_content.daisy_accordion.title">
+                <source>Accordion / FAQ</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_accordion.description" resname="tt_content.daisy_accordion.description">
+                <source>Expandable question-and-answer list.</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_stats.title" resname="tt_content.daisy_stats.title">
+                <source>Stats</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_stats.description" resname="tt_content.daisy_stats.description">
+                <source>Row of key figures.</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_timeline.title" resname="tt_content.daisy_timeline.title">
+                <source>Timeline</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_timeline.description" resname="tt_content.daisy_timeline.description">
+                <source>Chronological list of events.</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_steps.title" resname="tt_content.daisy_steps.title">
+                <source>Steps</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_steps.description" resname="tt_content.daisy_steps.description">
+                <source>Numbered sequence of steps, e.g. for processes.</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_tabs.title" resname="tt_content.daisy_tabs.title">
+                <source>Tabs</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_tabs.description" resname="tt_content.daisy_tabs.description">
+                <source>Content in switchable tabs.</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_carousel.title" resname="tt_content.daisy_carousel.title">
+                <source>Carousel</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_carousel.description" resname="tt_content.daisy_carousel.description">
+                <source>Swipeable image gallery.</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_chat.title" resname="tt_content.daisy_chat.title">
+                <source>Chat / Testimonial</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_chat.description" resname="tt_content.daisy_chat.description">
+                <source>Chat-style dialog, e.g. for testimonials.</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_cardgrid.title" resname="tt_content.daisy_cardgrid.title">
+                <source>Card Grid</source>
+            </trans-unit>
+            <trans-unit id="tt_content.daisy_cardgrid.description" resname="tt_content.daisy_cardgrid.description">
+                <source>Responsive grid of cards with icon, title, text and link.</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_variant" resname="tt_content.tx_themedaisy_variant">
+                <source>Variant</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_soft" resname="tt_content.tx_themedaisy_soft">
+                <source>Soft background</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_size" resname="tt_content.tx_themedaisy_size">
+                <source>Size</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_link" resname="tt_content.tx_themedaisy_link">
+                <source>Link</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_link_label" resname="tt_content.tx_themedaisy_link_label">
+                <source>Link label</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_countdown_value" resname="tt_content.tx_themedaisy_countdown_value">
+                <source>Number</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_countdown_label" resname="tt_content.tx_themedaisy_countdown_label">
+                <source>Caption</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_mockup_type" resname="tt_content.tx_themedaisy_mockup_type">
+                <source>Mockup type</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_mockup_url" resname="tt_content.tx_themedaisy_mockup_url">
+                <source>URL (with type "Browser")</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_accordion_items" resname="tt_content.tx_themedaisy_accordion_items">
+                <source>Questions &amp; answers</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_stat_items" resname="tt_content.tx_themedaisy_stat_items">
+                <source>Statistics</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_timeline_items" resname="tt_content.tx_themedaisy_timeline_items">
+                <source>Timeline items</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_step_items" resname="tt_content.tx_themedaisy_step_items">
+                <source>Steps</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_tab_items" resname="tt_content.tx_themedaisy_tab_items">
+                <source>Tabs</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_chat_items" resname="tt_content.tx_themedaisy_chat_items">
+                <source>Messages</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_card_items" resname="tt_content.tx_themedaisy_card_items">
+                <source>Cards</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_variant.I.primary" resname="tt_content.tx_themedaisy_variant.I.primary">
+                <source>Primary</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_variant.I.secondary" resname="tt_content.tx_themedaisy_variant.I.secondary">
+                <source>Secondary</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_variant.I.accent" resname="tt_content.tx_themedaisy_variant.I.accent">
+                <source>Accent</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_variant.I.neutral" resname="tt_content.tx_themedaisy_variant.I.neutral">
+                <source>Neutral</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_variant.I.info" resname="tt_content.tx_themedaisy_variant.I.info">
+                <source>Info</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_variant.I.success" resname="tt_content.tx_themedaisy_variant.I.success">
+                <source>Success</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_variant.I.warning" resname="tt_content.tx_themedaisy_variant.I.warning">
+                <source>Warning</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_variant.I.error" resname="tt_content.tx_themedaisy_variant.I.error">
+                <source>Error</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_size.I.xs" resname="tt_content.tx_themedaisy_size.I.xs">
+                <source>Extra small</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_size.I.sm" resname="tt_content.tx_themedaisy_size.I.sm">
+                <source>Small</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_size.I.md" resname="tt_content.tx_themedaisy_size.I.md">
+                <source>Medium</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_size.I.lg" resname="tt_content.tx_themedaisy_size.I.lg">
+                <source>Large</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_size.I.xl" resname="tt_content.tx_themedaisy_size.I.xl">
+                <source>Extra large</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_mockup_type.I.browser" resname="tt_content.tx_themedaisy_mockup_type.I.browser">
+                <source>Browser</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_mockup_type.I.code" resname="tt_content.tx_themedaisy_mockup_type.I.code">
+                <source>Code</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_mockup_type.I.phone" resname="tt_content.tx_themedaisy_mockup_type.I.phone">
+                <source>Phone</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_themedaisy_mockup_type.I.window" resname="tt_content.tx_themedaisy_mockup_type.I.window">
+                <source>Window</source>
+            </trans-unit>
+            <trans-unit id="tt_content.title.optional" resname="tt_content.title.optional">
+                <source>Title (optional)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.message" resname="tt_content.message">
+                <source>Message</source>
+            </trans-unit>
+            <trans-unit id="tt_content.label" resname="tt_content.label">
+                <source>Label</source>
+            </trans-unit>
+            <trans-unit id="tt_content.code" resname="tt_content.code">
+                <source>Code (with type "Code")</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_accordion_item.title" resname="tx_themedaisy_accordion_item.title">
+                <source>Accordion item</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_accordion_item.question" resname="tx_themedaisy_accordion_item.question">
+                <source>Question</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_accordion_item.answer" resname="tx_themedaisy_accordion_item.answer">
+                <source>Answer</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_card_item.title" resname="tx_themedaisy_card_item.title">
+                <source>Card item</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_card_item.icon" resname="tx_themedaisy_card_item.icon">
+                <source>Symbol (emoji or character)</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_card_item.title" resname="tx_themedaisy_card_item.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_card_item.description" resname="tx_themedaisy_card_item.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_card_item.link" resname="tx_themedaisy_card_item.link">
+                <source>Link</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_card_item.link_label" resname="tx_themedaisy_card_item.link_label">
+                <source>Link text</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_chat_item.title" resname="tx_themedaisy_chat_item.title">
+                <source>Chat message</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_chat_item.author" resname="tx_themedaisy_chat_item.author">
+                <source>Sender</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_chat_item.message" resname="tx_themedaisy_chat_item.message">
+                <source>Message</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_chat_item.side" resname="tx_themedaisy_chat_item.side">
+                <source>Side</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_chat_item.time" resname="tx_themedaisy_chat_item.time">
+                <source>Time</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_stat_item.title" resname="tx_themedaisy_stat_item.title">
+                <source>Statistic item</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_stat_item.title" resname="tx_themedaisy_stat_item.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_stat_item.value" resname="tx_themedaisy_stat_item.value">
+                <source>Value</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_stat_item.description" resname="tx_themedaisy_stat_item.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_step_item.title" resname="tx_themedaisy_step_item.title">
+                <source>Step</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_step_item.label" resname="tx_themedaisy_step_item.label">
+                <source>Label</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_step_item.done" resname="tx_themedaisy_step_item.done">
+                <source>Done</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_tab_item.title" resname="tx_themedaisy_tab_item.title">
+                <source>Tab item</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_tab_item.title" resname="tx_themedaisy_tab_item.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_tab_item.content" resname="tx_themedaisy_tab_item.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_timeline_item.title" resname="tx_themedaisy_timeline_item.title">
+                <source>Timeline item</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_timeline_item.title" resname="tx_themedaisy_timeline_item.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_timeline_item.content" resname="tx_themedaisy_timeline_item.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_timeline_item.side" resname="tx_themedaisy_timeline_item.side">
+                <source>Side</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_chat_item.side.I.start" resname="tx_themedaisy_chat_item.side.I.start">
+                <source>Left</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_chat_item.side.I.end" resname="tx_themedaisy_chat_item.side.I.end">
+                <source>Right</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_timeline_item.side.I.start" resname="tx_themedaisy_timeline_item.side.I.start">
+                <source>Start</source>
+            </trans-unit>
+            <trans-unit id="tx_themedaisy_timeline_item.side.I.end" resname="tx_themedaisy_timeline_item.side.I.end">
+                <source>End</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

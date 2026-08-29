@@ -18,7 +18,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'Chat message',
+        'title' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_chat_item.title',
         'label' => 'author',
         'sortby' => 'sorting',
         'delete' => 'deleted',
@@ -29,7 +29,7 @@ return [
     ],
     'columns' => [
         'author' => [
-            'label' => 'Sender',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_chat_item.author',
             'config' => [
                 'type' => 'input',
                 'size' => 20,
@@ -37,26 +37,26 @@ return [
             ],
         ],
         'message' => [
-            'label' => 'Message',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_chat_item.message',
             'config' => [
                 'type' => 'text',
                 'rows' => 3,
             ],
         ],
         'side' => [
-            'label' => 'Side',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_chat_item.side',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['label' => 'Left', 'value' => 'start'],
-                    ['label' => 'Right', 'value' => 'end'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_chat_item.side.I.start', 'value' => 'start'],
+                    ['label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_chat_item.side.I.end', 'value' => 'end'],
                 ],
                 'default' => 'start',
             ],
         ],
         'time' => [
-            'label' => 'Time',
+            'label' => 'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tx_themedaisy_chat_item.time',
             'config' => [
                 'type' => 'input',
                 'size' => 10,
