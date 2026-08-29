@@ -5,13 +5,15 @@
 <f:argument name="siteTitle" type="string" optional="{true}" default="" />
 <f:argument name="homeHref" type="string" optional="{true}" default="/" />
 <f:argument name="menuItems" type="array" optional="{true}" />
+<f:argument name="languages" type="array" optional="{true}" />
 <f:argument name="themes" type="array" optional="{true}" />
 
 <f:comment>
     Sticky, blurred top bar with three zones: brand, desktop menu and controls
-    (theme switcher + mobile menu). The active page comes from MenuProcessor's
-    `active` flag; on small screens the menu collapses into a dropdown. The
-    `themes` argument is an optional override for the switcher's built-in list.
+    (language + theme switcher, mobile menu). The active page comes from
+    MenuProcessor's `active` flag; on small screens the menu collapses into a
+    dropdown. `languages` is the TYPO3 LanguageMenuProcessor output;
+    `themes` is an optional override for the switcher's built-in list.
 </f:comment>
 
 <header class="navbar sticky top-0 z-50 h-auto min-h-16 border-b border-base-300 bg-base-100/80 px-4 backdrop-blur md:px-8">
@@ -67,6 +69,39 @@
     </nav>
 
     <div class="navbar-end gap-1">
+        <f:if condition="{languages}">
+            <details class="dropdown dropdown-end">
+                <summary class="btn btn-ghost btn-circle list-none" aria-haspopup="listbox" aria-controls="language-switcher" aria-label="Language">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="M12 3a14.5 14.5 0 0 0 0 18a14.5 14.5 0 0 0 0 -18" />
+                        <path d="M3.6 9h16.8M3.6 15h16.8" />
+                    </svg>
+                </summary>
+                <ul id="language-switcher" class="dropdown-content menu z-[60] mt-2 w-52 rounded-box border border-base-300 bg-base-100 p-1.5 shadow-xl" role="listbox" aria-label="Language">
+                    <li class="menu-title text-xs uppercase tracking-wider">Language</li>
+                    <f:for each="{languages}" as="language">
+                        <f:if condition="{language.available}">
+                            <li>
+                                <f:if condition="{language.current}">
+                                    <f:then>
+                                        <span role="option" aria-selected="true" class="menu-active">
+                                            {f:if(condition: language.navigationTitle, then: language.navigationTitle, else: language.title)}
+                                        </span>
+                                    </f:then>
+                                    <f:else>
+                                        <a href="{language.link}" role="option" hreflang="{language.hreflang}">
+                                            {f:if(condition: language.navigationTitle, then: language.navigationTitle, else: language.title)}
+                                        </a>
+                                    </f:else>
+                                </f:if>
+                            </li>
+                        </f:if>
+                    </f:for>
+                </ul>
+            </details>
+        </f:if>
+
         <my:actions.themeSwitcher themes="{themes}" />
 
         <f:if condition="{menuItems}">

@@ -31,6 +31,12 @@ page {
                 levels = 2
                 as = mainMenu
             }
+            30 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+            30 {
+                # "auto" = all languages of the current site configuration
+                languages = auto
+                as = languageMenu
+            }
         }
     }
 }
