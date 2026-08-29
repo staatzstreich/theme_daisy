@@ -15,9 +15,13 @@ declare(strict_types=1);
  * The TYPO3 project - inspiring people to share!
  */
 
-return static function (): void {
-    // Custom CKEditor 5 preset for daisyUI-styled content (see
-    // Configuration/RTE/Default.yaml), activated via RTE.default.preset
-    // in the ThemeDaisy site set.
-    $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['daisy_default'] = 'EXT:theme_daisy/Configuration/RTE/Default.yaml';
-};
+defined('TYPO3') or die();
+
+// Custom CKEditor 5 preset for daisyUI-styled content (see
+// Configuration/RTE/Default.yaml), activated via RTE.default.preset
+// in the ThemeDaisy site set.
+//
+// Note: deliberately plain statements, not a returned closure - the
+// compiled ext_localconf cache inlines the return statement verbatim,
+// which would truncate every registration loaded after this file.
+$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['daisy_default'] = 'EXT:theme_daisy/Configuration/RTE/Default.yaml';

@@ -8,6 +8,8 @@
 <button type="button" class="dsvg-preview-btn dsvg-preview-btn--{record.tx_themedaisy_variant}">
     {record.header}
 </button>
-<f:if condition="{record.tx_themedaisy_link}"><div class="dsvg-preview__meta">{record.tx_themedaisy_link}</div></f:if>
+<f:if condition="{record.tx_themedaisy_link.url}">
+    <div class="dsvg-preview__meta">{record.tx_themedaisy_link.url}</div>
+</f:if>
 
 </html>

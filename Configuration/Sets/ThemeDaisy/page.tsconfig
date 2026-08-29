@@ -3,6 +3,30 @@
 # CKEditor 5 preset registered by ext_localconf.php, styled like the front-end
 RTE.default.preset = daisy_default
 
+# -----------------------------------------------------------------------
+# Field cleanup: the daisyUI templates do not render the core frame,
+# spacing or "to top" features, so those fields only add noise.
+# -----------------------------------------------------------------------
+TCEFORM {
+  pages {
+    layout.disabled = 1
+    newUntil.disabled = 1
+    php_tree_stop.disabled = 1
+  }
+
+  tt_content {
+    categories.disabled = 1
+    layout.disabled = 1
+    linkToTop.disabled = 1
+    rowDescription.disabled = 1
+    space_after_class.disabled = 1
+    space_before_class.disabled = 1
+
+    # only the plain frame is supported by the daisyUI markup
+    frame_class.keepItems = default
+  }
+}
+
 mod.wizards.newContentElement.wizardItems.daisyui.header = LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.group.daisyui
 
 # Backend thumbnails for the daisyUI content elements (page module)

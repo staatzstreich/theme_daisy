@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Michaelstaatz TYPO3 extensions.
+ * This file is part of the michaelstaatz/theme-daisy extension.
  *
  * It is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License, either version 2
@@ -188,7 +188,7 @@ call_user_func(static function (): void {
         'CType',
         'daisyui',
         'LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.group.daisyui',
-        'after:default'
+        'after:default',
     );
 
     // -----------------------------------------------------------------
