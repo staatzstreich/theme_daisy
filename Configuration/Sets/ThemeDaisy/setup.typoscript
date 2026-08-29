@@ -37,6 +37,13 @@ page {
                 languages = auto
                 as = languageMenu
             }
+            40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            40 {
+                # rootline for the breadcrumb below the navbar
+                special = rootline
+                as = breadcrumb
+                dataProcessing.10 = record-transformation
+            }
         }
     }
 }

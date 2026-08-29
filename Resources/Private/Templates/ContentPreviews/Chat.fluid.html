@@ -1,0 +1,17 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+
+<f:asset.css identifier="theme_daisy_backend_previews" href="EXT:theme_daisy/Resources/Public/Css/previews.css"/>
+
+<f:if condition="{record.header}"><div class="dsvg-preview__title">{record.header}</div></f:if>
+<div class="dsvg-preview-chat">
+    <f:for each="{record.tx_themedaisy_chat_items}" as="item">
+        <div class="dsvg-preview-chat__row dsvg-preview-chat__row--{item.side}">
+            <span class="dsvg-preview-chat__bubble">{item.author}: {item.message}</span>
+        </div>
+    </f:for>
+</div>
+
+</html>

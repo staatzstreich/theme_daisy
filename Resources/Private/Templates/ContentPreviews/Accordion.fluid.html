@@ -1,0 +1,17 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+
+<f:asset.css identifier="theme_daisy_backend_previews" href="EXT:theme_daisy/Resources/Public/Css/previews.css"/>
+
+<f:if condition="{record.header}"><div class="dsvg-preview__title">{record.header}</div></f:if>
+<dl class="dsvg-preview-list">
+    <f:for each="{record.tx_themedaisy_accordion_items}" as="item">
+        <dt class="dsvg-preview-list__item">{item.question}</dt>
+        <dd class="dsvg-preview-list__detail">{item.answer}</dd>
+    </f:for>
+    <f:if condition="!{record.tx_themedaisy_accordion_items}"><dd class="dsvg-preview-list__item">-</dd></f:if>
+</dl>
+
+</html>

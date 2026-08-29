@@ -1,0 +1,15 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+
+<f:asset.css identifier="theme_daisy_backend_previews" href="EXT:theme_daisy/Resources/Public/Css/previews.css"/>
+
+<div class="dsvg-preview dsvg-preview--hero">
+    <f:if condition="{record.header}"><div class="dsvg-preview__title dsvg-preview__title--large">{record.header}</div></f:if>
+    <f:if condition="{record.subheader}"><div class="dsvg-preview__sub">{record.subheader}</div></f:if>
+    <f:if condition="{record.bodytext}"><div class="dsvg-preview__text">{record.bodytext}</div></f:if>
+    <f:if condition="{record.tx_themedaisy_link_label}"><span class="dsvg-preview__cta">{record.tx_themedaisy_link_label}</span></f:if>
+</div>
+
+</html>

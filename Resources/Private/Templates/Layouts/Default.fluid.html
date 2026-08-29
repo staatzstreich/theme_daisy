@@ -31,6 +31,9 @@
     <my:navigation.navbar siteTitle="{site.configuration.websiteTitle}" menuItems="{mainMenu}" languages="{languageMenu}" />
 
     <main class="container mx-auto flex-1 px-4 py-10 md:px-8">
+        <f:if condition="{breadcrumb | f:count()} > 1">
+            <my:navigation.breadcrumbs items="{breadcrumb}" />
+        </f:if>
         <f:render section="Main" arguments="{_all}" />
     </main>
 

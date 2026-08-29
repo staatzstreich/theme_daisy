@@ -1,3 +1,21 @@
 @import 'EXT:theme_daisy/Configuration/BackendLayouts/*.tsconfig'
 
 mod.wizards.newContentElement.wizardItems.daisyui.header = LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.group.daisyui
+
+# Backend thumbnails for the daisyUI content elements (page module)
+mod.web_layout.tt_content.preview {
+    daisy_alert = EXT:theme_daisy/Resources/Private/Templates/ContentPreviews/Alert.fluid.html
+    daisy_card = EXT:theme_daisy/Resources/Private/Templates/ContentPreviews/Card.fluid.html
+    daisy_hero = EXT:theme_daisy/Resources/Private/Templates/ContentPreviews/Hero.fluid.html
+    daisy_button = EXT:theme_daisy/Resources/Private/Templates/ContentPreviews/Button.fluid.html
+    daisy_countdown = EXT:theme_daisy/Resources/Private/Templates/ContentPreviews/Countdown.fluid.html
+    daisy_mockup = EXT:theme_daisy/Resources/Private/Templates/ContentPreviews/Mockup.fluid.html
+    daisy_accordion = EXT:theme_daisy/Resources/Private/Templates/ContentPreviews/Accordion.fluid.html
+    daisy_stats = EXT:theme_daisy/Resources/Private/Templates/ContentPreviews/Stats.fluid.html
+    daisy_timeline = EXT:theme_daisy/Resources/Private/Templates/ContentPreviews/Timeline.fluid.html
+    daisy_steps = EXT:theme_daisy/Resources/Private/Templates/ContentPreviews/Steps.fluid.html
+    daisy_tabs = EXT:theme_daisy/Resources/Private/Templates/ContentPreviews/Tabs.fluid.html
+    daisy_carousel = EXT:theme_daisy/Resources/Private/Templates/ContentPreviews/Carousel.fluid.html
+    daisy_chat = EXT:theme_daisy/Resources/Private/Templates/ContentPreviews/Chat.fluid.html
+    daisy_cardgrid = EXT:theme_daisy/Resources/Private/Templates/ContentPreviews/CardGrid.fluid.html
+}

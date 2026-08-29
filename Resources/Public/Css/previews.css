@@ -1,0 +1,143 @@
+/*
+ * Backend content previews for the daisyUI content elements
+ * (see Resources/Private/Templates/ContentPreviews/ and the
+ * mod.web_layout.tt_content.preview mapping in the site set).
+ * Self-contained: the backend page module does not load the
+ * frontend Tailwind/daisyUI build, so previews carry their own
+ * minimal styling that mimics the daisyUI look.
+ */
+
+.dsvg-preview {
+    padding: 0.5rem 0.6rem;
+    border: 1px solid #d5d8de;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+
+.dsvg-preview__tag {
+    display: inline-block;
+    margin-bottom: 0.25rem;
+    padding: 0 0.4rem;
+    border-radius: 999px;
+    font-size: 0.7em;
+    font-weight: 700;
+    background: #e4e6eb;
+    color: #363b45;
+    text-transform: uppercase;
+}
+
+.dsvg-preview--info { border-left: 4px solid #4d83ff; }
+.dsvg-preview--success { border-left: 4px solid #24ac66; }
+.dsvg-preview--warning { border-left: 4px solid #f5a623; }
+.dsvg-preview--error { border-left: 4px solid #e5495c; }
+
+.dsvg-preview__title { font-weight: 700; margin: 0.15rem 0; }
+.dsvg-preview__title--large { font-size: 1.3em; }
+.dsvg-preview__sub { font-size: 0.85em; color: #6a6f7b; }
+.dsvg-preview__text { font-size: 0.9em; }
+.dsvg-preview__meta { font-size: 0.75em; color: #6a6f7b; overflow-wrap: anywhere; }
+.dsvg-preview__link { font-size: 0.85em; font-weight: 600; text-decoration: underline; }
+.dsvg-preview__cta {
+    display: inline-block;
+    margin-top: 0.35rem;
+    padding: 0.15rem 0.6rem;
+    border-radius: 0.4rem;
+    background: #4106ba;
+    color: #fff;
+    font-weight: 700;
+}
+.dsvg-preview__cta::before { content: 'CTA: '; font-weight: 400; font-size: 0.8em; }
+
+.dsvg-preview__image,
+.dsvg-preview-card__image,
+.dsvg-preview--carousel .dsvg-preview-card__image {
+    width: 140px;
+    height: 78px;
+    margin: 0.3rem 0;
+    border-radius: 0.4rem;
+    border: 1px dashed #b9bdc7;
+    background:
+        linear-gradient(45deg, transparent 65%, #e9ebef 65%),
+        linear-gradient(-45deg, transparent 65%, #e9ebef 65%),
+        #f7f8fa;
+}
+.dsvg-preview-card__image::after {
+    content: 'Image';
+    display: block;
+    text-align: center;
+    line-height: 4.4em;
+    font-size: 0.7em;
+    color: #9aa0ab;
+}
+
+.dsvg-preview-btn {
+    display: inline-block;
+    margin: 0.2rem 0;
+    padding: 0.25rem 0.9rem;
+    border: 0;
+    border-radius: 0.4rem;
+    font-weight: 700;
+    background: #e4e6eb;
+    color: #363b45;
+}
+.dsvg-preview-btn--primary { background: #4106ba; color: #fff; }
+.dsvg-preview-btn--secondary { background: #6119c8; color: #fff; }
+.dsvg-preview-btn--accent { background: #c93c99; color: #fff; }
+.dsvg-preview-btn--success { background: #24ac66; color: #fff; }
+.dsvg-preview-btn--error { background: #e5495c; color: #fff; }
+
+.dsvg-preview-countdown { text-align: center; }
+.dsvg-preview-countdown__value { font-size: 1.8em; font-weight: 700; }
+.dsvg-preview-code {
+    margin: 0.3rem 0;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    background: #1d232d;
+    color: #e5e8ee;
+    font-family: ui-monospace, monospace;
+    font-size: 0.75em;
+    white-space: pre-wrap;
+}
+
+.dsvg-preview-list { margin: 0.25rem 0 0; padding-left: 1.2rem; }
+.dsvg-preview-list__item { font-weight: 600; margin-top: 0.15rem; }
+.dsvg-preview-list--numbered__item { }
+.dsvg-preview-list__detail { font-weight: 400; color: #6a6f7b; font-size: 0.85em; }
+.dsvg-preview-list--numbered { list-style: decimal; }
+
+.dsvg-preview-stats { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.3rem; }
+.dsvg-preview-stats__item { text-align: center; }
+.dsvg-preview-stats__value { font-weight: 700; font-size: 1.2em; }
+
+.dsvg-preview-tabs { display: flex; gap: 0.35rem; margin-top: 0.3rem; }
+.dsvg-preview-tabs__item {
+    padding: 0.1rem 0.5rem;
+    border: 1px solid #d5d8de;
+    border-radius: 0.4rem 0.4rem 0 0;
+    font-size: 0.85em;
+}
+.dsvg-preview-tabs__item--active {
+    border-color: #4106ba;
+    border-bottom-width: 2px;
+    font-weight: 700;
+}
+
+.dsvg-preview-chat { display: flex; flex-direction: column; gap: 0.2rem; margin-top: 0.3rem; }
+.dsvg-preview-chat__row { display: flex; }
+.dsvg-preview-chat__row--end { justify-content: flex-end; }
+.dsvg-preview-chat__bubble {
+    padding: 0.15rem 0.5rem;
+    border-radius: 0.7rem;
+    background: #e4e6eb;
+    font-size: 0.85em;
+}
+.dsvg-preview-chat__row--end .dsvg-preview-chat__bubble { background: #ede4ff; }
+
+.dsvg-preview-cardgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin-top: 0.3rem; }
+.dsvg-preview-cardgrid__card {
+    padding: 0.4rem;
+    border: 1px solid #d5d8de;
+    border-radius: 0.5rem;
+    font-size: 0.85em;
+}
+.dsvg-preview-cardgrid__icon { font-size: 1.1em; }

@@ -2,11 +2,22 @@
 
 <div class="breadcrumbs text-sm">
     <ul>
+        <f:comment>
+            Accepts both hand-built arrays (label/href, e.g. from the
+            component reference page) and MenuProcessor (rootline) items
+            (title/link).
+        </f:comment>
         <f:for each="{items}" as="item">
             <li>
-                <f:if condition="{item.href}">
-                    <f:then><a href="{item.href}">{item.label}</a></f:then>
-                    <f:else>{item.label}</f:else>
+                <f:variable name="label">{f:if(condition: item.label, then: item.label, else: item.title)}</f:variable>
+                <f:variable name="href">{f:if(condition: item.href, then: item.href, else: item.link)}</f:variable>
+                <f:if condition="{href}">
+                    <f:then>
+                        <a href="{href}">{label}</a>
+                    </f:then>
+                    <f:else>
+                        {label}
+                    </f:else>
                 </f:if>
             </li>
         </f:for>

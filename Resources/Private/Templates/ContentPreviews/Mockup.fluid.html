@@ -1,0 +1,15 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+
+<f:asset.css identifier="theme_daisy_backend_previews" href="EXT:theme_daisy/Resources/Public/Css/previews.css"/>
+
+<div class="dsvg-preview dsvg-preview--mockup">
+    <span class="dsvg-preview__tag">{record.tx_themedaisy_mockup_type}</span>
+    <f:if condition="{record.tx_themedaisy_mockup_url}"><div class="dsvg-preview__meta">{record.tx_themedaisy_mockup_url}</div></f:if>
+    <f:if condition="{record.bodytext}"><div class="dsvg-preview-code">{record.bodytext}</div></f:if>
+    <f:if condition="{record.image}"><div class="dsvg-preview-card__image"></div></f:if>
+</div>
+
+</html>

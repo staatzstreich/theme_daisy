@@ -1,0 +1,15 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+
+<f:asset.css identifier="theme_daisy_backend_previews" href="EXT:theme_daisy/Resources/Public/Css/previews.css"/>
+
+<f:if condition="{record.header}"><div class="dsvg-preview__title">{record.header}</div></f:if>
+<div class="dsvg-preview-tabs">
+    <f:for each="{record.tx_themedaisy_tab_items}" as="item" iteration="i">
+        <span class="dsvg-preview-tabs__item{f:if(condition: '{i.isFirst}', then: ' dsvg-preview-tabs__item--active')}">{item.title}</span>
+    </f:for>
+</div>
+
+</html>
