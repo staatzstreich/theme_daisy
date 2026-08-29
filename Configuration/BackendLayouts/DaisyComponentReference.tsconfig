@@ -1,0 +1,31 @@
+mod {
+    web_layout {
+        BackendLayouts {
+            daisycomponentreference {
+                title = daisyUI: Component-Reference (Developer)
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Main
+                                        colPos = 0
+                                        colspan = 1
+                                        identifier = main
+                                        # The component reference page renders every daisyUI
+                                        # component statically through its page template - keep
+                                        # duplicate daisy_* content elements out of this column.
+                                        disallowedContentTypes = daisy_alert, daisy_card, daisy_hero, daisy_button, daisy_countdown, daisy_mockup, daisy_accordion, daisy_stats, daisy_timeline, daisy_steps, daisy_tabs, daisy_carousel, daisy_chat
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Main">
+
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <div class="lg:col-span-3">
+            <f:render.contentArea contentArea="{content.main}" />
+        </div>
+        <aside class="lg:col-span-1">
+            <f:render.contentArea contentArea="{content.sidebar}" />
+        </aside>
+    </div>
+
+</f:section>
+
+</html>

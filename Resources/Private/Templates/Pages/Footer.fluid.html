@@ -1,0 +1,20 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Main">
+
+    <f:render.contentArea contentArea="{content.main}" />
+
+    <f:if condition="{content.footer1} || {content.footer2} || {content.footer3}">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-base-300 py-8">
+            <f:render.contentArea contentArea="{content.footer1}" />
+            <f:render.contentArea contentArea="{content.footer2}" />
+            <f:render.contentArea contentArea="{content.footer3}" />
+        </div>
+    </f:if>
+
+</f:section>
+
+</html>

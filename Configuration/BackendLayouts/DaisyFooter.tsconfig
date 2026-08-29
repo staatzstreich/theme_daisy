@@ -1,0 +1,49 @@
+mod {
+    web_layout {
+        BackendLayouts {
+            daisyfooter {
+                title = daisyUI: Footer
+                config {
+                    backend_layout {
+                        colCount = 3
+                        rowCount = 2
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Main
+                                        colPos = 0
+                                        colspan = 3
+                                        identifier = main
+                                    }
+                                }
+                            }
+                            2 {
+                                columns {
+                                    1 {
+                                        name = Footer 1
+                                        colPos = 100
+                                        identifier = footer1
+                                        slideMode = slide
+                                    }
+                                    2 {
+                                        name = Footer 2
+                                        colPos = 101
+                                        identifier = footer2
+                                        slideMode = slide
+                                    }
+                                    3 {
+                                        name = Footer 3
+                                        colPos = 102
+                                        identifier = footer3
+                                        slideMode = slide
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
