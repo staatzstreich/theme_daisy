@@ -1,0 +1,11 @@
+<f:argument name="name" type="string" />
+<f:argument name="type" type="string" optional="{true}" default="text" />
+<f:argument name="placeholder" type="string" optional="{true}" default="" />
+<f:argument name="value" type="string" optional="{true}" default="" />
+<f:argument name="variant" type="string" optional="{true}" default="" />
+<f:argument name="size" type="string" optional="{true}" default="md" />
+<f:argument name="disabled" type="boolean" optional="{true}" default="{false}" />
+
+<f:variable name="classes">input<f:if condition="{variant}"> input-{variant}</f:if><f:if condition="{size}"> input-{size}</f:if></f:variable>
+
+<input type="{type}" name="{name}"<f:if condition="{placeholder}"> placeholder="{placeholder}"</f:if><f:if condition="{value}"> value="{value}"</f:if> class="{classes}"<f:if condition="{disabled}"> disabled="disabled"</f:if> />

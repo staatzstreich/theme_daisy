@@ -1,0 +1,12 @@
+<f:argument name="horizontal" type="string" optional="{true}" default="end" />
+<f:argument name="vertical" type="string" optional="{true}" default="top" />
+
+<f:variable name="classes">toast toast-{horizontal} toast-{vertical}</f:variable>
+
+<!--
+    Usage: nest one or more alert components (or other alert-classed
+    elements) inside the slot.
+-->
+<div class="{classes}">
+    <f:slot />
+</div>

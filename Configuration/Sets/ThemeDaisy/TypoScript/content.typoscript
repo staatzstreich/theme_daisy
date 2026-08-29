@@ -1,0 +1,58 @@
+# -----------------------------------------------------------------------
+# daisyUI content elements — own "styled content" system, rendered through
+# the Resources/Private/Components/ Fluid components.
+# -----------------------------------------------------------------------
+lib.daisyContentElement = FLUIDTEMPLATE
+lib.daisyContentElement {
+    templateRootPaths {
+        0 = EXT:theme_daisy/Resources/Private/ContentElements/Templates/
+    }
+    partialRootPaths {
+        0 = EXT:theme_daisy/Resources/Private/ContentElements/Partials/
+    }
+    layoutRootPaths {
+        0 = EXT:theme_daisy/Resources/Private/ContentElements/Layouts/
+    }
+    dataProcessing {
+        10 = record-transformation
+    }
+}
+
+tt_content.daisy_alert =< lib.daisyContentElement
+tt_content.daisy_alert.templateName = Alert
+
+tt_content.daisy_card =< lib.daisyContentElement
+tt_content.daisy_card.templateName = Card
+
+tt_content.daisy_hero =< lib.daisyContentElement
+tt_content.daisy_hero.templateName = Hero
+
+tt_content.daisy_button =< lib.daisyContentElement
+tt_content.daisy_button.templateName = Button
+
+tt_content.daisy_countdown =< lib.daisyContentElement
+tt_content.daisy_countdown.templateName = Countdown
+
+tt_content.daisy_mockup =< lib.daisyContentElement
+tt_content.daisy_mockup.templateName = Mockup
+
+tt_content.daisy_accordion =< lib.daisyContentElement
+tt_content.daisy_accordion.templateName = Accordion
+
+tt_content.daisy_stats =< lib.daisyContentElement
+tt_content.daisy_stats.templateName = Stats
+
+tt_content.daisy_timeline =< lib.daisyContentElement
+tt_content.daisy_timeline.templateName = Timeline
+
+tt_content.daisy_steps =< lib.daisyContentElement
+tt_content.daisy_steps.templateName = Steps
+
+tt_content.daisy_tabs =< lib.daisyContentElement
+tt_content.daisy_tabs.templateName = Tabs
+
+tt_content.daisy_carousel =< lib.daisyContentElement
+tt_content.daisy_carousel.templateName = Carousel
+
+tt_content.daisy_chat =< lib.daisyContentElement
+tt_content.daisy_chat.templateName = Chat

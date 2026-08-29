@@ -1,0 +1,7 @@
+<f:argument name="value" type="integer" />
+<f:argument name="label" type="string" optional="{true}" default="" />
+
+<span class="countdown">
+    <span style="--value:{value};" aria-live="polite">{value}</span>
+</span>
+<f:if condition="{label}"> {label}</f:if>

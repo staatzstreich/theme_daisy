@@ -1,0 +1,20 @@
+<f:argument name="title" type="string" optional="{true}" default="" />
+<f:argument name="imageSrc" type="string" optional="{true}" default="" />
+<f:argument name="imageAlt" type="string" optional="{true}" default="" />
+<f:argument name="bordered" type="boolean" optional="{true}" default="{true}" />
+
+<f:variable name="classes">card bg-base-100 shadow-sm<f:if condition="{bordered}"> border border-base-300</f:if></f:variable>
+
+<div class="{classes}">
+    <f:if condition="{imageSrc}">
+        <figure>
+            <img src="{imageSrc}" alt="{imageAlt}" />
+        </figure>
+    </f:if>
+    <div class="card-body">
+        <f:if condition="{title}">
+            <h2 class="card-title">{title}</h2>
+        </f:if>
+        <f:slot />
+    </div>
+</div>

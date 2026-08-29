@@ -1,0 +1,11 @@
+<f:argument name="items" type="array" />
+<f:argument name="size" type="string" optional="{true}" default="md" />
+
+<div class="dock<f:if condition="{size} != 'md'"> dock-{size}</f:if>">
+    <f:for each="{items}" as="item">
+        <a href="{item.href}">
+            <f:if condition="{item.icon}"><f:format.raw>{item.icon}</f:format.raw></f:if>
+            <span class="dock-label">{item.label}</span>
+        </a>
+    </f:for>
+</div>

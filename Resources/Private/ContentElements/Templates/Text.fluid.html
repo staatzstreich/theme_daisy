@@ -1,0 +1,10 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Main">
+
+    <div class="max-w-prose space-y-4 leading-relaxed">
+        {record -> f:render.text(field: 'bodytext')}
+    </div>
+
+</f:section>
+</html>

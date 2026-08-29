@@ -1,0 +1,44 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:my="http://typo3.org/ns/Michaelstaatz/ThemeDaisy/Components"
+      data-namespace-typo3-fluid="true">
+
+<f:if condition="{record.header}">
+    <h3 class="font-semibold mb-2">{record.header}</h3>
+</f:if>
+
+<f:switch expression="{record.tx_themedaisy_mockup_type}">
+    <f:case value="code">
+        <my:mockup.codeMockup>
+            <pre data-prefix="$"><code><f:format.raw>{record.bodytext}</f:format.raw></code></pre>
+        </my:mockup.codeMockup>
+    </f:case>
+    <f:case value="phone">
+        <my:mockup.phoneMockup>
+            <f:if condition="{record.image}">
+                <f:for each="{record.image}" as="image">
+                    <f:image image="{image}" alt="{image.alternative}" />
+                </f:for>
+            </f:if>
+        </my:mockup.phoneMockup>
+    </f:case>
+    <f:case value="window">
+        <my:mockup.windowMockup>
+            <f:if condition="{record.image}">
+                <f:for each="{record.image}" as="image">
+                    <f:image image="{image}" alt="{image.alternative}" />
+                </f:for>
+            </f:if>
+        </my:mockup.windowMockup>
+    </f:case>
+    <f:defaultCase>
+        <my:mockup.browserMockup url="{record.tx_themedaisy_mockup_url}">
+            <f:if condition="{record.image}">
+                <f:for each="{record.image}" as="image">
+                    <f:image image="{image}" alt="{image.alternative}" />
+                </f:for>
+            </f:if>
+        </my:mockup.browserMockup>
+    </f:defaultCase>
+</f:switch>
+
+</html>

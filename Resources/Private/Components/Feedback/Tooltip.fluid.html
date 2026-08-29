@@ -1,0 +1,9 @@
+<f:argument name="text" type="string" />
+<f:argument name="position" type="string" optional="{true}" default="" />
+<f:argument name="variant" type="string" optional="{true}" default="" />
+
+<f:variable name="classes">tooltip<f:if condition="{position}"> tooltip-{position}</f:if><f:if condition="{variant}"> tooltip-{variant}</f:if></f:variable>
+
+<div class="{classes}" data-tip="{text}">
+    <f:slot />
+</div>

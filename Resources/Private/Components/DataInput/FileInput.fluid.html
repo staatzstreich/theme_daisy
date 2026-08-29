@@ -1,0 +1,8 @@
+<f:argument name="name" type="string" />
+<f:argument name="variant" type="string" optional="{true}" default="" />
+<f:argument name="size" type="string" optional="{true}" default="md" />
+<f:argument name="multiple" type="boolean" optional="{true}" default="{false}" />
+
+<f:variable name="classes">file-input<f:if condition="{variant}"> file-input-{variant}</f:if><f:if condition="{size}"> file-input-{size}</f:if></f:variable>
+
+<input type="file" name="{name}"<f:if condition="{multiple}"> multiple="multiple"</f:if> class="{classes}" />

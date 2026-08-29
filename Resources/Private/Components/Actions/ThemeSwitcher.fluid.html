@@ -1,0 +1,12 @@
+<f:argument name="themes" type="array" />
+<f:argument name="size" type="string" optional="{true}" default="sm" />
+
+<select
+    id="theme-switcher"
+    class="select select-{size} w-auto"
+    aria-label="Farbschema wählen"
+>
+    <f:for each="{themes}" as="theme">
+        <option value="{theme.value}">{theme.label}</option>
+    </f:for>
+</select>

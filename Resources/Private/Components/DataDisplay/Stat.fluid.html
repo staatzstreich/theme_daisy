@@ -1,0 +1,21 @@
+<f:argument name="title" type="string" optional="{true}" default="" />
+<f:argument name="value" type="string" />
+<f:argument name="description" type="string" optional="{true}" default="" />
+<f:argument name="figure" type="string" optional="{true}" default="" />
+
+<!--
+    Usage: wrap one or more instances of this component inside your own
+    "div.stats.shadow" container.
+-->
+<div class="stat">
+    <f:if condition="{figure}">
+        <div class="stat-figure">{figure}</div>
+    </f:if>
+    <f:if condition="{title}">
+        <div class="stat-title">{title}</div>
+    </f:if>
+    <div class="stat-value">{value}</div>
+    <f:if condition="{description}">
+        <div class="stat-desc">{description}</div>
+    </f:if>
+</div>

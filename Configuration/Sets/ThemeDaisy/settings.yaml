@@ -1,0 +1,4 @@
+styles:
+  templates:
+    templateRootPath: EXT:theme_daisy/Resources/Private/ContentElements/Templates/
+    partialRootPath: EXT:theme_daisy/Resources/Private/ContentElements/Partials/

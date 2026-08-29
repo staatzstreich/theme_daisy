@@ -1,0 +1,22 @@
+<f:argument name="label" type="string" optional="{true}" default="" />
+<f:argument name="href" type="string" optional="{true}" default="" />
+<f:argument name="variant" type="string" optional="{true}" default="primary" />
+<f:argument name="size" type="string" optional="{true}" default="md" />
+<f:argument name="outline" type="boolean" optional="{true}" default="{false}" />
+<f:argument name="wide" type="boolean" optional="{true}" default="{false}" />
+<f:argument name="disabled" type="boolean" optional="{true}" default="{false}" />
+
+<f:variable name="classes">btn btn-{variant}<f:if condition="{outline}"> btn-outline</f:if><f:if condition="{size} != 'md'"> btn-{size}</f:if><f:if condition="{wide}"> btn-wide</f:if></f:variable>
+
+<f:if condition="{href}">
+    <f:then>
+        <a href="{href}" class="{classes}"<f:if condition="{disabled}"> aria-disabled="true" tabindex="-1"</f:if>>
+            <f:if condition="{label}"><f:then>{label}</f:then><f:else><f:slot /></f:else></f:if>
+        </a>
+    </f:then>
+    <f:else>
+        <button type="button" class="{classes}"<f:if condition="{disabled}"> disabled="disabled"</f:if>>
+            <f:if condition="{label}"><f:then>{label}</f:then><f:else><f:slot /></f:else></f:if>
+        </button>
+    </f:else>
+</f:if>

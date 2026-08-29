@@ -1,0 +1,64 @@
+@import "tailwindcss";
+/*
+ * ALL built-in daisyUI themes are compiled. The 35 names below are the
+ * three-way source of truth and MUST stay in sync with:
+ *   1. this @plugin block,
+ *   2. Configuration/Sets/ThemeDaisy/settings.definitions.yaml (theme.daisy.defaultTheme enum),
+ *   3. Resources/Private/Components/Actions/ThemeSwitcher.fluid.html (built-in list).
+ * daisyUI emits one [data-theme=<name>] variable block per theme, so adding a
+ * theme needs no class safelisting - only these three lists updated.
+ */
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, cupcake, bumblebee, emerald,
+          corporate, synthwave, retro, cyberpunk, valentine, halloween,
+          garden, forest, aqua, lofi, pastel, fantasy, wireframe, black,
+          luxury, dracula, cmyk, autumn, business, acid, lemonade, night,
+          coffee, winter, dim, nord, sunset, caramellatte, abyss, silk;
+}
+
+@source "../../Components";
+@source "../../Layouts";
+@source "../../Partials";
+@source "../../Templates";
+@source "../../ContentElements";
+
+/*
+ * The Fluid components build daisyUI class names dynamically
+ * (e.g. "btn-{variant}"), so Tailwind's static scanner never sees the
+ * literal class. These are safelisted explicitly instead.
+ */
+@source inline("{btn,badge,alert,link}-{primary,secondary,accent,neutral,info,success,warning,error,ghost,hover}");
+@source inline("btn-{xs,sm,md,lg,xl}");
+
+/* Actions + Feedback (Dropdown, Modal, Swap, Loading, Progress, RadialProgress, Skeleton, Toast, Tooltip) */
+@source inline("loading-{spinner,dots,ring,ball,bars,infinity}");
+@source inline("loading-{xs,sm,md,lg,xl}");
+@source inline("progress-{primary,secondary,accent,info,success,warning,error}");
+@source inline("text-{primary,secondary,accent,neutral,info,success,warning,error}");
+@source inline("toast-{start,center,end}");
+@source inline("toast-{top,middle,bottom}");
+@source inline("tooltip-{top,bottom,left,right}");
+@source inline("tooltip-{neutral,primary,secondary,accent,info,success,warning,error}");
+
+/* DataDisplay (Accordion, Avatar, Carousel, ChatBubble, Collapse, Countdown, Diff, Kbd, List, Stat, Status, Table, Timeline) */
+@source inline("chat-{start,end}");
+@source inline("chat-bubble-{primary,secondary,accent,info,success,warning,error}");
+@source inline("kbd-{xs,sm,md,lg}");
+@source inline("status-{neutral,primary,secondary,accent,info,success,warning,error}");
+@source inline("status-{xs,sm,md,lg,xl}");
+@source inline("table-{xs,sm,md,lg,xl}");
+@source inline("w-{8,10,12,16,20,24,32}");
+@source inline("rounded-{full,lg,box}");
+
+/* Navigation + Layout (Breadcrumbs, Dock, Menu, Pagination, Steps, Tab, Divider, Drawer, Hero, Indicator, Join, Mask, Stack) */
+@source inline("dock-{xs,sm,md,lg,xl}");
+@source inline("menu-{xs,sm,md,lg,xl}");
+@source inline("tabs-{box,border,lift}");
+@source inline("tabs-{xs,sm,md,lg,xl}");
+@source inline("divider-{primary,secondary,accent,neutral,success,warning,info,error}");
+@source inline("indicator-{start,center,end,top,middle,bottom}");
+@source inline("mask-{squircle,heart,hexagon,decagon,pentagon,diamond,square,circle,star,triangle}");
+
+/* DataInput (Checkbox, FileInput, Radio, Range, Select, TextInput, Textarea, Toggle, Rating) */
+@source inline("{checkbox,file-input,radio,range,select,input,textarea,toggle}-{neutral,primary,secondary,accent,info,success,warning,error}");
+@source inline("{checkbox,file-input,radio,range,select,input,textarea,toggle,rating}-{xs,sm,md,lg}");

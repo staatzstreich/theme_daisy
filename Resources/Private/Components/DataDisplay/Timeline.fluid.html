@@ -1,0 +1,42 @@
+<f:argument name="items" type="array" />
+<f:argument name="vertical" type="boolean" optional="{true}" default="{false}" />
+
+<f:variable name="classes">timeline<f:if condition="{vertical}"><f:then> timeline-vertical</f:then><f:else> timeline-horizontal</f:else></f:if></f:variable>
+
+<!--
+    Usage: each item may have title (plain label), content (main box text),
+    and side ("start" or "end", default "end") controlling which side the
+    content box renders on.
+-->
+<ul class="{classes}">
+    <f:for each="{items}" as="item" iteration="iterator">
+        <li>
+            <f:if condition="!{iterator.isFirst}">
+                <hr />
+            </f:if>
+            <f:if condition="{item.side} == 'start'">
+                <f:then>
+                    <div class="timeline-start timeline-box">{item.content}</div>
+                    <div class="timeline-middle">
+                        <span class="size-3 rounded-full bg-primary inline-block"></span>
+                    </div>
+                    <f:if condition="{item.title}">
+                        <div class="timeline-end">{item.title}</div>
+                    </f:if>
+                </f:then>
+                <f:else>
+                    <f:if condition="{item.title}">
+                        <div class="timeline-start">{item.title}</div>
+                    </f:if>
+                    <div class="timeline-middle">
+                        <span class="size-3 rounded-full bg-primary inline-block"></span>
+                    </div>
+                    <div class="timeline-end timeline-box">{item.content}</div>
+                </f:else>
+            </f:if>
+            <f:if condition="!{iterator.isLast}">
+                <hr />
+            </f:if>
+        </li>
+    </f:for>
+</ul>

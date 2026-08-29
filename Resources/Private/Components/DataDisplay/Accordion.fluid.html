@@ -1,0 +1,11 @@
+<f:argument name="groupName" type="string" />
+<f:argument name="title" type="string" />
+<f:argument name="checked" type="boolean" optional="{true}" default="{false}" />
+
+<div class="collapse collapse-arrow bg-base-100 border border-base-300">
+    <input type="radio" name="{groupName}"<f:if condition="{checked}"> checked="checked"</f:if> />
+    <div class="collapse-title font-semibold">{title}</div>
+    <div class="collapse-content text-sm">
+        <f:slot />
+    </div>
+</div>

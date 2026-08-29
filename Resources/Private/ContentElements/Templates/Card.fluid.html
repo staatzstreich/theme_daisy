@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:my="http://typo3.org/ns/Michaelstaatz/ThemeDaisy/Components"
+      data-namespace-typo3-fluid="true">
+
+<my:dataDisplay.card title="{record.header}">
+    <f:if condition="{record.image}">
+        <f:for each="{record.image}" as="image">
+            <f:image image="{image}" class="rounded-t-box" alt="{image.alternative}" />
+        </f:for>
+    </f:if>
+    <f:if condition="{record.bodytext}">
+        <p class="text-base-content/70"><f:format.nl2br>{record.bodytext}</f:format.nl2br></p>
+    </f:if>
+    <f:if condition="{record.tx_themedaisy_link}">
+        <div class="card-actions justify-end pt-2">
+            <my:actions.button variant="primary" size="sm" href="{f:uri.typolink(parameter: record.tx_themedaisy_link)}">
+                <f:if condition="{record.tx_themedaisy_link_label}">
+                    <f:then>{record.tx_themedaisy_link_label}</f:then>
+                    <f:else>Mehr erfahren</f:else>
+                </f:if>
+            </my:actions.button>
+        </div>
+    </f:if>
+</my:dataDisplay.card>
+
+</html>

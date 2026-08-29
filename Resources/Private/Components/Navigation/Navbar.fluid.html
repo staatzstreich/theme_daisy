@@ -1,0 +1,30 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:my="http://typo3.org/ns/Michaelstaatz/ThemeDaisy/Components"
+      data-namespace-typo3-fluid="true">
+
+<f:argument name="siteTitle" type="string" optional="{true}" default="" />
+<f:argument name="homeHref" type="string" optional="{true}" default="/" />
+<f:argument name="menuItems" type="array" optional="{true}" />
+<f:argument name="themes" type="array" optional="{true}" />
+
+<div class="navbar bg-base-100 shadow-sm">
+    <div class="flex-1">
+        <a href="{homeHref}" class="btn btn-ghost text-xl">{siteTitle}</a>
+    </div>
+    <div class="flex-none flex items-center gap-2">
+        <ul class="menu menu-horizontal px-1">
+            <f:if condition="{menuItems}">
+                <f:for each="{menuItems}" as="menuItem">
+                    <li>
+                        <my:navigation.link href="{menuItem.link}" variant="hover">{menuItem.title}</my:navigation.link>
+                    </li>
+                </f:for>
+            </f:if>
+        </ul>
+        <f:if condition="{themes}">
+            <my:actions.themeSwitcher themes="{themes}" />
+        </f:if>
+    </div>
+</div>
+
+</html>

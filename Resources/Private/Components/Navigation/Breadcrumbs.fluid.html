@@ -1,0 +1,14 @@
+<f:argument name="items" type="array" />
+
+<div class="breadcrumbs text-sm">
+    <ul>
+        <f:for each="{items}" as="item">
+            <li>
+                <f:if condition="{item.href}">
+                    <f:then><a href="{item.href}">{item.label}</a></f:then>
+                    <f:else>{item.label}</f:else>
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</div>

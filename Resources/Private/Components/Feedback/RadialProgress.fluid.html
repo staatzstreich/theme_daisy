@@ -1,0 +1,8 @@
+<f:argument name="value" type="integer" />
+<f:argument name="variant" type="string" optional="{true}" default="" />
+
+<f:variable name="classes">radial-progress<f:if condition="{variant}"> text-{variant}</f:if></f:variable>
+
+<div class="{classes}" style="--value:{value};" role="progressbar" aria-valuenow="{value}" aria-valuemin="0" aria-valuemax="100">
+    <f:slot />
+</div>

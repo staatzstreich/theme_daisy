@@ -1,0 +1,16 @@
+<f:argument name="lines" type="array" optional="{true}" />
+
+<f:if condition="{lines}">
+    <f:then>
+        <div class="mockup-code">
+            <f:for each="{lines}" as="line" iteration="it">
+                <pre data-prefix="{it.index}"><code>{line}</code></pre>
+            </f:for>
+        </div>
+    </f:then>
+    <f:else>
+        <div class="mockup-code">
+            <f:slot />
+        </div>
+    </f:else>
+</f:if>

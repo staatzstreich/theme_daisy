@@ -1,0 +1,13 @@
+{
+    "name": "theme_daisy",
+    "private": true,
+    "scripts": {
+        "build": "tailwindcss -i ./Resources/Private/Assets/Css/main.css -o ./Resources/Public/Css/main.css --minify",
+        "watch": "tailwindcss -i ./Resources/Private/Assets/Css/main.css -o ./Resources/Public/Css/main.css --watch"
+    },
+    "devDependencies": {
+        "@tailwindcss/cli": "^4.1.0",
+        "daisyui": "^5.0.0",
+        "tailwindcss": "^4.1.0"
+    }
+}

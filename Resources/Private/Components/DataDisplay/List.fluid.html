@@ -1,0 +1,26 @@
+<f:argument name="items" type="array" optional="{true}" />
+
+<!--
+    Usage: pass an items array (each with optional title/subtitle) to loop
+    automatically, or omit items and nest manually-marked-up
+    <li class="list-row">...</li> children in the slot instead.
+-->
+<ul class="list bg-base-100 rounded-box shadow-sm">
+    <f:if condition="{items}">
+        <f:then>
+            <f:for each="{items}" as="item">
+                <li class="list-row">
+                    <div>
+                        <f:if condition="{item.subtitle}">
+                            <div class="text-xs uppercase opacity-60">{item.subtitle}</div>
+                        </f:if>
+                        <div>{item.title}</div>
+                    </div>
+                </li>
+            </f:for>
+        </f:then>
+        <f:else>
+            <f:slot />
+        </f:else>
+    </f:if>
+</ul>

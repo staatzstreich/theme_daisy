@@ -1,0 +1,15 @@
+<f:argument name="name" type="string" />
+<f:argument name="count" type="integer" optional="{true}" default="5" />
+<f:argument name="value" type="integer" optional="{true}" default="0" />
+<f:argument name="size" type="string" optional="{true}" default="md" />
+<f:argument name="half" type="boolean" optional="{true}" default="{false}" />
+
+<f:variable name="classes">rating<f:if condition="{size}"> rating-{size}</f:if><f:if condition="{half}"> rating-half</f:if></f:variable>
+
+<div class="{classes}">
+    <f:for each="{0: 1, 1: 2, 2: 3, 3: 4, 4: 5, 5: 6, 6: 7, 7: 8, 8: 9, 9: 10}" as="i">
+        <f:if condition="{i} <= {count}">
+            <input type="radio" name="{name}" class="mask mask-star-2"<f:if condition="{i} == {value}"> checked="checked"</f:if> />
+        </f:if>
+    </f:for>
+</div>

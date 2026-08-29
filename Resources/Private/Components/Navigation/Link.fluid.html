@@ -1,0 +1,5 @@
+<f:argument name="href" type="string" />
+<f:argument name="variant" type="string" optional="{true}" default="link" />
+<f:argument name="target" type="string" optional="{true}" default="" />
+
+<a href="{href}" class="link link-{variant}"<f:if condition="{target}"> target="{target}"</f:if>><f:slot /></a>

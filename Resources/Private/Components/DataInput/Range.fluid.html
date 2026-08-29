@@ -1,0 +1,10 @@
+<f:argument name="name" type="string" />
+<f:argument name="min" type="integer" optional="{true}" default="0" />
+<f:argument name="max" type="integer" optional="{true}" default="100" />
+<f:argument name="value" type="integer" optional="{true}" default="50" />
+<f:argument name="variant" type="string" optional="{true}" default="" />
+<f:argument name="size" type="string" optional="{true}" default="md" />
+
+<f:variable name="classes">range<f:if condition="{variant}"> range-{variant}</f:if><f:if condition="{size}"> range-{size}</f:if></f:variable>
+
+<input type="range" name="{name}" min="{min}" max="{max}" value="{value}" class="{classes}" />

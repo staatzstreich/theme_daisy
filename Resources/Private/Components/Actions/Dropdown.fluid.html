@@ -1,0 +1,18 @@
+<f:argument name="label" type="string" optional="{true}" default="" />
+<f:argument name="end" type="boolean" optional="{true}" default="{false}" />
+<f:argument name="top" type="boolean" optional="{true}" default="{false}" />
+<f:argument name="hover" type="boolean" optional="{true}" default="{false}" />
+
+<f:variable name="classes">dropdown<f:if condition="{end}"> dropdown-end</f:if><f:if condition="{top}"> dropdown-top</f:if><f:if condition="{hover}"> dropdown-hover</f:if></f:variable>
+
+<!--
+    Usage: place the menu content inside the slot, e.g. a
+    "ul.menu.dropdown-content" element containing "li > a" entries.
+    Note: do not write namespaced example tags directly inside this
+    comment -- Fluid's parser scans comment text too, and this file
+    does not declare the "my" namespace, so it would fail to compile.
+-->
+<details class="{classes}">
+    <summary class="btn m-1">{label}</summary>
+    <f:slot />
+</details>

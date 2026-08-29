@@ -1,0 +1,5 @@
+name: michaelstaatz/theme-daisy
+label: 'Theme: daisyUI (Tailwind v4)'
+dependencies:
+  - typo3/fluid-styled-content
+  - typo3/fluid-styled-content-css

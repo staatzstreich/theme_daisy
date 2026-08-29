@@ -1,0 +1,7 @@
+<f:argument name="label" type="string" optional="{true}" default="" />
+<f:argument name="vertical" type="boolean" optional="{true}" default="{false}" />
+<f:argument name="variant" type="string" optional="{true}" default="" />
+
+<f:variable name="classes">divider<f:if condition="{vertical}"> divider-vertical</f:if><f:if condition="{variant}"> divider-{variant}</f:if></f:variable>
+
+<div class="{classes}">{label}</div>

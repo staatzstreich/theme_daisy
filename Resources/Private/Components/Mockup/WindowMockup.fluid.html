@@ -1,0 +1,9 @@
+<f:argument name="border" type="boolean" optional="{true}" default="{true}" />
+
+<f:variable name="classes">mockup-window bg-base-100<f:if condition="{border}"> border border-base-300</f:if></f:variable>
+
+<div class="{classes}">
+    <div class="grid place-content-center border-t border-base-300">
+        <f:slot />
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<f:argument name="name" type="string" />
+<f:argument name="checked" type="boolean" optional="{true}" default="{false}" />
+<f:argument name="variant" type="string" optional="{true}" default="" />
+<f:argument name="size" type="string" optional="{true}" default="md" />
+<f:argument name="disabled" type="boolean" optional="{true}" default="{false}" />
+
+<f:variable name="classes">toggle<f:if condition="{variant}"> toggle-{variant}</f:if><f:if condition="{size}"> toggle-{size}</f:if></f:variable>
+
+<input type="checkbox" name="{name}" class="{classes}"<f:if condition="{checked}"> checked="checked"</f:if><f:if condition="{disabled}"> disabled="disabled"</f:if> />

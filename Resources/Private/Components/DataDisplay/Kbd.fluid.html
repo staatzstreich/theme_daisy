@@ -1,0 +1,5 @@
+<f:argument name="size" type="string" optional="{true}" default="md" />
+
+<f:variable name="classes">kbd<f:if condition="{size} != 'md'"> kbd-{size}</f:if></f:variable>
+
+<kbd class="{classes}"><f:slot /></kbd>

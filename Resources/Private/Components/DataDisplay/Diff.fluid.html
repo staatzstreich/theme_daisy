@@ -1,0 +1,27 @@
+<f:argument name="beforeSrc" type="string" optional="{true}" default="" />
+<f:argument name="afterSrc" type="string" optional="{true}" default="" />
+<f:argument name="beforeContent" type="string" optional="{true}" default="" />
+<f:argument name="afterContent" type="string" optional="{true}" default="" />
+<f:argument name="beforeAlt" type="string" optional="{true}" default="" />
+<f:argument name="afterAlt" type="string" optional="{true}" default="" />
+
+<!--
+    Pass either beforeSrc/afterSrc (image URLs) or beforeContent/afterContent
+    (trusted raw HTML rendered via f:format.raw -- caller is responsible for
+    sanitizing this input).
+-->
+<div class="diff aspect-video">
+    <div class="diff-item-1">
+        <f:if condition="{beforeSrc}">
+            <f:then><img src="{beforeSrc}" alt="{beforeAlt}" /></f:then>
+            <f:else><f:format.raw>{beforeContent}</f:format.raw></f:else>
+        </f:if>
+    </div>
+    <div class="diff-item-2">
+        <f:if condition="{afterSrc}">
+            <f:then><img src="{afterSrc}" alt="{afterAlt}" /></f:then>
+            <f:else><f:format.raw>{afterContent}</f:format.raw></f:else>
+        </f:if>
+    </div>
+    <div class="diff-resizer"></div>
+</div>

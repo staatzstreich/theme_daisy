@@ -1,0 +1,14 @@
+<f:argument name="value" type="integer" optional="{true}" />
+<f:argument name="max" type="integer" optional="{true}" default="100" />
+<f:argument name="variant" type="string" optional="{true}" default="" />
+
+<f:variable name="classes">progress<f:if condition="{variant}"> progress-{variant}</f:if></f:variable>
+
+<f:if condition="{value}">
+    <f:then>
+        <progress class="{classes}" value="{value}" max="{max}"></progress>
+    </f:then>
+    <f:else>
+        <progress class="{classes}" max="{max}"></progress>
+    </f:else>
+</f:if>

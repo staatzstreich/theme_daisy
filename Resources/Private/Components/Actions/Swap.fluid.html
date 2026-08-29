@@ -1,0 +1,16 @@
+<f:argument name="rotate" type="boolean" optional="{true}" default="{false}" />
+<f:argument name="flip" type="boolean" optional="{true}" default="{false}" />
+
+<f:variable name="classes">swap<f:if condition="{rotate}"> swap-rotate</f:if><f:if condition="{flip}"> swap-flip</f:if></f:variable>
+
+<!--
+    Usage: slot content must contain exactly two children, marked with the
+    daisyUI classes "swap-on" and "swap-off" (e.g. two "div" elements).
+    Note: avoid writing namespaced example tags directly inside this
+    comment -- Fluid's parser scans comment text too, and this file
+    does not declare the "my" namespace, so it would fail to compile.
+-->
+<label class="{classes}">
+    <input type="checkbox" />
+    <f:slot />
+</label>

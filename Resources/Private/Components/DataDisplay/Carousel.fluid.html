@@ -1,0 +1,15 @@
+<f:argument name="centered" type="boolean" optional="{true}" default="{false}" />
+<f:argument name="vertical" type="boolean" optional="{true}" default="{false}" />
+
+<f:variable name="classes">carousel w-full<f:if condition="{centered}"> carousel-center</f:if><f:if condition="{vertical}"> carousel-vertical</f:if></f:variable>
+
+<!--
+    Usage: nest one or more <div class="carousel-item">...</div> elements
+    inside the slot. "w-full" gives the carousel a real (non-shrink-to-fit)
+    width so it actually overflows and becomes scrollable -- without an
+    explicit width, ".carousel" (inline-flex) just shrinks to its content
+    and there's nothing to scroll.
+-->
+<div class="{classes}">
+    <f:slot />
+</div>

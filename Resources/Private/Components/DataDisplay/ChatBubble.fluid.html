@@ -1,0 +1,30 @@
+<f:argument name="side" type="string" />
+<f:argument name="imageSrc" type="string" optional="{true}" default="" />
+<f:argument name="author" type="string" optional="{true}" default="" />
+<f:argument name="time" type="string" optional="{true}" default="" />
+<f:argument name="variant" type="string" optional="{true}" default="" />
+<f:argument name="footer" type="string" optional="{true}" default="" />
+
+<f:variable name="bubbleClasses">chat-bubble<f:if condition="{variant}"> chat-bubble-{variant}</f:if></f:variable>
+
+<div class="chat chat-{side}">
+    <f:if condition="{imageSrc}">
+        <div class="chat-image avatar">
+            <div class="w-10 rounded-full">
+                <img src="{imageSrc}" alt="{author}" />
+            </div>
+        </div>
+    </f:if>
+    <f:if condition="{author} || {time}">
+        <div class="chat-header">
+            <f:if condition="{author}">{author}</f:if>
+            <f:if condition="{time}"> <time class="text-xs opacity-50">{time}</time></f:if>
+        </div>
+    </f:if>
+    <div class="{bubbleClasses}">
+        <f:slot />
+    </div>
+    <f:if condition="{footer}">
+        <div class="chat-footer opacity-50">{footer}</div>
+    </f:if>
+</div>

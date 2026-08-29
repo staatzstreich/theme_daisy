@@ -1,0 +1,8 @@
+<f:argument name="items" type="array" />
+<f:argument name="vertical" type="boolean" optional="{true}" default="{false}" />
+
+<ul class="steps<f:if condition="{vertical}"> steps-vertical</f:if>">
+    <f:for each="{items}" as="item">
+        <li class="step<f:if condition="{item.done}"><f:then> step-primary</f:then><f:else><f:if condition="{item.active}"> step-primary</f:if></f:else></f:if>"<f:if condition="{item.content}"> data-content="{item.content}"</f:if>>{item.label}</li>
+    </f:for>
+</ul>

@@ -1,0 +1,8 @@
+<f:argument name="badgeText" type="string" optional="{true}" default="" />
+<f:argument name="badgeVariant" type="string" optional="{true}" default="primary" />
+<f:argument name="position" type="string" optional="{true}" default="" />
+
+<div class="indicator">
+    <span class="indicator-item badge badge-{badgeVariant}<f:if condition="{position}"> {position}</f:if>">{badgeText}</span>
+    <f:slot />
+</div>

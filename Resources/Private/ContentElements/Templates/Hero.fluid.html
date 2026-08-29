@@ -1,0 +1,36 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:my="http://typo3.org/ns/Michaelstaatz/ThemeDaisy/Components"
+      data-namespace-typo3-fluid="true">
+
+<f:variable name="bgImage" value="0" />
+<f:if condition="{record.image}">
+    <f:for each="{record.image}" as="image" iteration="it">
+        <f:if condition="{it.isFirst}">
+            <f:variable name="bgImage">{f:uri.image(image: image)}</f:variable>
+        </f:if>
+    </f:for>
+</f:if>
+
+<my:layout.hero backgroundImage="{bgImage}" overlay="{f:if(condition: bgImage, then: true, else: false)}">
+    <div class="max-w-md">
+        <f:if condition="{record.header}">
+            <h1 class="text-3xl font-bold">{record.header}</h1>
+        </f:if>
+        <f:if condition="{record.subheader}">
+            <p class="py-2 text-lg">{record.subheader}</p>
+        </f:if>
+        <f:if condition="{record.bodytext}">
+            <p class="py-2"><f:format.nl2br>{record.bodytext}</f:format.nl2br></p>
+        </f:if>
+        <f:if condition="{record.tx_themedaisy_link}">
+            <my:actions.button variant="primary" href="{f:uri.typolink(parameter: record.tx_themedaisy_link)}">
+                <f:if condition="{record.tx_themedaisy_link_label}">
+                    <f:then>{record.tx_themedaisy_link_label}</f:then>
+                    <f:else>Mehr erfahren</f:else>
+                </f:if>
+            </my:actions.button>
+        </f:if>
+    </div>
+</my:layout.hero>
+
+</html>

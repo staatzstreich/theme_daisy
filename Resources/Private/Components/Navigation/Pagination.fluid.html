@@ -1,0 +1,7 @@
+<f:argument name="items" type="array" />
+
+<div class="join">
+    <f:for each="{items}" as="item">
+        <a href="{item.href}" class="join-item btn<f:if condition="{item.active}"> btn-active</f:if>">{item.label}</a>
+    </f:for>
+</div>

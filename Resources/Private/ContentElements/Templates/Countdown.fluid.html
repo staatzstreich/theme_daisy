@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:my="http://typo3.org/ns/Michaelstaatz/ThemeDaisy/Components"
+      data-namespace-typo3-fluid="true">
+
+<f:if condition="{record.header}">
+    <h3 class="font-semibold mb-2">{record.header}</h3>
+</f:if>
+<div class="flex items-center gap-2 text-lg">
+    <my:dataDisplay.countdown value="{record.tx_themedaisy_countdown_value}" />
+    <f:if condition="{record.tx_themedaisy_countdown_label}">
+        <span>{record.tx_themedaisy_countdown_label}</span>
+    </f:if>
+</div>
+
+</html>

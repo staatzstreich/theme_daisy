@@ -1,0 +1,8 @@
+<f:argument name="legend" type="string" optional="{true}" default="" />
+
+<fieldset class="fieldset bg-base-100 border border-base-300 rounded-box p-4">
+    <f:if condition="{legend}">
+        <legend class="fieldset-legend">{legend}</legend>
+    </f:if>
+    <f:slot />
+</fieldset>

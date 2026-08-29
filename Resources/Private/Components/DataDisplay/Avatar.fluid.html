@@ -1,0 +1,13 @@
+<f:argument name="src" type="string" />
+<f:argument name="alt" type="string" optional="{true}" default="" />
+<f:argument name="size" type="string" optional="{true}" default="w-12" />
+<f:argument name="ring" type="boolean" optional="{true}" default="{false}" />
+<f:argument name="rounded" type="string" optional="{true}" default="rounded-full" />
+
+<f:variable name="classes">{rounded} {size}<f:if condition="{ring}"> ring ring-primary ring-offset-base-100 ring-offset-2</f:if></f:variable>
+
+<div class="avatar">
+    <div class="{classes}">
+        <img src="{src}" alt="{alt}" />
+    </div>
+</div>

@@ -1,0 +1,21 @@
+{
+    "name": "michaelstaatz/theme-daisy",
+    "type": "typo3-cms-extension",
+    "description": "daisyUI 5 / Tailwind v4 theme for TYPO3: Fluid components, styled content elements and backend layouts.",
+    "license": ["GPL-2.0-or-later"],
+    "require": {
+        "php": "^8.2",
+        "typo3/cms-core": "^14.3",
+        "typo3/cms-fluid-styled-content": "^14.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Michaelstaatz\\ThemeDaisy\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "theme_daisy"
+        }
+    }
+}

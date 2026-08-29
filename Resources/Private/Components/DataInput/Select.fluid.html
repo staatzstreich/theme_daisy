@@ -1,0 +1,19 @@
+<f:argument name="name" type="string" />
+<f:argument name="variant" type="string" optional="{true}" default="" />
+<f:argument name="size" type="string" optional="{true}" default="md" />
+<f:argument name="items" type="array" optional="{true}" />
+
+<f:variable name="classes">select<f:if condition="{variant}"> select-{variant}</f:if><f:if condition="{size}"> select-{size}</f:if></f:variable>
+
+<select name="{name}" class="{classes}">
+    <f:if condition="{items}">
+        <f:then>
+            <f:for each="{items}" as="item">
+                <option value="{item.value}"<f:if condition="{item.selected}"> selected="selected"</f:if>>{item.label}</option>
+            </f:for>
+        </f:then>
+        <f:else>
+            <f:slot />
+        </f:else>
+    </f:if>
+</select>

@@ -1,0 +1,16 @@
+<f:argument name="style" type="string" optional="{true}" default="" />
+<f:argument name="size" type="string" optional="{true}" default="md" />
+
+<f:variable name="classes">tabs<f:if condition="{style}"> tabs-{style}</f:if><f:if condition="{size} != 'md'"> tabs-{size}</f:if></f:variable>
+
+<!--
+    Usage: nest caller-authored radio-driven tab/panel pairs inside the
+    slot -- alternating "input[type=radio].tab" and "div.tab-content"
+    elements sharing the same radio "name".
+    Note: avoid writing namespaced example tags directly inside this
+    comment -- Fluid's parser scans comment text too, and this file
+    does not declare the "my" namespace, so it would fail to compile.
+-->
+<div class="{classes}">
+    <f:slot />
+</div>

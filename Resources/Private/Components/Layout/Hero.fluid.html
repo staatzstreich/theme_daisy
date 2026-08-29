@@ -1,0 +1,11 @@
+<f:argument name="backgroundImage" type="string" optional="{true}" default="" />
+<f:argument name="overlay" type="boolean" optional="{true}" default="{false}" />
+
+<div class="hero"<f:if condition="{backgroundImage}"> style="background-image: url({backgroundImage});"</f:if>>
+    <f:if condition="{overlay}">
+        <div class="hero-overlay"></div>
+    </f:if>
+    <div class="hero-content text-center">
+        <f:slot />
+    </div>
+</div>

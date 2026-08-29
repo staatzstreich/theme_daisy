@@ -1,0 +1,6 @@
+<f:argument name="variant" type="string" optional="{true}" default="neutral" />
+<f:argument name="outline" type="boolean" optional="{true}" default="{false}" />
+
+<f:variable name="classes">badge badge-{variant}<f:if condition="{outline}"> badge-outline</f:if></f:variable>
+
+<span class="{classes}"><f:slot /></span>

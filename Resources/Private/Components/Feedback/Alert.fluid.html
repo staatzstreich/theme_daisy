@@ -1,0 +1,8 @@
+<f:argument name="variant" type="string" optional="{true}" default="info" />
+<f:argument name="soft" type="boolean" optional="{true}" default="{true}" />
+
+<f:variable name="classes">alert alert-{variant}<f:if condition="{soft}"> alert-soft</f:if></f:variable>
+
+<div role="alert" class="{classes}">
+    <f:slot />
+</div>

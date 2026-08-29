@@ -1,0 +1,17 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:my="http://typo3.org/ns/Michaelstaatz/ThemeDaisy/Components"
+      data-namespace-typo3-fluid="true">
+
+<f:if condition="{record.header}">
+    <h3 class="font-semibold mb-2">{record.header}</h3>
+</f:if>
+<my:navigation.tab style="box">
+    <f:for each="{record.tx_themedaisy_tab_items}" as="item" iteration="it">
+        <input type="radio" name="ce{record.uid}-tabs" class="tab" aria-label="{item.title}"{f:if(condition: it.isFirst, then: ' checked="checked"')} />
+        <div class="tab-content bg-base-100 border-base-300 p-6">
+            <f:format.nl2br>{item.bodytext}</f:format.nl2br>
+        </div>
+    </f:for>
+</my:navigation.tab>
+
+</html>

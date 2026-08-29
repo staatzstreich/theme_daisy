@@ -1,0 +1,14 @@
+<f:argument name="zebra" type="boolean" optional="{true}" default="{true}" />
+<f:argument name="pinRows" type="boolean" optional="{true}" default="{false}" />
+<f:argument name="size" type="string" optional="{true}" default="md" />
+
+<f:variable name="classes">table<f:if condition="{zebra}"> table-zebra</f:if><f:if condition="{pinRows}"> table-pin-rows</f:if><f:if condition="{size} != 'md'"> table-{size}</f:if></f:variable>
+
+<!--
+    Usage: nest your own <thead>/<tbody> markup inside the slot.
+-->
+<div class="overflow-x-auto">
+    <table class="{classes}">
+        <f:slot />
+    </table>
+</div>

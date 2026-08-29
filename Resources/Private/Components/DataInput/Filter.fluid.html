@@ -1,0 +1,12 @@
+<f:argument name="name" type="string" />
+<f:argument name="items" type="array" />
+<f:argument name="includeReset" type="boolean" optional="{true}" default="{true}" />
+
+<div class="filter">
+    <f:if condition="{includeReset}">
+        <input class="btn filter-reset" type="radio" name="{name}" aria-label="×" />
+    </f:if>
+    <f:for each="{items}" as="item">
+        <input class="btn" type="radio" name="{name}" aria-label="{item.label}" value="{item.value}" />
+    </f:for>
+</div>
