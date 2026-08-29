@@ -1,0 +1,40 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:my="http://typo3.org/ns/Michaelstaatz/ThemeDaisy/Components"
+      data-namespace-typo3-fluid="true">
+
+<f:comment>
+    The active theme is stamped as data-theme on the <html> element:
+    - server-side default from the site setting theme.daisy.defaultTheme
+      (see Configuration/Sets/ThemeDaisy/setup.typoscript),
+    - visitor override applied inline in the head below (no flash of the
+      default theme) and kept in sync on navigation by theme-daisy.js.
+</f:comment>
+
+<f:asset.css identifier="theme-daisy-main" href="EXT:theme_daisy/Resources/Public/Css/main.css" />
+
+<f:asset.script identifier="theme-daisy-init" priority="true">
+    (function () {
+        try {
+            var storedTheme = localStorage.getItem('theme-daisy-theme');
+            if (storedTheme) {
+                document.documentElement.setAttribute('data-theme', storedTheme);
+            }
+        } catch (e) {
+            // localStorage unavailable - server-rendered default stays active
+        }
+    })();
+</f:asset.script>
+
+<f:asset.script identifier="theme-daisy-main" src="EXT:theme_daisy/Resources/Public/JavaScript/theme-daisy.js" defer="true" />
+
+<div class="flex min-h-screen flex-col">
+    <my:navigation.navbar siteTitle="{site.configuration.websiteTitle}" menuItems="{mainMenu}" />
+
+    <main class="container mx-auto flex-1 px-4 py-8">
+        <f:render section="Main" arguments="{_all}" />
+    </main>
+
+    <my:layout.footer siteTitle="{site.configuration.websiteTitle}">All rights reserved.</my:layout.footer>
+</div>
+
+</html>

@@ -1,0 +1,50 @@
+categories:
+  theme: ~
+
+# The 35 enum values below are the three-way source of truth and MUST stay in
+# sync with:
+#   1. Resources/Private/Assets/Css/main.css (@plugin "daisyui" themes block),
+#   2. Resources/Private/Components/Actions/ThemeSwitcher.fluid.html (built-in list).
+# Visitors may override this default client-side; it only sets the initial
+# data-theme value rendered on the <html> element (see setup.typoscript).
+settings:
+  theme.daisy.defaultTheme:
+    default: light
+    type: string
+    enum:
+      - light
+      - dark
+      - cupcake
+      - bumblebee
+      - emerald
+      - corporate
+      - synthwave
+      - retro
+      - cyberpunk
+      - valentine
+      - halloween
+      - garden
+      - forest
+      - aqua
+      - lofi
+      - pastel
+      - fantasy
+      - wireframe
+      - black
+      - luxury
+      - dracula
+      - cmyk
+      - autumn
+      - business
+      - acid
+      - lemonade
+      - night
+      - coffee
+      - winter
+      - dim
+      - nord
+      - sunset
+      - caramellatte
+      - abyss
+      - silk
+    category: theme

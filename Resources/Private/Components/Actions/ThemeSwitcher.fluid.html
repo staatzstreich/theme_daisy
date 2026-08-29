@@ -1,12 +1,62 @@
-<f:argument name="themes" type="array" />
+<f:argument name="themes" type="array" optional="{true}" />
 <f:argument name="size" type="string" optional="{true}" default="sm" />
+
+<f:comment>
+    Without a `themes` argument the component renders the 35 built-in daisyUI
+    themes. That list is the three-way source of truth and MUST stay in sync
+    with:
+      1. Resources/Private/Assets/Css/main.css (@plugin "daisyui" themes block),
+      2. Configuration/Sets/ThemeDaisy/settings.definitions.yaml (enum).
+</f:comment>
+<f:if condition="{themes}">
+    <f:variable name="resolvedThemes" value="{themes}" />
+    <f:else>
+        <f:variable name="resolvedThemes" value="{
+            0: {value: 'light', label: 'Light'},
+            1: {value: 'dark', label: 'Dark'},
+            2: {value: 'cupcake', label: 'Cupcake'},
+            3: {value: 'bumblebee', label: 'Bumblebee'},
+            4: {value: 'emerald', label: 'Emerald'},
+            5: {value: 'corporate', label: 'Corporate'},
+            6: {value: 'synthwave', label: 'Synthwave'},
+            7: {value: 'retro', label: 'Retro'},
+            8: {value: 'cyberpunk', label: 'Cyberpunk'},
+            9: {value: 'valentine', label: 'Valentine'},
+            10: {value: 'halloween', label: 'Halloween'},
+            11: {value: 'garden', label: 'Garden'},
+            12: {value: 'forest', label: 'Forest'},
+            13: {value: 'aqua', label: 'Aqua'},
+            14: {value: 'lofi', label: 'Lofi'},
+            15: {value: 'pastel', label: 'Pastel'},
+            16: {value: 'fantasy', label: 'Fantasy'},
+            17: {value: 'wireframe', label: 'Wireframe'},
+            18: {value: 'black', label: 'Black'},
+            19: {value: 'luxury', label: 'Luxury'},
+            20: {value: 'dracula', label: 'Dracula'},
+            21: {value: 'cmyk', label: 'CMYK'},
+            22: {value: 'autumn', label: 'Autumn'},
+            23: {value: 'business', label: 'Business'},
+            24: {value: 'acid', label: 'Acid'},
+            25: {value: 'lemonade', label: 'Lemonade'},
+            26: {value: 'night', label: 'Night'},
+            27: {value: 'coffee', label: 'Coffee'},
+            28: {value: 'winter', label: 'Winter'},
+            29: {value: 'dim', label: 'Dim'},
+            30: {value: 'nord', label: 'Nord'},
+            31: {value: 'sunset', label: 'Sunset'},
+            32: {value: 'caramellatte', label: 'Caramel Latte'},
+            33: {value: 'abyss', label: 'Abyss'},
+            34: {value: 'silk', label: 'Silk'}
+        }" />
+    </f:else>
+</f:if>
 
 <select
     id="theme-switcher"
     class="select select-{size} w-auto"
-    aria-label="Farbschema wählen"
+    aria-label="Choose color theme"
 >
-    <f:for each="{themes}" as="theme">
+    <f:for each="{resolvedThemes}" as="theme">
         <option value="{theme.value}">{theme.label}</option>
     </f:for>
 </select>
