@@ -28,7 +28,7 @@ page {
             10 = page-content
             20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
             20 {
-                levels = 1
+                levels = 2
                 as = mainMenu
             }
         }

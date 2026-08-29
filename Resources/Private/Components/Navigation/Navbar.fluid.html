@@ -22,16 +22,46 @@
     <nav class="navbar-center hidden lg:block" aria-label="Main navigation">
         <ul class="menu menu-horizontal gap-1">
             <f:for each="{menuItems}" as="menuItem">
-                <li>
-                    <f:if condition="{menuItem.active}">
-                        <f:then>
-                            <a href="{menuItem.link}" class="menu-active rounded-md" aria-current="page">{menuItem.title}</a>
-                        </f:then>
-                        <f:else>
-                            <a href="{menuItem.link}" class="rounded-md">{menuItem.title}</a>
-                        </f:else>
-                    </f:if>
-                </li>
+                <f:if condition="{menuItem.children}">
+                    <f:then>
+                        <li>
+                            <div class="dropdown dropdown-hover dropdown-end">
+                                <div tabindex="0" role="button" aria-haspopup="true" class="rounded-md">
+                                    {menuItem.title}
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 opacity-60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </div>
+                                <ul class="dropdown-content menu z-[60] mt-2 w-56 rounded-box border border-base-300 bg-base-100 p-1.5 shadow-xl">
+                                    <f:for each="{menuItem.children}" as="child">
+                                        <li>
+                                            <f:if condition="{child.active}">
+                                                <f:then>
+                                                    <a href="{child.link}" class="menu-active rounded-md" aria-current="page">{child.title}</a>
+                                                </f:then>
+                                                <f:else>
+                                                    <a href="{child.link}" class="rounded-md">{child.title}</a>
+                                                </f:else>
+                                            </f:if>
+                                        </li>
+                                    </f:for>
+                                </ul>
+                            </div>
+                        </li>
+                    </f:then>
+                    <f:else>
+                        <li>
+                            <f:if condition="{menuItem.active}">
+                                <f:then>
+                                    <a href="{menuItem.link}" class="menu-active rounded-md" aria-current="page">{menuItem.title}</a>
+                                </f:then>
+                                <f:else>
+                                    <a href="{menuItem.link}" class="rounded-md">{menuItem.title}</a>
+                                </f:else>
+                            </f:if>
+                        </li>
+                    </f:else>
+                </f:if>
             </f:for>
         </ul>
     </nav>
@@ -48,16 +78,43 @@
                 </summary>
                 <ul class="dropdown-content menu z-[60] mt-2 w-64 rounded-box border border-base-300 bg-base-100 p-2 shadow-xl" role="menu">
                     <f:for each="{menuItems}" as="menuItem">
-                        <li>
-                            <f:if condition="{menuItem.active}">
-                                <f:then>
-                                    <a href="{menuItem.link}" role="menuitem" class="menu-active" aria-current="page">{menuItem.title}</a>
-                                </f:then>
-                                <f:else>
-                                    <a href="{menuItem.link}" role="menuitem">{menuItem.title}</a>
-                                </f:else>
-                            </f:if>
-                        </li>
+                        <f:if condition="{menuItem.children}">
+                            <f:then>
+                                <li>
+                                    <f:if condition="{menuItem.active}">
+                                        <f:then>
+                                            <details class="group" open>
+                                        </f:then>
+                                        <f:else>
+                                            <details class="group">
+                                        </f:else>
+                                    </f:if>
+                                        <summary class="list-none">
+                                            <f:if condition="{menuItem.active}">
+                                                <f:then>
+                                                    <span class="menu-active" aria-current="page">{menuItem.title}</span>
+                                                </f:then>
+                                                <f:else>
+                                                    <span>{menuItem.title}</span>
+                                                </f:else>
+                                            </f:if>
+                                        </summary>
+                                        <ul>
+                                            <f:for each="{menuItem.children}" as="child">
+                                                <li>
+                                                    <a href="{child.link}" role="menuitem"{f:if(condition: child.active, then: ' class="menu-active" aria-current="page"')}>{child.title}</a>
+                                                </li>
+                                            </f:for>
+                                        </ul>
+                                    </details>
+                                </li>
+                            </f:then>
+                            <f:else>
+                                <li>
+                                    <a href="{menuItem.link}" role="menuitem"{f:if(condition: menuItem.active, then: ' class="menu-active" aria-current="page"')}>{menuItem.title}</a>
+                                </li>
+                            </f:else>
+                        </f:if>
                     </f:for>
                 </ul>
             </details>
