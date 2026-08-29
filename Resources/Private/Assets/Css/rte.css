@@ -1,0 +1,133 @@
+/*
+ * Source for the CKEditor 5 contentsCss (`Resources/Public/Css/rte.css`).
+ * Built with the same Tailwind + daisyUI toolchain as main.css, but with only
+ * the two base themes: the editor iframe picks the light theme variables from
+ * `:root` and falls back to dark via prefers-color-scheme, so the editor is
+ * dark/light-mode aware without shipping all 35 themes.
+ *
+ * Build: npm run build:rte
+ */
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-base-content);
+  background-color: var(--color-base-100);
+  margin: 0;
+  padding: 1rem 0;
+  max-width: 60rem;
+}
+
+p,
+ul,
+ol,
+blockquote,
+table,
+figure,
+pre {
+  margin-block: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.25;
+  margin-block: 1.2em 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.25em;
+}
+h4,
+h5,
+h6 {
+  font-size: 1em;
+}
+
+ul {
+  list-style: disc;
+}
+ol {
+  list-style: decimal;
+}
+ul,
+ol {
+  padding-inline-start: 1.5em;
+}
+ul ul {
+  list-style: circle;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+blockquote {
+  border-inline-start: 4px solid var(--color-primary);
+  padding-inline-start: 1em;
+  opacity: 0.9;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid color-mix(in oklab, var(--color-base-content) 20%, transparent);
+  margin-block: 2em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid color-mix(in oklab, var(--color-base-content) 25%, transparent);
+  padding: 0.375rem 0.625rem;
+  text-align: start;
+}
+
+thead th {
+  background-color: color-mix(in oklab, var(--color-base-content) 8%, transparent);
+}
+
+code,
+pre {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: color-mix(in oklab, var(--color-base-content) 8%, transparent);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-box);
+  overflow-x: auto;
+}
+
+code {
+  background-color: color-mix(in oklab, var(--color-base-content) 8%, transparent);
+  padding: 0.125rem 0.375rem;
+  border-radius: var(--radius-field);
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+}

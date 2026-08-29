@@ -1,5 +1,8 @@
 @import 'EXT:theme_daisy/Configuration/BackendLayouts/*.tsconfig'
 
+# CKEditor 5 preset registered by ext_localconf.php, styled like the front-end
+RTE.default.preset = daisy_default
+
 mod.wizards.newContentElement.wizardItems.daisyui.header = LLL:EXT:theme_daisy/Resources/Private/Language/backend_fields.xlf:tt_content.group.daisyui
 
 # Backend thumbnails for the daisyUI content elements (page module)

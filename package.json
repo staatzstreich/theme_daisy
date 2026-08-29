@@ -2,8 +2,12 @@
     "name": "theme_daisy",
     "private": true,
     "scripts": {
-        "build": "tailwindcss -i ./Resources/Private/Assets/Css/main.css -o ./Resources/Public/Css/main.css --minify",
-        "watch": "tailwindcss -i ./Resources/Private/Assets/Css/main.css -o ./Resources/Public/Css/main.css --watch"
+        "build": "npm run build:main && npm run build:rte",
+        "build:main": "tailwindcss -i ./Resources/Private/Assets/Css/main.css -o ./Resources/Public/Css/main.css --minify",
+        "build:rte": "tailwindcss -i ./Resources/Private/Assets/Css/rte.css -o ./Resources/Public/Css/rte.css --minify",
+        "watch": "npm run watch:main && npm run watch:rte",
+        "watch:main": "tailwindcss -i ./Resources/Private/Assets/Css/main.css -o ./Resources/Public/Css/main.css --watch",
+        "watch:rte": "tailwindcss -i ./Resources/Private/Assets/Css/rte.css -o ./Resources/Public/Css/rte.css --watch"
     },
     "devDependencies": {
         "@tailwindcss/cli": "^4.1.0",
