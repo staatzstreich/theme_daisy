@@ -3,6 +3,7 @@ mod {
         BackendLayouts {
             daisysidebar {
                 title = LLL:EXT:theme_daisy/Resources/Private/Language/backend_layouts.xlf:backend_layout.daisysidebar.title
+                icon = EXT:theme_daisy/Resources/Public/Icons/BackendLayouts/daisysidebar.svg
                 config {
                     backend_layout {
                         colCount = 4

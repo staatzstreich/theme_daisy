@@ -3,6 +3,7 @@ mod {
         BackendLayouts {
             daisycomponentreference {
                 title = LLL:EXT:theme_daisy/Resources/Private/Language/backend_layouts.xlf:backend_layout.daisycomponentreference.title
+                icon = EXT:theme_daisy/Resources/Public/Icons/BackendLayouts/daisycomponentreference.svg
                 config {
                     backend_layout {
                         colCount = 1

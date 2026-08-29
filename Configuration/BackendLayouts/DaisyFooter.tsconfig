@@ -3,6 +3,7 @@ mod {
         BackendLayouts {
             daisyfooter {
                 title = LLL:EXT:theme_daisy/Resources/Private/Language/backend_layouts.xlf:backend_layout.daisyfooter.title
+                icon = EXT:theme_daisy/Resources/Public/Icons/BackendLayouts/daisyfooter.svg
                 config {
                     backend_layout {
                         colCount = 3

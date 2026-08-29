@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <!-- daisyfooter: main above three footer columns -->
+  <rect width="48" height="48" rx="8" fill="#4f46f5"/>
+  <rect x="9" y="9" width="30" height="20" rx="2" opacity="0.5" fill="#fff"/>
+  <rect x="9" y="32" width="9" height="7" rx="1.5" fill="#fff"/>
+  <rect x="19.5" y="32" width="9" height="7" rx="1.5" fill="#fff"/>
+  <rect x="30" y="32" width="9" height="7" rx="1.5" fill="#fff"/>
+</svg>
