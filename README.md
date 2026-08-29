@@ -39,7 +39,7 @@ Five page layouts are registered and selectable per page:
 - **daisysidebar** – main plus sidebar
 - **daisycomponentreference** – showcase layout for the component reference
 
-Each layout renders a matching Fluid page template named after its identifier.
+Each layout renders a matching Fluid page template named after its identifier and shows a wireframe icon in the backend layout selector.
 
 ## Content elements
 
@@ -48,6 +48,10 @@ Fourteen content elements in the wizard group “daisyUI elements”:
 alert, button, card, card grid, carousel, chat, countdown, hero, mockup, stats, steps, tabs, timeline, accordion.
 
 All elements ship with backend content previews so editors see a thumbnail in the page module, fully translated through XLF language files.
+
+## Navigation
+
+A breadcrumb trail renders below the navbar on every page more than one level deep; the start page shows no breadcrumb. It is built from the page rootline in `Configuration/Sets/ThemeDaisy/setup.typoscript` and rendered by the `Navigation/Breadcrumbs` Fluid component.
 
 ## Rich text editing
 

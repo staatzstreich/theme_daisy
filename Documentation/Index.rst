@@ -60,6 +60,8 @@ Five layouts are registered under “Backend Layouts” and map 1:1 onto Fluid p
 *daisycomponentreference*
     Showcase layout used by the bundled component reference page.
 
+Each layout carries a wireframe icon so editors can tell the layouts apart in the page module.
+
 .. _content-elements:
 
 Content elements
@@ -87,6 +89,13 @@ Timeline     daisy_timeline
 ============ ==========
 
 List-based elements (accordion, card grid, chat, stats, steps, tabs, timeline) use inline relation (IRRE) child tables. Every element ships with a backend content preview.
+
+.. _navigation:
+
+Navigation
+==========
+
+A breadcrumb trail renders below the navbar on every page more than one level deep; the start page shows no breadcrumb. It is built from the page rootline in ``Configuration/Sets/ThemeDaisy/setup.typoscript`` and rendered by the ``Navigation/Breadcrumbs`` Fluid component. The current page is plain text, its ancestors are links.
 
 .. _rte:
 
