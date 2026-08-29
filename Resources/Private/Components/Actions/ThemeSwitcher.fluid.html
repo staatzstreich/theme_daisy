@@ -1,5 +1,4 @@
 <f:argument name="themes" type="array" optional="{true}" />
-<f:argument name="size" type="string" optional="{true}" default="sm" />
 
 <f:comment>
     Without a `themes` argument the component renders the 35 built-in daisyUI
@@ -7,7 +6,13 @@
     with:
       1. Resources/Private/Assets/Css/main.css (@plugin "daisyui" themes block),
       2. Configuration/Sets/ThemeDaisy/settings.definitions.yaml (enum).
+
+    Each menu entry carries a small swatch rendered in the entry's own theme
+    (daisyUI applies data-theme on any container), so the list previews every
+    theme. Active sync happens client-side in theme-daisy.js via
+    [data-theme-value]; the server cannot know the visitor's stored theme.
 </f:comment>
+
 <f:if condition="{themes}">
     <f:variable name="resolvedThemes" value="{themes}" />
     <f:else>
@@ -51,12 +56,26 @@
     </f:else>
 </f:if>
 
-<select
-    id="theme-switcher"
-    class="select select-{size} w-auto"
-    aria-label="Choose color theme"
->
-    <f:for each="{resolvedThemes}" as="theme">
-        <option value="{theme.value}">{theme.label}</option>
-    </f:for>
-</select>
+<div class="dropdown dropdown-end">
+    <button class="btn btn-ghost btn-circle" type="button" aria-haspopup="listbox" aria-controls="theme-switcher" aria-label="Choose color theme">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M11 2 a9 9 0 1 0 0 18 h1 a2 2 0 0 0 0 -4 h-1 a5 5 0 1 1 5 -5 v1.5 a1.5 1.5 0 0 0 3 0 v-1.5 a9 9 0 0 0 -9 -9 z" />
+            <circle cx="7.5" cy="10.5" r="1" fill="currentColor" stroke="none" />
+            <circle cx="12" cy="7.5" r="1" fill="currentColor" stroke="none" />
+            <circle cx="16" cy="10" r="1" fill="currentColor" stroke="none" />
+        </svg>
+    </button>
+    <ul id="theme-switcher" class="dropdown-content menu z-[60] mt-2 w-56 max-h-80 overflow-y-auto rounded-box border border-base-300 bg-base-100 p-1.5 shadow-xl" role="listbox" aria-label="Color theme">
+        <li class="menu-title text-xs uppercase tracking-wider">Theme</li>
+        <f:for each="{resolvedThemes}" as="theme">
+            <li>
+                <button type="button" role="option" data-theme-value="{theme.value}">
+                    <span data-theme="{theme.value}" class="inline-flex h-4.5 w-4.5 shrink-0 items-center justify-center overflow-hidden rounded-full border border-base-300" aria-hidden="true">
+                        <span class="h-2.5 w-2.5 bg-primary"></span>
+                    </span>
+                    {theme.label}
+                </button>
+            </li>
+        </f:for>
+    </ul>
+</div>

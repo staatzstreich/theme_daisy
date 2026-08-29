@@ -30,11 +30,13 @@
 <div class="flex min-h-screen flex-col">
     <my:navigation.navbar siteTitle="{site.configuration.websiteTitle}" menuItems="{mainMenu}" />
 
-    <main class="container mx-auto flex-1 px-4 py-8">
+    <main class="container mx-auto flex-1 px-4 py-10 md:px-8">
         <f:render section="Main" arguments="{_all}" />
     </main>
 
-    <my:layout.footer siteTitle="{site.configuration.websiteTitle}">All rights reserved.</my:layout.footer>
+    <my:layout.footer siteTitle="{site.configuration.websiteTitle}" menuItems="{mainMenu}">
+        Built with TYPO3 and daisyUI.
+    </my:layout.footer>
 </div>
 
 </html>

@@ -1,7 +1,31 @@
 <f:argument name="siteTitle" type="string" optional="{true}" default="" />
+<f:argument name="menuItems" type="array" optional="{true}" />
 
-<footer class="footer footer-horizontal footer-center bg-base-200 text-base-content p-6 mt-auto">
-    <aside>
-        <p>&copy; <f:format.date format="Y">now</f:format.date> {siteTitle} &mdash; <f:slot /></p>
-    </aside>
+<f:comment>
+    Two-zone footer: brand + tagline (slot) on the left, page links on the
+    right, copyright line below. `menuItems` reuses the same MenuProcessor
+    data as the navbar.
+</f:comment>
+
+<footer class="mt-auto border-t border-base-300 bg-base-200/50">
+    <div class="container mx-auto px-4 py-8 md:px-8">
+        <div class="flex flex-col justify-between gap-6 sm:flex-row">
+            <div class="space-y-1">
+                <a href="/" class="text-base font-bold tracking-tight">{siteTitle}</a>
+                <p class="max-w-prose text-sm text-base-content/60">
+                    <f:slot />
+                </p>
+            </div>
+            <f:if condition="{menuItems}">
+                <nav class="text-sm" aria-label="Footer navigation">
+                    <ul class="flex flex-wrap items-center gap-x-5 gap-y-2">
+                        <f:for each="{menuItems}" as="menuItem">
+                            <li><a href="{menuItem.link}" class="link link-hover text-base-content/70">{menuItem.title}</a></li>
+                        </f:for>
+                    </ul>
+                </nav>
+            </f:if>
+        </div>
+        <p class="mt-6 text-xs text-base-content/50">&copy; <f:format.date format="Y">now</f:format.date> {siteTitle}</p>
+    </div>
 </footer>
