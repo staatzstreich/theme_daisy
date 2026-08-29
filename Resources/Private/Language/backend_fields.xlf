@@ -201,7 +201,7 @@
             <trans-unit id="tt_content.code" resname="tt_content.code">
                 <source>Code (with type "Code")</source>
             </trans-unit>
-            <trans-unit id="tx_themedaisy_accordion_item.title" resname="tx_themedaisy_accordion_item.title">
+            <trans-unit id="tx_themedaisy_accordion_item" resname="tx_themedaisy_accordion_item">
                 <source>Accordion item</source>
             </trans-unit>
             <trans-unit id="tx_themedaisy_accordion_item.question" resname="tx_themedaisy_accordion_item.question">
@@ -210,7 +210,7 @@
             <trans-unit id="tx_themedaisy_accordion_item.answer" resname="tx_themedaisy_accordion_item.answer">
                 <source>Answer</source>
             </trans-unit>
-            <trans-unit id="tx_themedaisy_card_item.title" resname="tx_themedaisy_card_item.title">
+            <trans-unit id="tx_themedaisy_card_item" resname="tx_themedaisy_card_item">
                 <source>Card item</source>
             </trans-unit>
             <trans-unit id="tx_themedaisy_card_item.icon" resname="tx_themedaisy_card_item.icon">
@@ -228,7 +228,7 @@
             <trans-unit id="tx_themedaisy_card_item.link_label" resname="tx_themedaisy_card_item.link_label">
                 <source>Link text</source>
             </trans-unit>
-            <trans-unit id="tx_themedaisy_chat_item.title" resname="tx_themedaisy_chat_item.title">
+            <trans-unit id="tx_themedaisy_chat_item" resname="tx_themedaisy_chat_item">
                 <source>Chat message</source>
             </trans-unit>
             <trans-unit id="tx_themedaisy_chat_item.author" resname="tx_themedaisy_chat_item.author">
@@ -243,7 +243,7 @@
             <trans-unit id="tx_themedaisy_chat_item.time" resname="tx_themedaisy_chat_item.time">
                 <source>Time</source>
             </trans-unit>
-            <trans-unit id="tx_themedaisy_stat_item.title" resname="tx_themedaisy_stat_item.title">
+            <trans-unit id="tx_themedaisy_stat_item" resname="tx_themedaisy_stat_item">
                 <source>Statistic item</source>
             </trans-unit>
             <trans-unit id="tx_themedaisy_stat_item.title" resname="tx_themedaisy_stat_item.title">
@@ -255,7 +255,7 @@
             <trans-unit id="tx_themedaisy_stat_item.description" resname="tx_themedaisy_stat_item.description">
                 <source>Description</source>
             </trans-unit>
-            <trans-unit id="tx_themedaisy_step_item.title" resname="tx_themedaisy_step_item.title">
+            <trans-unit id="tx_themedaisy_step_item" resname="tx_themedaisy_step_item">
                 <source>Step</source>
             </trans-unit>
             <trans-unit id="tx_themedaisy_step_item.label" resname="tx_themedaisy_step_item.label">
@@ -264,7 +264,7 @@
             <trans-unit id="tx_themedaisy_step_item.done" resname="tx_themedaisy_step_item.done">
                 <source>Done</source>
             </trans-unit>
-            <trans-unit id="tx_themedaisy_tab_item.title" resname="tx_themedaisy_tab_item.title">
+            <trans-unit id="tx_themedaisy_tab_item" resname="tx_themedaisy_tab_item">
                 <source>Tab item</source>
             </trans-unit>
             <trans-unit id="tx_themedaisy_tab_item.title" resname="tx_themedaisy_tab_item.title">
@@ -273,7 +273,7 @@
             <trans-unit id="tx_themedaisy_tab_item.content" resname="tx_themedaisy_tab_item.content">
                 <source>Content</source>
             </trans-unit>
-            <trans-unit id="tx_themedaisy_timeline_item.title" resname="tx_themedaisy_timeline_item.title">
+            <trans-unit id="tx_themedaisy_timeline_item" resname="tx_themedaisy_timeline_item">
                 <source>Timeline item</source>
             </trans-unit>
             <trans-unit id="tx_themedaisy_timeline_item.title" resname="tx_themedaisy_timeline_item.title">

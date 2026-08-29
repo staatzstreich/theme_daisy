@@ -5,13 +5,13 @@
         <f:comment>
             Accepts both hand-built arrays (label/href, e.g. from the
             component reference page) and MenuProcessor (rootline) items
-            (title/link).
+            (title/link, current marks the open page).
         </f:comment>
         <f:for each="{items}" as="item">
-            <li>
+            <li{f:if(condition: item.current, then: ' aria-current="page"')}>
                 <f:variable name="label">{f:if(condition: item.label, then: item.label, else: item.title)}</f:variable>
                 <f:variable name="href">{f:if(condition: item.href, then: item.href, else: item.link)}</f:variable>
-                <f:if condition="{href}">
+                <f:if condition="{href} && !{item.current}">
                     <f:then>
                         <a href="{href}">{label}</a>
                     </f:then>

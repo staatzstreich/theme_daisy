@@ -33,7 +33,7 @@ Visitors can switch the theme client-side via the theme switcher in the navbar; 
 
 Five page layouts are registered and selectable per page:
 
-- **daisystartpage** – stage, main, footer columns
+- **daisystartpage** – stage and main column
 - **daisydefault** – single main column
 - **daisyfooter** – main plus three footer columns
 - **daisysidebar** – main plus sidebar

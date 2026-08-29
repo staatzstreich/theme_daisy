@@ -46,7 +46,7 @@ Backend layouts
 Five layouts are registered under “Backend Layouts” and map 1:1 onto Fluid page templates in ``Resources/Private/Templates/Pages/``:
 
 *daisystartpage*
-    Hero-like stage, main column and footer columns.
+    Hero-like stage on top and a main column below.
 
 *daisydefault*
     Single main column - the workhorse layout.

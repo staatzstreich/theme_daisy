@@ -8,7 +8,7 @@
 <f:if condition="{record.header}"><div class="dsvg-preview__title">{record.header}</div></f:if>
 <ul class="dsvg-preview-list">
     <f:for each="{record.tx_themedaisy_timeline_items}" as="item">
-        <li class="dsvg-preview-list__item">{item.title} <span class="dsvg-preview__meta">{item.side}</span></li>
+        <li class="dsvg-preview-list__item">{item.title} <span class="dsvg-preview__meta"><f:translate key="tx_themedaisy_timeline_item.side.I.{item.side}" domain="theme_daisy.backend_fields"/></span></li>
     </f:for>
 </ul>
 

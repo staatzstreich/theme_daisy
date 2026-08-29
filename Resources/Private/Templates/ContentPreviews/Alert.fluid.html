@@ -6,7 +6,7 @@
 <f:asset.css identifier="theme_daisy_backend_previews" href="EXT:theme_daisy/Resources/Public/Css/previews.css"/>
 
 <div class="dsvg-preview dsvg-preview--{record.tx_themedaisy_variant}">
-    <span class="dsvg-preview__tag">{record.tx_themedaisy_variant}</span>
+    <span class="dsvg-preview__tag"><f:translate key="tt_content.tx_themedaisy_variant.I.{record.tx_themedaisy_variant}" domain="theme_daisy.backend_fields"/></span>
     <f:if condition="{record.header}"><div class="dsvg-preview__title">{record.header}</div></f:if>
     <f:if condition="{record.bodytext}"><div class="dsvg-preview__text">{record.bodytext}</div></f:if>
 </div>
