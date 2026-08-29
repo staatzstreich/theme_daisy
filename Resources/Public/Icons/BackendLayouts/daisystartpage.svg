@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
   <!-- daisystartpage: stage on top, main below -->
   <rect width="48" height="48" rx="8" fill="#4f46f5"/>
-  <rect x="9" y="9" width="30" height="12" rx="2" fill="#fff"/>
-  <rect x="9" y="25" width="30" height="14" rx="2" opacity="0.5" fill="#fff"/>
+  <rect x="6" y="7" width="36" height="16" rx="2.5" fill="#fff"/>
+  <rect x="6" y="26" width="36" height="15" rx="2.5" opacity="0.5" fill="#fff"/>
 </svg>
