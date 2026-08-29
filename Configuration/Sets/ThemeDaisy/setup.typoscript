@@ -21,6 +21,9 @@ page {
         paths {
             0 = EXT:theme_daisy/Resources/Private/Templates/
         }
+        # PAGEVIEW renders the template named after the backend layout
+        # identifier (e.g. "daisydefault" -> Templates/Pages/daisydefault.fluid.html),
+        # so the template files in Templates/Pages/ must keep these names.
         dataProcessing {
             10 = page-content
             20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
@@ -30,21 +33,4 @@ page {
             }
         }
     }
-}
-
-# Page template per backend layout (explicit CASE instead of betting on
-# PAGEVIEW's backend-layout-to-template-name resolution).
-page.10.templateName.cObject = CASE
-page.10.templateName.cObject {
-    key.data = field:backend_layout
-    default = TEXT
-    default.value = Default
-    pagets__daisystartpage = TEXT
-    pagets__daisystartpage.value = Startpage
-    pagets__daisysidebar = TEXT
-    pagets__daisysidebar.value = Sidebar
-    pagets__daisyfooter = TEXT
-    pagets__daisyfooter.value = Footer
-    pagets__daisycomponentreference = TEXT
-    pagets__daisycomponentreference.value = ComponentReference
 }
