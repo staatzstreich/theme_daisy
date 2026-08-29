@@ -56,3 +56,6 @@ tt_content.daisy_carousel.templateName = Carousel
 
 tt_content.daisy_chat =< lib.daisyContentElement
 tt_content.daisy_chat.templateName = Chat
+
+tt_content.daisy_cardgrid =< lib.daisyContentElement
+tt_content.daisy_cardgrid.templateName = Cardgrid

@@ -1,0 +1,47 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:my="http://typo3.org/ns/Michaelstaatz/ThemeDaisy/Components"
+      data-namespace-typo3-fluid="true">
+
+<f:comment>
+    Responsive card grid driven by the tx_themedaisy_card_item children
+    (icon/emoji, title, description, optional link). Wraps itself in a
+    section so the header renders with breathing room like on
+    demo.typo3.org's teaser grids.
+</f:comment>
+
+<section class="py-2">
+    <f:if condition="{record.header}">
+        <h2 class="mb-6 text-center text-3xl font-bold tracking-tight">{record.header}</h2>
+    </f:if>
+
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <f:for each="{record.tx_themedaisy_card_items}" as="item">
+            <div class="card bg-base-200 shadow-sm transition-shadow hover:shadow-md">
+                <div class="card-body">
+                    <f:if condition="{item.icon}">
+                        <div class="text-3xl" aria-hidden="true">{item.icon}</div>
+                    </f:if>
+                    <h3 class="card-title text-lg">{item.title}</h3>
+                    <f:if condition="{item.description}">
+                        <p class="text-base-content/70 text-sm leading-relaxed">{item.description}</p>
+                    </f:if>
+                    <f:if condition="{item.link}">
+                        <div class="card-actions pt-2">
+                            <a href="{f:uri.typolink(parameter: item.link)}" class="link link-primary text-sm">
+                                <f:if condition="{item.link_label}">
+                                    <f:then>{item.link_label}</f:then>
+                                    <f:else>Mehr erfahren</f:else>
+                                </f:if>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg>
+                            </a>
+                        </div>
+                    </f:if>
+                </div>
+            </div>
+        </f:for>
+    </div>
+</section>
+
+</html>

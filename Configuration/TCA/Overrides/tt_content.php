@@ -170,6 +170,16 @@ call_user_func(static function (): void {
                 'appearance' => ['collapseAll' => false, 'useSortable' => true],
             ],
         ],
+        'tx_themedaisy_card_items' => [
+            'label' => 'Karten',
+            'config' => [
+                'type' => 'inline',
+                'foreign_table' => 'tx_themedaisy_card_item',
+                'foreign_field' => 'tt_content',
+                'foreign_sortby' => 'sorting',
+                'appearance' => ['collapseAll' => false, 'useSortable' => true],
+            ],
+        ],
     ];
 
     // -----------------------------------------------------------------
@@ -193,6 +203,7 @@ call_user_func(static function (): void {
         'daisy_tabs' => ['title' => 'Tabs', 'description' => 'Inhalte in wechselbaren Reitern.', 'icon' => 'content-tab'],
         'daisy_carousel' => ['title' => 'Carousel', 'description' => 'Durchblätterbare Bildergalerie.', 'icon' => 'content-carousel-image'],
         'daisy_chat' => ['title' => 'Chat / Testimonial', 'description' => 'Chat-artiger Dialog, z. B. für Testimonials.', 'icon' => 'content-message-dots'],
+        'daisy_cardgrid' => ['title' => 'Card Grid', 'description' => 'Responsives Raster aus Karten mit Icon, Titel, Text und Link.', 'icon' => 'content-grid-container'],
     ];
 
     foreach ($elements as $cType => $config) {
@@ -262,5 +273,8 @@ call_user_func(static function (): void {
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_chat'] = [
         'showitem' => 'CType, header;Titel (optional), tx_themedaisy_chat_items',
+    ];
+    $GLOBALS['TCA']['tt_content']['types']['daisy_cardgrid'] = [
+        'showitem' => 'CType, header;Titel (optional), tx_themedaisy_card_items',
     ];
 });
