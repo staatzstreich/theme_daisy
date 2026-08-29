@@ -56,15 +56,15 @@
     </f:else>
 </f:if>
 
-<div class="dropdown dropdown-end">
-    <button class="btn btn-ghost btn-circle" type="button" aria-haspopup="listbox" aria-controls="theme-switcher" aria-label="Choose color theme">
+<details class="dropdown dropdown-end">
+    <summary class="btn btn-ghost btn-circle list-none" aria-haspopup="listbox" aria-controls="theme-switcher" aria-label="Choose color theme">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M11 2 a9 9 0 1 0 0 18 h1 a2 2 0 0 0 0 -4 h-1 a5 5 0 1 1 5 -5 v1.5 a1.5 1.5 0 0 0 3 0 v-1.5 a9 9 0 0 0 -9 -9 z" />
             <circle cx="7.5" cy="10.5" r="1" fill="currentColor" stroke="none" />
             <circle cx="12" cy="7.5" r="1" fill="currentColor" stroke="none" />
             <circle cx="16" cy="10" r="1" fill="currentColor" stroke="none" />
         </svg>
-    </button>
+    </summary>
     <ul id="theme-switcher" class="dropdown-content menu z-[60] mt-2 w-56 max-h-80 overflow-y-auto rounded-box border border-base-300 bg-base-100 p-1.5 shadow-xl" role="listbox" aria-label="Color theme">
         <li class="menu-title text-xs uppercase tracking-wider">Theme</li>
         <f:for each="{resolvedThemes}" as="theme">
@@ -78,4 +78,4 @@
             </li>
         </f:for>
     </ul>
-</div>
+</details>

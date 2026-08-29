@@ -40,12 +40,12 @@
         <my:actions.themeSwitcher themes="{themes}" />
 
         <f:if condition="{menuItems}">
-            <div class="dropdown dropdown-end lg:hidden">
-                <button class="btn btn-ghost btn-circle" type="button" aria-haspopup="menu" aria-label="Menu">
+            <details class="dropdown dropdown-end lg:hidden">
+                <summary class="btn btn-ghost btn-circle list-none" aria-haspopup="menu" aria-label="Menu">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
-                </button>
+                </summary>
                 <ul class="dropdown-content menu z-[60] mt-2 w-64 rounded-box border border-base-300 bg-base-100 p-2 shadow-xl" role="menu">
                     <f:for each="{menuItems}" as="menuItem">
                         <li>
@@ -60,7 +60,7 @@
                         </li>
                     </f:for>
                 </ul>
-            </div>
+            </details>
         </f:if>
     </div>
 </header>
