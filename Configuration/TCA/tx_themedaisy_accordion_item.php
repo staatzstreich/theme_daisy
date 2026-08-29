@@ -18,7 +18,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'Accordion-Eintrag',
+        'title' => 'Accordion item',
         'label' => 'question',
         'sortby' => 'sorting',
         'delete' => 'deleted',
@@ -29,7 +29,7 @@ return [
     ],
     'columns' => [
         'question' => [
-            'label' => 'Frage',
+            'label' => 'Question',
             'config' => [
                 'type' => 'input',
                 'size' => 40,
@@ -37,7 +37,7 @@ return [
             ],
         ],
         'answer' => [
-            'label' => 'Antwort',
+            'label' => 'Answer',
             'config' => [
                 'type' => 'text',
                 'rows' => 5,

@@ -18,7 +18,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'Timeline-Eintrag',
+        'title' => 'Timeline item',
         'label' => 'title',
         'sortby' => 'sorting',
         'delete' => 'deleted',
@@ -29,7 +29,7 @@ return [
     ],
     'columns' => [
         'title' => [
-            'label' => 'Titel',
+            'label' => 'Title',
             'config' => [
                 'type' => 'input',
                 'size' => 20,
@@ -37,20 +37,20 @@ return [
             ],
         ],
         'content' => [
-            'label' => 'Inhalt',
+            'label' => 'Content',
             'config' => [
                 'type' => 'text',
                 'rows' => 3,
             ],
         ],
         'side' => [
-            'label' => 'Seite',
+            'label' => 'Side',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
                     ['label' => 'Start', 'value' => 'start'],
-                    ['label' => 'Ende', 'value' => 'end'],
+                    ['label' => 'End', 'value' => 'end'],
                 ],
                 'default' => 'start',
             ],

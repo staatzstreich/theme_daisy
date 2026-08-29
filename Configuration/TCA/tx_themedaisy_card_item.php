@@ -18,7 +18,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'Karten-Eintrag',
+        'title' => 'Card item',
         'label' => 'title',
         'sortby' => 'sorting',
         'delete' => 'deleted',
@@ -29,7 +29,7 @@ return [
     ],
     'columns' => [
         'icon' => [
-            'label' => 'Symbol (Emoji oder Zeichen)',
+            'label' => 'Symbol (emoji or character)',
             'config' => [
                 'type' => 'input',
                 'size' => 10,
@@ -37,7 +37,7 @@ return [
             ],
         ],
         'title' => [
-            'label' => 'Titel',
+            'label' => 'Title',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -45,7 +45,7 @@ return [
             ],
         ],
         'description' => [
-            'label' => 'Beschreibung',
+            'label' => 'Description',
             'config' => [
                 'type' => 'text',
                 'rows' => 3,
@@ -58,7 +58,7 @@ return [
             ],
         ],
         'link_label' => [
-            'label' => 'Link-Text',
+            'label' => 'Link text',
             'config' => [
                 'type' => 'input',
                 'size' => 30,

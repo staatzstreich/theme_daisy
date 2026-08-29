@@ -28,7 +28,7 @@ call_user_func(static function (): void {
     // -----------------------------------------------------------------
     $GLOBALS['TCA']['tt_content']['columns'] += [
         'tx_themedaisy_variant' => [
-            'label' => 'Variante',
+            'label' => 'Variant',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -46,23 +46,23 @@ call_user_func(static function (): void {
             ],
         ],
         'tx_themedaisy_soft' => [
-            'label' => 'Weicher Hintergrund (soft)',
+            'label' => 'Soft background',
             'config' => [
                 'type' => 'check',
                 'default' => 1,
             ],
         ],
         'tx_themedaisy_size' => [
-            'label' => 'Größe',
+            'label' => 'Size',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['label' => 'Extra klein', 'value' => 'xs'],
-                    ['label' => 'Klein', 'value' => 'sm'],
-                    ['label' => 'Mittel', 'value' => 'md'],
-                    ['label' => 'Groß', 'value' => 'lg'],
-                    ['label' => 'Extra groß', 'value' => 'xl'],
+                    ['label' => 'Extra small', 'value' => 'xs'],
+                    ['label' => 'Small', 'value' => 'sm'],
+                    ['label' => 'Medium', 'value' => 'md'],
+                    ['label' => 'Large', 'value' => 'lg'],
+                    ['label' => 'Extra large', 'value' => 'xl'],
                 ],
                 'default' => 'md',
             ],
@@ -75,28 +75,28 @@ call_user_func(static function (): void {
             ],
         ],
         'tx_themedaisy_link_label' => [
-            'label' => 'Link-Beschriftung',
+            'label' => 'Link label',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
             ],
         ],
         'tx_themedaisy_countdown_value' => [
-            'label' => 'Zahl',
+            'label' => 'Number',
             'config' => [
                 'type' => 'number',
                 'default' => 0,
             ],
         ],
         'tx_themedaisy_countdown_label' => [
-            'label' => 'Beschriftung',
+            'label' => 'Caption',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
             ],
         ],
         'tx_themedaisy_mockup_type' => [
-            'label' => 'Mockup-Typ',
+            'label' => 'Mockup type',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -110,14 +110,14 @@ call_user_func(static function (): void {
             ],
         ],
         'tx_themedaisy_mockup_url' => [
-            'label' => 'URL (bei Typ "Browser")',
+            'label' => 'URL (with type "Browser")',
             'config' => [
                 'type' => 'input',
                 'size' => 40,
             ],
         ],
         'tx_themedaisy_accordion_items' => [
-            'label' => 'Fragen & Antworten',
+            'label' => 'Questions & answers',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_themedaisy_accordion_item',
@@ -126,7 +126,7 @@ call_user_func(static function (): void {
             ],
         ],
         'tx_themedaisy_stat_items' => [
-            'label' => 'Statistiken',
+            'label' => 'Statistics',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_themedaisy_stat_item',
@@ -135,7 +135,7 @@ call_user_func(static function (): void {
             ],
         ],
         'tx_themedaisy_timeline_items' => [
-            'label' => 'Timeline-Einträge',
+            'label' => 'Timeline items',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_themedaisy_timeline_item',
@@ -144,7 +144,7 @@ call_user_func(static function (): void {
             ],
         ],
         'tx_themedaisy_step_items' => [
-            'label' => 'Schritte',
+            'label' => 'Steps',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_themedaisy_step_item',
@@ -162,7 +162,7 @@ call_user_func(static function (): void {
             ],
         ],
         'tx_themedaisy_chat_items' => [
-            'label' => 'Nachrichten',
+            'label' => 'Messages',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_themedaisy_chat_item',
@@ -171,7 +171,7 @@ call_user_func(static function (): void {
             ],
         ],
         'tx_themedaisy_card_items' => [
-            'label' => 'Karten',
+            'label' => 'Cards',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_themedaisy_card_item',
@@ -190,20 +190,20 @@ call_user_func(static function (): void {
     // (T3Icons, EXT:core/Resources/Public/Icons/T3Icons/) and therefore
     // already registered core-side -- no custom Icons.php needed.
     $elements = [
-        'daisy_alert' => ['title' => 'Alert', 'description' => 'Hinweisbox in vier Zuständen (info/success/warning/error).', 'icon' => 'content-info'],
-        'daisy_card' => ['title' => 'Card', 'description' => 'Karte mit Bild, Titel, Text und optionalem Button.', 'icon' => 'content-card'],
-        'daisy_hero' => ['title' => 'Hero', 'description' => 'Große Aufmacher-Sektion mit Titel, Text, Bild und Call-to-Action.', 'icon' => 'content-panel'],
-        'daisy_button' => ['title' => 'CTA-Button', 'description' => 'Einzelner Call-to-Action-Button.', 'icon' => 'content-widget-calltoaction'],
-        'daisy_countdown' => ['title' => 'Countdown', 'description' => 'Zahlenanzeige, z. B. für einen Countdown.', 'icon' => 'content-clock'],
-        'daisy_mockup' => ['title' => 'Mockup', 'description' => 'Browser-, Code-, Phone- oder Window-Rahmen um Bild oder Code.', 'icon' => 'content-device-desktop'],
-        'daisy_accordion' => ['title' => 'Accordion / FAQ', 'description' => 'Aufklappbare Frage-Antwort-Liste.', 'icon' => 'content-accordion'],
-        'daisy_stats' => ['title' => 'Stats', 'description' => 'Reihe von Kennzahlen.', 'icon' => 'content-widget-number'],
-        'daisy_timeline' => ['title' => 'Timeline', 'description' => 'Chronologische Ereignisliste.', 'icon' => 'content-timeline'],
-        'daisy_steps' => ['title' => 'Steps', 'description' => 'Nummerierte Schrittfolge, z. B. für Prozesse.', 'icon' => 'content-listgroup'],
-        'daisy_tabs' => ['title' => 'Tabs', 'description' => 'Inhalte in wechselbaren Reitern.', 'icon' => 'content-tab'],
-        'daisy_carousel' => ['title' => 'Carousel', 'description' => 'Durchblätterbare Bildergalerie.', 'icon' => 'content-carousel-image'],
-        'daisy_chat' => ['title' => 'Chat / Testimonial', 'description' => 'Chat-artiger Dialog, z. B. für Testimonials.', 'icon' => 'content-message-dots'],
-        'daisy_cardgrid' => ['title' => 'Card Grid', 'description' => 'Responsives Raster aus Karten mit Icon, Titel, Text und Link.', 'icon' => 'content-grid-container'],
+        'daisy_alert' => ['title' => 'Alert', 'description' => 'Callout box in four states (info/success/warning/error).', 'icon' => 'content-info'],
+        'daisy_card' => ['title' => 'Card', 'description' => 'Card with image, title, text and optional button.', 'icon' => 'content-card'],
+        'daisy_hero' => ['title' => 'Hero', 'description' => 'Large hero section with title, text, image and call-to-action.', 'icon' => 'content-panel'],
+        'daisy_button' => ['title' => 'CTA button', 'description' => 'A single call-to-action button.', 'icon' => 'content-widget-calltoaction'],
+        'daisy_countdown' => ['title' => 'Countdown', 'description' => 'Number display, e.g. for a countdown.', 'icon' => 'content-clock'],
+        'daisy_mockup' => ['title' => 'Mockup', 'description' => 'Browser, code, phone or window frame around image or code.', 'icon' => 'content-device-desktop'],
+        'daisy_accordion' => ['title' => 'Accordion / FAQ', 'description' => 'Expandable question-and-answer list.', 'icon' => 'content-accordion'],
+        'daisy_stats' => ['title' => 'Stats', 'description' => 'Row of key figures.', 'icon' => 'content-widget-number'],
+        'daisy_timeline' => ['title' => 'Timeline', 'description' => 'Chronological list of events.', 'icon' => 'content-timeline'],
+        'daisy_steps' => ['title' => 'Steps', 'description' => 'Numbered sequence of steps, e.g. for processes.', 'icon' => 'content-listgroup'],
+        'daisy_tabs' => ['title' => 'Tabs', 'description' => 'Content in switchable tabs.', 'icon' => 'content-tab'],
+        'daisy_carousel' => ['title' => 'Carousel', 'description' => 'Swipeable image gallery.', 'icon' => 'content-carousel-image'],
+        'daisy_chat' => ['title' => 'Chat / Testimonial', 'description' => 'Chat-style dialog, e.g. for testimonials.', 'icon' => 'content-message-dots'],
+        'daisy_cardgrid' => ['title' => 'Card Grid', 'description' => 'Responsive grid of cards with icon, title, text and link.', 'icon' => 'content-grid-container'],
     ];
 
     foreach ($elements as $cType => $config) {
@@ -224,7 +224,7 @@ call_user_func(static function (): void {
     // Field layout (showitem) per CType
     // -----------------------------------------------------------------
     $GLOBALS['TCA']['tt_content']['types']['daisy_alert'] = [
-        'showitem' => 'CType, header;Titel (optional), bodytext;Nachricht, tx_themedaisy_variant, tx_themedaisy_soft',
+        'showitem' => 'CType, header;Title (optional), bodytext;Message, tx_themedaisy_variant, tx_themedaisy_soft',
         'columnsOverrides' => [
             'bodytext' => ['config' => ['enableRichtext' => false, 'rows' => 3]],
         ],
@@ -242,39 +242,39 @@ call_user_func(static function (): void {
         ],
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_button'] = [
-        'showitem' => 'CType, header;Beschriftung, tx_themedaisy_link, tx_themedaisy_variant, tx_themedaisy_size',
+        'showitem' => 'CType, header;Label, tx_themedaisy_link, tx_themedaisy_variant, tx_themedaisy_size',
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_countdown'] = [
-        'showitem' => 'CType, header;Titel (optional), tx_themedaisy_countdown_value, tx_themedaisy_countdown_label',
+        'showitem' => 'CType, header;Title (optional), tx_themedaisy_countdown_value, tx_themedaisy_countdown_label',
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_mockup'] = [
-        'showitem' => 'CType, header;Titel (optional), tx_themedaisy_mockup_type, tx_themedaisy_mockup_url, bodytext;Code (bei Typ "Code"), image',
+        'showitem' => 'CType, header;Title (optional), tx_themedaisy_mockup_type, tx_themedaisy_mockup_url, bodytext;Code (with type "Code"), image',
         'columnsOverrides' => [
             'bodytext' => ['config' => ['enableRichtext' => false, 'rows' => 6]],
         ],
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_accordion'] = [
-        'showitem' => 'CType, header;Titel (optional), tx_themedaisy_accordion_items',
+        'showitem' => 'CType, header;Title (optional), tx_themedaisy_accordion_items',
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_stats'] = [
-        'showitem' => 'CType, header;Titel (optional), tx_themedaisy_stat_items',
+        'showitem' => 'CType, header;Title (optional), tx_themedaisy_stat_items',
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_timeline'] = [
-        'showitem' => 'CType, header;Titel (optional), tx_themedaisy_timeline_items',
+        'showitem' => 'CType, header;Title (optional), tx_themedaisy_timeline_items',
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_steps'] = [
-        'showitem' => 'CType, header;Titel (optional), tx_themedaisy_step_items',
+        'showitem' => 'CType, header;Title (optional), tx_themedaisy_step_items',
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_tabs'] = [
-        'showitem' => 'CType, header;Titel (optional), tx_themedaisy_tab_items',
+        'showitem' => 'CType, header;Title (optional), tx_themedaisy_tab_items',
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_carousel'] = [
-        'showitem' => 'CType, header;Titel (optional), image',
+        'showitem' => 'CType, header;Title (optional), image',
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_chat'] = [
-        'showitem' => 'CType, header;Titel (optional), tx_themedaisy_chat_items',
+        'showitem' => 'CType, header;Title (optional), tx_themedaisy_chat_items',
     ];
     $GLOBALS['TCA']['tt_content']['types']['daisy_cardgrid'] = [
-        'showitem' => 'CType, header;Titel (optional), tx_themedaisy_card_items',
+        'showitem' => 'CType, header;Title (optional), tx_themedaisy_card_items',
     ];
 });

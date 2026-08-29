@@ -10,11 +10,11 @@
 
         <header class="space-y-2">
             <p class="text-sm font-semibold tracking-wide uppercase text-primary">theme_daisy</p>
-            <h1 class="text-3xl font-bold">Komponenten-Referenz</h1>
+            <h1 class="text-3xl font-bold">Component reference</h1>
             <p class="max-w-prose text-base-content/70">
-                Entwickler-Referenz aller Fluid-Components aus <code class="text-sm">Resources/Private/Components/</code>.
-                Diese Seite ist über das Seiten-Template &bdquo;Component-Referenz (Entwickler)&ldquo; aktiviert und
-                erscheint nicht automatisch auf anderen Seiten.
+                Developer reference for all Fluid components from <code class="text-sm">Resources/Private/Components/</code>.
+                This page is enabled via the page template &ldquo;Component reference (developer)&rdquo; and
+                does not appear automatically on other pages.
             </p>
         </header>
 
@@ -24,7 +24,7 @@
                 <my:actions.button label="Primary" variant="primary" />
                 <my:actions.button label="Secondary" variant="secondary" />
                 <my:actions.button label="Accent" variant="accent" />
-                <my:actions.button label="Neutral" variant="neutral" />
+                <my:actions.button label="Newtral" variant="neutral" />
                 <my:actions.button label="Primary Outline" variant="primary" outline="{true}" />
                 <my:actions.button label="Disabled" variant="primary" disabled="{true}" />
             </div>
@@ -53,42 +53,42 @@
         <div class="space-y-4">
             <h2 class="text-xl font-semibold">Links</h2>
             <div class="flex flex-wrap items-center gap-6">
-                <my:navigation.link href="#">Standard-Link</my:navigation.link>
-                <my:navigation.link href="#" variant="hover">Hover-Link</my:navigation.link>
-                <my:navigation.link href="https://typo3.org" target="_blank" variant="primary">Externer Link</my:navigation.link>
+                <my:navigation.link href="#">Default link</my:navigation.link>
+                <my:navigation.link href="#" variant="hover">Hover link</my:navigation.link>
+                <my:navigation.link href="https://typo3.org" target="_blank" variant="primary">External link</my:navigation.link>
             </div>
         </div>
 
         <div class="space-y-4">
             <h2 class="text-xl font-semibold">Alerts</h2>
             <div class="grid gap-3 md:grid-cols-2">
-                <my:feedback.alert variant="info">Neue Version verfügbar.</my:feedback.alert>
-                <my:feedback.alert variant="success">Änderungen gespeichert.</my:feedback.alert>
-                <my:feedback.alert variant="warning">Bitte Eingaben prüfen.</my:feedback.alert>
-                <my:feedback.alert variant="error">Speichern fehlgeschlagen.</my:feedback.alert>
+                <my:feedback.alert variant="info">A new version is available.</my:feedback.alert>
+                <my:feedback.alert variant="success">Changes saved.</my:feedback.alert>
+                <my:feedback.alert variant="warning">Please check your input.</my:feedback.alert>
+                <my:feedback.alert variant="error">Saving failed.</my:feedback.alert>
             </div>
         </div>
 
         <div class="space-y-4">
             <h2 class="text-xl font-semibold">Cards</h2>
             <div class="grid gap-4 md:grid-cols-3">
-                <my:dataDisplay.card title="Einfache Card">
-                    <p class="text-base-content/70">Card mit Titel und Fließtext, ohne weitere Aktionen.</p>
+                <my:dataDisplay.card title="Simple card">
+                    <p class="text-base-content/70">Card with title and body text, no further actions.</p>
                 </my:dataDisplay.card>
 
-                <my:dataDisplay.card title="Mit Aktion">
-                    <p class="text-base-content/70">Card mit einem eingebetteten Button im Slot.</p>
+                <my:dataDisplay.card title="With action">
+                    <p class="text-base-content/70">Card with an embedded button in the slot.</p>
                     <div class="card-actions justify-end pt-2">
-                        <my:actions.button label="Mehr erfahren" variant="primary" size="sm" />
+                        <my:actions.button label="Learn more" variant="primary" size="sm" />
                     </div>
                 </my:dataDisplay.card>
 
-                <my:dataDisplay.card title="Mit Badge">
+                <my:dataDisplay.card title="With badge">
                     <div class="flex items-center gap-2">
-                        <my:dataDisplay.badge variant="success">Neu</my:dataDisplay.badge>
-                        <span class="text-sm text-base-content/60">vor 2 Tagen</span>
+                        <my:dataDisplay.badge variant="success">New</my:dataDisplay.badge>
+                        <span class="text-sm text-base-content/60">2 days ago</span>
                     </div>
-                    <p class="text-base-content/70">Kombination aus Badge und Fließtext im selben Slot.</p>
+                    <p class="text-base-content/70">Badge and body text combined in the same slot.</p>
                 </my:dataDisplay.card>
             </div>
         </div>
@@ -98,22 +98,22 @@
 
             <div class="space-y-2">
                 <h3 class="font-semibold">Dropdown</h3>
-                <my:actions.dropdown label="Optionen">
+                <my:actions.dropdown label="Options">
                     <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                        <li><a>Bearbeiten</a></li>
-                        <li><a>Löschen</a></li>
+                        <li><a>Edit</a></li>
+                        <li><a>Delete</a></li>
                     </ul>
                 </my:actions.dropdown>
             </div>
 
             <div class="space-y-2">
                 <h3 class="font-semibold">Modal</h3>
-                <button type="button" class="btn btn-primary" onclick="document.getElementById('demo-modal').showModal()">Modal öffnen</button>
-                <my:actions.modal id="demo-modal" heading="Beispiel-Modal">
-                    <p>Dies ist der Inhalt des Modals.</p>
+                <button type="button" class="btn btn-primary" onclick="document.getElementById('demo-modal').showModal()">Open modal</button>
+                <my:actions.modal id="demo-modal" heading="Example modal">
+                    <p>This is the modal content.</p>
                     <div class="modal-action">
                         <form method="dialog">
-                            <button class="btn">Schließen</button>
+                            <button class="btn">Close</button>
                         </form>
                     </div>
                 </my:actions.modal>
@@ -121,7 +121,7 @@
 
             <div class="space-y-2">
                 <h3 class="font-semibold">Swap</h3>
-                <p class="text-sm text-base-content/60">Anklicken zum Umschalten zwischen beiden Zuständen.</p>
+                <p class="text-sm text-base-content/60">Click to toggle between the two states.</p>
                 <my:actions.swap rotate="{true}">
                     <div class="swap-on">😀</div>
                     <div class="swap-off">😴</div>
@@ -166,20 +166,19 @@
             <div class="space-y-2">
                 <h3 class="font-semibold">Toast</h3>
                 <p class="text-sm text-base-content/60">
-                    <code>.toast</code> ist bei daisyUI <code>position: fixed</code> und klebt
-                    deshalb oben rechts am Browserfenster fest (nicht in einem Kasten hier auf
-                    der Seite) – das ist bei einer echten Benachrichtigung so gewollt. Anders
-                    als vorher bleibt sie aber nicht dauerhaft stehen: Button klicken, die
-                    Nachricht erscheint kurz und verschwindet nach 3 Sekunden von selbst
-                    wieder, wie bei einer echten Toast-Benachrichtigung.
+                    <code>.toast</code> uses <code>position: fixed</code> in daisyUI and therefore
+                    sticks to the top right of the browser window (not inside a box on this
+                    page) – that is intentional for a real notification. Unlike before, it
+                    does not stay permanently: click the button, the message appears briefly
+                    and disappears after 3 seconds on its own, like a real toast notification.
                 </p>
                 <button type="button" class="btn btn-primary"
                         onclick="var t=document.getElementById('demo-toast'); t.classList.remove('hidden'); clearTimeout(t.dataset.timer); t.dataset.timer=setTimeout(function(){ t.classList.add('hidden'); }, 3000);">
-                    Nachricht anzeigen
+                    Show message
                 </button>
                 <div id="demo-toast" class="hidden">
                     <my:feedback.toast>
-                        <my:feedback.alert variant="info">Änderungen gespeichert.</my:feedback.alert>
+                        <my:feedback.alert variant="info">Changes saved.</my:feedback.alert>
                     </my:feedback.toast>
                 </div>
             </div>
@@ -191,11 +190,11 @@
             <div class="space-y-2">
                 <h3 class="font-semibold">Accordion</h3>
                 <div class="space-y-2">
-                    <my:dataDisplay.accordion groupName="acc-demo" title="Frage 1" checked="{true}">
-                        <p>Antwort 1</p>
+                    <my:dataDisplay.accordion groupName="acc-demo" title="Question 1" checked="{true}">
+                        <p>Answer 1</p>
                     </my:dataDisplay.accordion>
-                    <my:dataDisplay.accordion groupName="acc-demo" title="Frage 2">
-                        <p>Antwort 2</p>
+                    <my:dataDisplay.accordion groupName="acc-demo" title="Question 2">
+                        <p>Answer 2</p>
                     </my:dataDisplay.accordion>
                 </div>
             </div>
@@ -208,9 +207,9 @@
             <div class="space-y-2">
                 <h3 class="font-semibold">Carousel</h3>
                 <p class="text-sm text-base-content/60">
-                    Die Breite ist hier bewusst kleiner als die Summe der Bilder, sonst gibt es
-                    nichts zum Scrollen (<code>.carousel</code> ist <code>inline-flex</code> und
-                    schrumpft sonst auf die Inhaltsbreite).
+                    The width here is deliberately smaller than the sum of the images, otherwise
+                    there is nothing to scroll (<code>.carousel</code> is <code>inline-flex</code>
+                    and would otherwise shrink to the content width).
                 </p>
                 <div class="max-w-xs">
                     <my:dataDisplay.carousel>
@@ -224,27 +223,27 @@
             <div class="space-y-2">
                 <h3 class="font-semibold">Chat Bubble</h3>
                 <div class="space-y-1">
-                    <my:dataDisplay.chatBubble side="start" author="Anna" time="12:34" variant="secondary">Hallo!</my:dataDisplay.chatBubble>
-                    <my:dataDisplay.chatBubble side="end" author="Du" time="12:35" variant="primary">Hi zurück!</my:dataDisplay.chatBubble>
+                    <my:dataDisplay.chatBubble side="start" author="Anna" time="12:34" variant="secondary">Hello!</my:dataDisplay.chatBubble>
+                    <my:dataDisplay.chatBubble side="end" author="You" time="12:35" variant="primary">Hi back!</my:dataDisplay.chatBubble>
                 </div>
             </div>
 
             <div class="space-y-2">
                 <h3 class="font-semibold">Collapse</h3>
-                <my:dataDisplay.collapse title="Mehr Infos">
-                    <p>Versteckter Inhalt.</p>
+                <my:dataDisplay.collapse title="More info">
+                    <p>Hidden content.</p>
                 </my:dataDisplay.collapse>
             </div>
 
             <div class="space-y-2">
                 <h3 class="font-semibold">Countdown</h3>
-                <my:dataDisplay.countdown value="15" label="Sekunden" />
+                <my:dataDisplay.countdown value="15" label="Seconds" />
             </div>
 
             <div class="space-y-2">
                 <h3 class="font-semibold">Diff</h3>
-                <p class="text-sm text-base-content/60">Trennlinie in der Mitte zum Vergleichen ziehen.</p>
-                <my:dataDisplay.diff beforeContent="<div class='bg-primary text-primary-content grid place-content-center text-4xl'>VORHER</div>" afterContent="<div class='bg-base-200 grid place-content-center text-4xl'>NACHHER</div>" />
+                <p class="text-sm text-base-content/60">Drag the center divider to compare.</p>
+                <my:dataDisplay.diff beforeContent="<div class='bg-primary text-primary-content grid place-content-center text-4xl'>BEFORE</div>" afterContent="<div class='bg-base-200 grid place-content-center text-4xl'>AFTER</div>" />
             </div>
 
             <div class="space-y-2">
@@ -254,14 +253,14 @@
 
             <div class="space-y-2">
                 <h3 class="font-semibold">List</h3>
-                <my:dataDisplay.list items="{0: {title: 'Eintrag 1', subtitle: 'Kategorie A'}, 1: {title: 'Eintrag 2', subtitle: 'Kategorie B'}}" />
+                <my:dataDisplay.list items="{0: {title: 'Item 1', subtitle: 'Category A'}, 1: {title: 'Item 2', subtitle: 'Category B'}}" />
             </div>
 
             <div class="space-y-2">
                 <h3 class="font-semibold">Stat</h3>
                 <div class="stats shadow">
-                    <my:dataDisplay.stat title="Benutzer" value="1.200+" description="+12% seit letztem Monat" />
-                    <my:dataDisplay.stat title="Umsatz" value="4.200 €" />
+                    <my:dataDisplay.stat title="Users" value="1,200+" description="+12% since last month" />
+                    <my:dataDisplay.stat title="Revenue" value="€4,200" />
                 </div>
             </div>
 
@@ -274,7 +273,7 @@
                 <h3 class="font-semibold">Table</h3>
                 <my:dataDisplay.table>
                     <thead>
-                        <tr><th>Name</th><th>Rolle</th></tr>
+                        <tr><th>Name</th><th>Role</th></tr>
                     </thead>
                     <tbody>
                         <tr><td>Max</td><td>Admin</td></tr>
@@ -285,7 +284,7 @@
 
             <div class="space-y-2">
                 <h3 class="font-semibold">Timeline</h3>
-                <my:dataDisplay.timeline items="{0: {title: '2023', content: 'Start', side: 'start'}, 1: {title: '2024', content: 'Wachstum'}, 2: {title: '2025', content: 'Launch', side: 'start'}}" />
+                <my:dataDisplay.timeline items="{0: {title: '2023', content: 'Start', side: 'start'}, 1: {title: '2024', content: 'Growth'}, 2: {title: '2025', content: 'Launch', side: 'start'}}" />
             </div>
         </div>
 
@@ -294,23 +293,23 @@
 
             <div class="space-y-2">
                 <h3 class="font-semibold">Breadcrumbs</h3>
-                <my:navigation.breadcrumbs items="{0: {label: 'Start', href: '#'}, 1: {label: 'Kategorie', href: '#'}, 2: {label: 'Aktuelle Seite'}}" />
+                <my:navigation.breadcrumbs items="{0: {label: 'Home', href: '#'}, 1: {label: 'Category', href: '#'}, 2: {label: 'Current page'}}" />
             </div>
 
             <div class="space-y-2">
                 <h3 class="font-semibold">Dock</h3>
                 <p class="text-sm text-base-content/60">
-                    <code>.dock</code> ist bei daisyUI ebenfalls <code>position: fixed</code>
-                    (mobile App-Leiste) – die Leiste klebt deshalb absichtlich unten am
-                    Browserfenster fest und bleibt beim Scrollen durch den Rest dieser Seite
-                    sichtbar, nicht nur hier in diesem Abschnitt.
+                    <code>.dock</code> also uses <code>position: fixed</code> in daisyUI
+                    (mobile app bar) – the bar therefore deliberately sticks to the bottom
+                    of the browser window and stays visible while scrolling through the
+                    rest of this page, not only here in this section.
                 </p>
-                <my:navigation.dock items="{0: {href: '#', label: 'Start', icon: '🏠'}, 1: {href: '#', label: 'Suche', icon: '🔍'}, 2: {href: '#', label: 'Profil', icon: '👤'}}" />
+                <my:navigation.dock items="{0: {href: '#', label: 'Home', icon: '🏠'}, 1: {href: '#', label: 'Search', icon: '🔍'}, 2: {href: '#', label: 'Profile', icon: '👤'}}" />
             </div>
 
             <div class="space-y-2">
                 <h3 class="font-semibold">Menu</h3>
-                <my:navigation.menu items="{0: {href: '#', label: 'Dashboard', active: true}, 1: {href: '#', label: 'Einstellungen'}}" />
+                <my:navigation.menu items="{0: {href: '#', label: 'Dashboard', active: true}, 1: {href: '#', label: 'Settings'}}" />
             </div>
 
             <div class="space-y-2">
@@ -320,16 +319,16 @@
 
             <div class="space-y-2">
                 <h3 class="font-semibold">Steps</h3>
-                <my:navigation.steps items="{0: {label: 'Registrieren', done: true}, 1: {label: 'Bestätigen', active: true}, 2: {label: 'Fertig'}}" />
+                <my:navigation.steps items="{0: {label: 'Register', done: true}, 1: {label: 'Confirm', active: true}, 2: {label: 'Done'}}" />
             </div>
 
             <div class="space-y-2">
                 <h3 class="font-semibold">Tab</h3>
                 <my:navigation.tab style="box">
                     <input type="radio" name="tabs-demo" class="tab" aria-label="Tab 1" checked="checked" />
-                    <div class="tab-content bg-base-100 border-base-300 p-6">Inhalt 1</div>
+                    <div class="tab-content bg-base-100 border-base-300 p-6">Content 1</div>
                     <input type="radio" name="tabs-demo" class="tab" aria-label="Tab 2" />
-                    <div class="tab-content bg-base-100 border-base-300 p-6">Inhalt 2</div>
+                    <div class="tab-content bg-base-100 border-base-300 p-6">Content 2</div>
                 </my:navigation.tab>
             </div>
         </div>
@@ -339,20 +338,20 @@
 
             <div class="space-y-2">
                 <h3 class="font-semibold">Divider</h3>
-                <my:layout.divider label="ODER" />
+                <my:layout.divider label="OR" />
             </div>
 
             <div class="space-y-2">
                 <h3 class="font-semibold">Drawer</h3>
                 <p class="text-sm text-base-content/60">
-                    "Menü öffnen" klicken – das Seitenmenü schiebt sich als eigenes Panel über
-                    die volle Bildschirmhöhe herein, nicht nur innerhalb dieses Kastens.
+                    Click "Open menu" – the side menu slides in as its own panel over the full
+                    screen height, not only inside this box.
                 </p>
-                <f:variable name="drawerSidebarDemo"><li><a>Punkt 1</a></li><li><a>Punkt 2</a></li><li><a>Punkt 3</a></li></f:variable>
+                <f:variable name="drawerSidebarDemo"><li><a>Item 1</a></li><li><a>Item 2</a></li><li><a>Item 3</a></li></f:variable>
                 <my:layout.drawer id="demo-drawer" sidebar="{drawerSidebarDemo}">
                     <div class="p-4 border border-dashed border-base-300 rounded-box">
-                        <label for="demo-drawer" class="btn btn-primary drawer-button">Menü öffnen</label>
-                        <p class="mt-4">Hauptinhalt des Drawers.</p>
+                        <label for="demo-drawer" class="btn btn-primary drawer-button">Open menu</label>
+                        <p class="mt-4">Drawer main content.</p>
                     </div>
                 </my:layout.drawer>
             </div>
@@ -361,16 +360,16 @@
                 <h3 class="font-semibold">Hero</h3>
                 <my:layout.hero>
                     <div class="max-w-md">
-                        <h1 class="text-3xl font-bold">Willkommen</h1>
-                        <p class="py-4">Ein kurzer Hero-Text als Beispiel.</p>
-                        <button type="button" class="btn btn-primary">Los geht's</button>
+                        <h1 class="text-3xl font-bold">Welcome</h1>
+                        <p class="py-4">A short hero text as an example.</p>
+                        <button type="button" class="btn btn-primary">Let's go</button>
                     </div>
                 </my:layout.hero>
             </div>
 
             <div class="space-y-2">
                 <h3 class="font-semibold">Indicator</h3>
-                <my:layout.indicator badgeText="Neu" badgeVariant="secondary">
+                <my:layout.indicator badgeText="New" badgeVariant="secondary">
                     <div class="grid w-32 place-content-center bg-base-300 rounded">Inhalt</div>
                 </my:layout.indicator>
             </div>
@@ -403,26 +402,26 @@
         <div class="space-y-4">
             <h2 class="text-xl font-semibold">Data Input</h2>
 
-            <my:dataInput.fieldset legend="Beispiel-Formular">
+            <my:dataInput.fieldset legend="Example form">
                 <div class="space-y-3">
                     <div>
                         <my:dataInput.label>Name</my:dataInput.label>
-                        <my:dataInput.textInput name="demoName" placeholder="Dein Name" />
+                        <my:dataInput.textInput name="demoName" placeholder="Your name" />
                     </div>
 
                     <div>
-                        <my:dataInput.label>Nachricht</my:dataInput.label>
-                        <my:dataInput.textarea name="demoMessage" placeholder="Deine Nachricht" />
+                        <my:dataInput.label>Message</my:dataInput.label>
+                        <my:dataInput.textarea name="demoMessage" placeholder="Your message" />
                     </div>
 
                     <div>
-                        <my:dataInput.label>Land</my:dataInput.label>
-                        <my:dataInput.select name="demoCountry" items="{0: {value: 'de', label: 'Deutschland'}, 1: {value: 'at', label: 'Österreich'}, 2: {value: 'ch', label: 'Schweiz'}}" />
+                        <my:dataInput.label>Country</my:dataInput.label>
+                        <my:dataInput.select name="demoCountry" items="{0: {value: 'de', label: 'Germany'}, 1: {value: 'at', label: 'Austria'}, 2: {value: 'ch', label: 'Switzerland'}}" />
                     </div>
 
                     <div class="flex items-center gap-2">
                         <my:dataInput.checkbox name="demoAgree" />
-                        <my:dataInput.label>Ich stimme zu</my:dataInput.label>
+                        <my:dataInput.label>I agree</my:dataInput.label>
                     </div>
 
                     <div class="flex items-center gap-4">
@@ -431,32 +430,32 @@
                     </div>
 
                     <div>
-                        <my:dataInput.label>Lautstärke</my:dataInput.label>
+                        <my:dataInput.label>Volume</my:dataInput.label>
                         <my:dataInput.range name="demoRange" min="0" max="100" value="40" />
                     </div>
 
                     <div>
-                        <my:dataInput.label>Bewertung</my:dataInput.label>
+                        <my:dataInput.label>Rating</my:dataInput.label>
                         <my:dataInput.rating name="demoRating" value="3" />
                     </div>
 
                     <div>
-                        <my:dataInput.label>Datei</my:dataInput.label>
+                        <my:dataInput.label>File</my:dataInput.label>
                         <my:dataInput.fileInput name="demoFile" />
                     </div>
 
                     <div class="flex items-center gap-2">
-                        <my:dataInput.label>Benachrichtigungen</my:dataInput.label>
+                        <my:dataInput.label>Notifications</my:dataInput.label>
                         <my:dataInput.toggle name="demoToggle" variant="primary" />
                     </div>
 
-                    <my:dataInput.validator hint="Bitte ein gültiges Format verwenden." />
+                    <my:dataInput.validator hint="Please use a valid format." />
                 </div>
             </my:dataInput.fieldset>
 
             <div class="space-y-2">
                 <h3 class="font-semibold">Filter</h3>
-                <my:dataInput.filter name="demoFilter" items="{0: {label: 'Alle', value: 'all'}, 1: {label: 'Aktiv', value: 'active'}}" />
+                <my:dataInput.filter name="demoFilter" items="{0: {label: 'All', value: 'all'}, 1: {label: 'Active', value: 'active'}}" />
             </div>
         </div>
 
@@ -466,7 +465,7 @@
             <div class="space-y-2">
                 <h3 class="font-semibold">Browser Mockup</h3>
                 <my:mockup.browserMockup url="https://example.com">
-                    <p class="p-4">Inhalt im Browser-Fenster.</p>
+                    <p class="p-4">Content inside the browser window.</p>
                 </my:mockup.browserMockup>
             </div>
 
@@ -478,14 +477,14 @@
             <div class="space-y-2">
                 <h3 class="font-semibold">Phone Mockup</h3>
                 <my:mockup.phoneMockup>
-                    <div class="p-4">Telefon-Inhalt</div>
+                    <div class="p-4">Phone content</div>
                 </my:mockup.phoneMockup>
             </div>
 
             <div class="space-y-2">
                 <h3 class="font-semibold">Window Mockup</h3>
                 <my:mockup.windowMockup>
-                    <p class="p-4">Fenster-Inhalt</p>
+                    <p class="p-4">Window content</p>
                 </my:mockup.windowMockup>
             </div>
         </div>

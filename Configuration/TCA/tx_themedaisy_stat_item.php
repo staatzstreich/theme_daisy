@@ -18,7 +18,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'Statistik-Eintrag',
+        'title' => 'Statistic item',
         'label' => 'title',
         'sortby' => 'sorting',
         'delete' => 'deleted',
@@ -29,14 +29,14 @@ return [
     ],
     'columns' => [
         'title' => [
-            'label' => 'Titel',
+            'label' => 'Title',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
             ],
         ],
         'value' => [
-            'label' => 'Wert',
+            'label' => 'Value',
             'config' => [
                 'type' => 'input',
                 'size' => 20,
@@ -44,7 +44,7 @@ return [
             ],
         ],
         'description' => [
-            'label' => 'Beschreibung',
+            'label' => 'Description',
             'config' => [
                 'type' => 'input',
                 'size' => 40,

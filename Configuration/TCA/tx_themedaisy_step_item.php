@@ -18,7 +18,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'Schritt',
+        'title' => 'Step',
         'label' => 'label',
         'sortby' => 'sorting',
         'delete' => 'deleted',
@@ -29,7 +29,7 @@ return [
     ],
     'columns' => [
         'label' => [
-            'label' => 'Beschriftung',
+            'label' => 'Label',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -37,7 +37,7 @@ return [
             ],
         ],
         'done' => [
-            'label' => 'Abgeschlossen',
+            'label' => 'Done',
             'config' => [
                 'type' => 'check',
                 'default' => 0,

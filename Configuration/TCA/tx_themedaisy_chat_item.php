@@ -18,7 +18,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'Chat-Nachricht',
+        'title' => 'Chat message',
         'label' => 'author',
         'sortby' => 'sorting',
         'delete' => 'deleted',
@@ -29,7 +29,7 @@ return [
     ],
     'columns' => [
         'author' => [
-            'label' => 'Absender',
+            'label' => 'Sender',
             'config' => [
                 'type' => 'input',
                 'size' => 20,
@@ -37,26 +37,26 @@ return [
             ],
         ],
         'message' => [
-            'label' => 'Nachricht',
+            'label' => 'Message',
             'config' => [
                 'type' => 'text',
                 'rows' => 3,
             ],
         ],
         'side' => [
-            'label' => 'Seite',
+            'label' => 'Side',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['label' => 'Links', 'value' => 'start'],
-                    ['label' => 'Rechts', 'value' => 'end'],
+                    ['label' => 'Left', 'value' => 'start'],
+                    ['label' => 'Right', 'value' => 'end'],
                 ],
                 'default' => 'start',
             ],
         ],
         'time' => [
-            'label' => 'Zeit',
+            'label' => 'Time',
             'config' => [
                 'type' => 'input',
                 'size' => 10,

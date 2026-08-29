@@ -18,7 +18,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'Tab-Eintrag',
+        'title' => 'Tab item',
         'label' => 'title',
         'sortby' => 'sorting',
         'delete' => 'deleted',
@@ -29,7 +29,7 @@ return [
     ],
     'columns' => [
         'title' => [
-            'label' => 'Titel',
+            'label' => 'Title',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -37,7 +37,7 @@ return [
             ],
         ],
         'bodytext' => [
-            'label' => 'Inhalt',
+            'label' => 'Content',
             'config' => [
                 'type' => 'text',
                 'rows' => 5,
