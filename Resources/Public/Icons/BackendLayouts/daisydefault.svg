@@ -1,8 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
   <!-- daisydefault: single main column -->
   <rect width="48" height="48" rx="8" fill="#4f46f5"/>
-  <rect x="6" y="14" width="36" height="22" rx="2.5" opacity="0.5" fill="#fff"/>
-  <rect x="9" y="19" width="20" height="3" rx="1.5" fill="#fff"/>
-  <rect x="9" y="25" width="30" height="2" rx="1" fill="#fff" opacity="0.75"/>
-  <rect x="9" y="29" width="30" height="2" rx="1" fill="#fff" opacity="0.75"/>
+  <g fill="#fff">
+  <rect x="6" y="14" width="36" height="22" rx="2.5" opacity="0.5"/>
+  <rect x="9" y="19" width="20" height="3" rx="1.5"/>
+  <rect x="9" y="25" width="30" height="2" rx="1" opacity="0.75"/>
+  <rect x="9" y="29" width="30" height="2" rx="1" opacity="0.75"/>
+  </g>
 </svg>

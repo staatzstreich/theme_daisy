@@ -1,8 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
   <!-- daisyfooter: main above three footer columns -->
   <rect width="48" height="48" rx="8" fill="#4f46f5"/>
-  <rect x="6" y="7" width="36" height="22" rx="2.5" opacity="0.5" fill="#fff"/>
-  <rect x="6" y="32" width="11.3" height="9" rx="2" fill="#fff"/>
-  <rect x="18.4" y="32" width="11.3" height="9" rx="2" fill="#fff"/>
-  <rect x="30.7" y="32" width="11.3" height="9" rx="2" fill="#fff"/>
+  <g fill="#fff">
+  <rect x="6" y="7" width="36" height="22" rx="2.5" opacity="0.5"/>
+  <rect x="6" y="32" width="11.3" height="9" rx="2"/>
+  <rect x="18.4" y="32" width="11.3" height="9" rx="2"/>
+  <rect x="30.7" y="32" width="11.3" height="9" rx="2"/>
+  </g>
 </svg>
