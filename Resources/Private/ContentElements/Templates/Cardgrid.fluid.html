@@ -5,8 +5,8 @@
 <f:comment>
     Responsive card grid driven by the tx_themedaisy_card_item children
     (icon/emoji, title, description, optional link). Wraps itself in a
-    section so the header renders with breathing room like on
-    demo.typo3.org's teaser grids.
+    section so the header gets generous spacing, similar to the teaser
+    grids in the TYPO3 demo site.
 </f:comment>
 
 <section class="py-2">
@@ -30,7 +30,7 @@
                             <a href="{f:uri.typolink(parameter: item.link)}" class="link link-primary text-sm">
                                 <f:if condition="{item.link_label}">
                                     <f:then>{item.link_label}</f:then>
-                                    <f:else>Mehr erfahren</f:else>
+                                    <f:else>Read more</f:else>
                                 </f:if>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                     <path d="M5 12h14M13 6l6 6-6 6" />

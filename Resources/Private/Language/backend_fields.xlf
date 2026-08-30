@@ -34,7 +34,7 @@
                 <source>Countdown</source>
             </trans-unit>
             <trans-unit id="tt_content.daisy_countdown.description" resname="tt_content.daisy_countdown.description">
-                <source>Number display, e.g. for a countdown.</source>
+                <source>Large number display with a caption, e.g. for a countdown or a key figure.</source>
             </trans-unit>
             <trans-unit id="tt_content.daisy_mockup.title" resname="tt_content.daisy_mockup.title">
                 <source>Mockup</source>
@@ -85,7 +85,7 @@
                 <source>Chat-style dialog, e.g. for testimonials.</source>
             </trans-unit>
             <trans-unit id="tt_content.daisy_cardgrid.title" resname="tt_content.daisy_cardgrid.title">
-                <source>Card Grid</source>
+                <source>Card grid</source>
             </trans-unit>
             <trans-unit id="tt_content.daisy_cardgrid.description" resname="tt_content.daisy_cardgrid.description">
                 <source>Responsive grid of cards with icon, title, text and link.</source>

@@ -17,7 +17,7 @@ A TYPO3 v14 theme package built on [daisyUI 5](https://daisyui.com) and Tailwind
      - michaelstaatz/theme-daisy
    ```
 
-3. Flush caches. The theme ships sensible defaults and works out of the box.
+3. Flush caches. The theme comes with sensible defaults and works out of the box.
 
 ## Configuration
 
@@ -25,9 +25,9 @@ One site setting controls the appearance:
 
 | Setting | Default | Description |
 | ------- | ------- | ----------- |
-| `theme.daisy.defaultTheme` | `light` | One of the 35 built-in daisyUI themes, stamped as `data-theme` on `<html>`. |
+| `theme.daisy.defaultTheme` | `light` | One of the 35 built-in daisyUI themes, set as the `data-theme` attribute on `<html>`. |
 
-Visitors can switch the theme client-side via the theme switcher in the navbar; the choice is persisted in the browser and wins over the server default.
+Visitors can switch the theme client-side via the theme switcher in the navbar; the choice is stored in the browser and takes precedence over the server default.
 
 ## Backend layouts
 
@@ -47,7 +47,7 @@ Fourteen content elements in the wizard group “daisyUI elements”:
 
 alert, button, card, card grid, carousel, chat, countdown, hero, mockup, stats, steps, tabs, timeline, accordion.
 
-All elements ship with backend content previews so editors see a thumbnail in the page module, fully translated through XLF language files.
+All elements come with a backend content preview, which is fully translated through XLF language files, so editors see a thumbnail in the page module.
 
 ## Navigation
 

@@ -24,7 +24,7 @@ Install the extension and add it to the dependencies of your site:
    dependencies:
      - michaelstaatz/theme-daisy
 
-Then flush the caches. The ThemeDaisy site set ships sensible TypoScript defaults, a CKEditor preset and all backend layouts - no manual TypoScript includes required.
+Then flush the caches. The ThemeDaisy site set comes with sensible TypoScript defaults, a CKEditor preset and all backend layouts - no manual TypoScript includes required.
 
 .. _configuration:
 
@@ -34,7 +34,7 @@ Configuration
 The theme exposes a single set setting:
 
 ``theme.daisy.defaultTheme``
-    The daisyUI theme stamped as ``data-theme`` on the ``<html>`` element. Any of the 35 built-in daisyUI themes (``light``, ``dark``, ``cupcake``, ``dracula``, ...). Default: ``light``.
+    The daisyUI theme set as the ``data-theme`` attribute on the ``<html>`` element. Any of the 35 built-in daisyUI themes (``light``, ``dark``, ``cupcake``, ``dracula``, ...). Default: ``light``.
 
 Visitors can override the theme client-side through the navbar theme switcher; their choice is stored in the browser and takes precedence over the server-rendered default.
 
@@ -49,7 +49,7 @@ Five layouts are registered under “Backend Layouts” and map 1:1 onto Fluid p
     Hero-like stage on top and a main column below.
 
 *daisydefault*
-    Single main column - the workhorse layout.
+    Single main column - the standard layout used for most pages.
 
 *daisyfooter*
     Main column plus three footer columns.
@@ -88,21 +88,21 @@ Tabs         daisy_tabs
 Timeline     daisy_timeline
 ============ ==========
 
-List-based elements (accordion, card grid, chat, stats, steps, tabs, timeline) use inline relation (IRRE) child tables. Every element ships with a backend content preview.
+List-based elements (accordion, card grid, chat, stats, steps, tabs, timeline) store their entries in separate IRRE child tables (inline relational records). Every element comes with a backend content preview.
 
 .. _navigation:
 
 Navigation
 ==========
 
-A breadcrumb trail renders below the navbar on every page more than one level deep; the start page shows no breadcrumb. It is built from the page rootline in ``Configuration/Sets/ThemeDaisy/setup.typoscript`` and rendered by the ``Navigation/Breadcrumbs`` Fluid component. The current page is plain text, its ancestors are links.
+A breadcrumb trail renders below the navbar on every page more than one level deep; the start page shows no breadcrumb. It is built from the page rootline in ``Configuration/Sets/ThemeDaisy/setup.typoscript`` and rendered by the ``Navigation/Breadcrumbs`` Fluid component. The current page is shown as plain text; its ancestors are links.
 
 .. _rte:
 
 Rich text editing
 =================
 
-A slim CKEditor 5 preset ``daisy_default`` is registered in ``ext_localconf.php`` and activated by the site set. H1 is deliberately omitted (pages provide the heading level), tables are supported. The editor stylesheet ``Resources/Public/Css/rte.css`` is built from the same Tailwind/daisyUI sources as the front end and follows the visitor's colour scheme.
+A slim CKEditor 5 preset ``daisy_default`` is registered in ``ext_localconf.php`` and activated by the site set. H1 is deliberately omitted (the page already provides the page-level heading); tables are supported. The editor stylesheet ``Resources/Public/Css/rte.css`` is built from the same Tailwind/daisyUI sources as the front end and follows the visitor's colour scheme.
 
 .. _assets:
 

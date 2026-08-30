@@ -1,8 +1,9 @@
 @import './TypoScript/*.typoscript'
 
 # -----------------------------------------------------------------------
-# Default theme of the site: the selected daisyUI theme is stamped as
-# data-theme on the <html> element so it applies before any layout markup.
+# Default theme of the site: the selected daisyUI theme is set as the
+# data-theme attribute on the <html> element so it applies before any
+# layout markup.
 # Visitors can override it client-side (Resources/Public/JavaScript/theme-daisy.js
 # + the theme switcher in the navbar component).
 # -----------------------------------------------------------------------
