@@ -18,7 +18,157 @@
             </p>
         </header>
 
-        <div class="space-y-4">
+        <nav class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3" aria-label="Component catalogue">
+            <a href="#buttons" class="card bg-base-100 border border-base-300 transition-colors hover:border-primary">
+                <div class="card-body gap-4 p-5">
+                    <div class="flex min-h-12 items-center">
+                        <my:actions.button label="Button" variant="primary" size="sm" />
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Buttons</h3>
+                        <p class="text-xs text-base-content/60">Button</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#badges" class="card bg-base-100 border border-base-300 transition-colors hover:border-primary">
+                <div class="card-body gap-4 p-5">
+                    <div class="flex min-h-12 items-center gap-2">
+                        <my:dataDisplay.badge variant="primary">Primary</my:dataDisplay.badge>
+                        <my:dataDisplay.badge variant="success">Success</my:dataDisplay.badge>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Badges</h3>
+                        <p class="text-xs text-base-content/60">Badge</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#links" class="card bg-base-100 border border-base-300 transition-colors hover:border-primary">
+                <div class="card-body gap-4 p-5">
+                    <div class="flex min-h-12 items-center">
+                        <my:navigation.link href="#navigation">Link</my:navigation.link>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Links</h3>
+                        <p class="text-xs text-base-content/60">Link</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#alerts" class="card bg-base-100 border border-base-300 transition-colors hover:border-primary">
+                <div class="card-body gap-4 p-5">
+                    <div class="flex min-h-12 items-center">
+                        <my:feedback.alert variant="info">Information.</my:feedback.alert>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Alerts</h3>
+                        <p class="text-xs text-base-content/60">Alert</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#cards" class="card bg-base-100 border border-base-300 transition-colors hover:border-primary">
+                <div class="card-body gap-4 p-5">
+                    <div class="flex min-h-12 items-center">
+                        <my:dataDisplay.card title="Card">
+                            <p class="text-sm text-base-content/70">A card demo.</p>
+                        </my:dataDisplay.card>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Cards</h3>
+                        <p class="text-xs text-base-content/60">Card</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#actions" class="card bg-base-100 border border-base-300 transition-colors hover:border-primary">
+                <div class="card-body gap-4 p-5">
+                    <div class="flex min-h-12 items-center">
+                        <my:actions.swap>
+                            <div class="swap-on">On</div>
+                            <div class="swap-off">Off</div>
+                        </my:actions.swap>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Actions</h3>
+                        <p class="text-xs text-base-content/60">Dropdown, modal, swap</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#feedback" class="card bg-base-100 border border-base-300 transition-colors hover:border-primary">
+                <div class="card-body gap-4 p-5">
+                    <div class="flex min-h-12 items-center">
+                        <progress class="progress progress-primary w-full" value="70" max="100"></progress>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Feedback</h3>
+                        <p class="text-xs text-base-content/60">Loading, progress, skeleton, tooltip, toast</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#data-display" class="card bg-base-100 border border-base-300 transition-colors hover:border-primary">
+                <div class="card-body gap-4 p-5">
+                    <div class="flex min-h-12 items-center">
+                        <div class="stats bg-base-200">
+                            <my:dataDisplay.stat title="Demo" value="42" />
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Data Display</h3>
+                        <p class="text-xs text-base-content/60">Accordion, avatar, carousel, chat bubble, collapse, countdown, diff, kbd, list, stat, status, table, timeline</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#navigation" class="card bg-base-100 border border-base-300 transition-colors hover:border-primary">
+                <div class="card-body gap-4 p-5">
+                    <div class="flex min-h-12 items-center">
+                        <ul class="steps w-full text-xs">
+                            <li class="step step-primary">Start</li>
+                            <li class="step">Goal</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Navigation</h3>
+                        <p class="text-xs text-base-content/60">Breadcrumbs, dock, menu, pagination, steps, tab</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#layout" class="card bg-base-100 border border-base-300 transition-colors hover:border-primary">
+                <div class="card-body gap-4 p-5">
+                    <div class="flex min-h-12 items-center">
+                        <div class="join">
+                            <my:actions.button label="Join" variant="primary" size="sm" />
+                            <my:actions.button label="Group" variant="primary" size="sm" />
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Layout</h3>
+                        <p class="text-xs text-base-content/60">Divider, drawer, hero, indicator, join, mask, stack</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#data-input" class="card bg-base-100 border border-base-300 transition-colors hover:border-primary">
+                <div class="card-body gap-4 p-5">
+                    <div class="flex min-h-12 items-center gap-4">
+                        <my:dataInput.toggle name="catalogueToggle" variant="primary" />
+                        <my:dataInput.checkbox name="catalogueCheckbox" />
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Data Input</h3>
+                        <p class="text-xs text-base-content/60">Checkbox, fieldset, file input, filter, label, radio, range, rating, select, text input, textarea, toggle, validator</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#mockup" class="card bg-base-100 border border-base-300 transition-colors hover:border-primary">
+                <div class="card-body gap-4 p-5">
+                    <div class="flex min-h-12 items-center">
+                        <my:mockup.codeMockup lines="{0: 'npm run build'}" />
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Mockup</h3>
+                        <p class="text-xs text-base-content/60">Browser, code, phone, window</p>
+                    </div>
+                </div>
+            </a>
+        </nav>
+
+        <div id="buttons" class="space-y-4 scroll-mt-24">
             <h2 class="text-xl font-semibold">Buttons</h2>
             <div class="flex flex-wrap items-center gap-3">
                 <my:actions.button label="Primary" variant="primary" />
@@ -36,7 +186,7 @@
             </div>
         </div>
 
-        <div class="space-y-4">
+        <div id="badges" class="space-y-4 scroll-mt-24">
             <h2 class="text-xl font-semibold">Badges</h2>
             <div class="flex flex-wrap items-center gap-3">
                 <my:dataDisplay.badge variant="primary">Primary</my:dataDisplay.badge>
@@ -50,7 +200,7 @@
             </div>
         </div>
 
-        <div class="space-y-4">
+        <div id="links" class="space-y-4 scroll-mt-24">
             <h2 class="text-xl font-semibold">Links</h2>
             <div class="flex flex-wrap items-center gap-6">
                 <my:navigation.link href="#">Default link</my:navigation.link>
@@ -59,7 +209,7 @@
             </div>
         </div>
 
-        <div class="space-y-4">
+        <div id="alerts" class="space-y-4 scroll-mt-24">
             <h2 class="text-xl font-semibold">Alerts</h2>
             <div class="grid gap-3 md:grid-cols-2">
                 <my:feedback.alert variant="info">A new version is available.</my:feedback.alert>
@@ -69,7 +219,7 @@
             </div>
         </div>
 
-        <div class="space-y-4">
+        <div id="cards" class="space-y-4 scroll-mt-24">
             <h2 class="text-xl font-semibold">Cards</h2>
             <div class="grid gap-4 md:grid-cols-3">
                 <my:dataDisplay.card title="Simple card">
@@ -93,7 +243,7 @@
             </div>
         </div>
 
-        <div class="space-y-4">
+        <div id="actions" class="space-y-4 scroll-mt-24">
             <h2 class="text-xl font-semibold">Actions</h2>
 
             <div class="space-y-2">
@@ -129,7 +279,7 @@
             </div>
         </div>
 
-        <div class="space-y-4">
+        <div id="feedback" class="space-y-4 scroll-mt-24">
             <h2 class="text-xl font-semibold">Feedback</h2>
 
             <div class="space-y-2">
@@ -184,7 +334,7 @@
             </div>
         </div>
 
-        <div class="space-y-4">
+        <div id="data-display" class="space-y-4 scroll-mt-24">
             <h2 class="text-xl font-semibold">Data Display</h2>
 
             <div class="space-y-2">
@@ -288,7 +438,7 @@
             </div>
         </div>
 
-        <div class="space-y-4">
+        <div id="navigation" class="space-y-4 scroll-mt-24">
             <h2 class="text-xl font-semibold">Navigation</h2>
 
             <div class="space-y-2">
@@ -333,7 +483,7 @@
             </div>
         </div>
 
-        <div class="space-y-4">
+        <div id="layout" class="space-y-4 scroll-mt-24">
             <h2 class="text-xl font-semibold">Layout</h2>
 
             <div class="space-y-2">
@@ -399,7 +549,7 @@
             </div>
         </div>
 
-        <div class="space-y-4">
+        <div id="data-input" class="space-y-4 scroll-mt-24">
             <h2 class="text-xl font-semibold">Data Input</h2>
 
             <my:dataInput.fieldset legend="Example form">
@@ -459,7 +609,7 @@
             </div>
         </div>
 
-        <div class="space-y-4">
+        <div id="mockup" class="space-y-4 scroll-mt-24">
             <h2 class="text-xl font-semibold">Mockup</h2>
 
             <div class="space-y-2">
