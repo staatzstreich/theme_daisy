@@ -67,7 +67,7 @@ npm run build      # builds main.css and rte.css, minified
 npm run watch:main # watches during development
 ```
 
-All 35 built-in daisyUI themes are compiled into `main.css`; the source lists are kept in sync with `settings.definitions.yaml` and the theme switcher component.
+All 35 built-in daisyUI themes are compiled into `main.css`; the source lists are kept in sync with `settings.definitions.yaml` and the theme switcher component. Projects that want fewer themes or a smaller stylesheet can trim the catalogue down to a handful of themes – the "Slimming the theme catalogue" section in the documentation walks through the three files involved and the rebuild.
 
 ## License
 

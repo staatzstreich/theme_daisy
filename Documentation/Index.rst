@@ -119,6 +119,47 @@ Both stylesheets are compiled with the Tailwind CLI from ``Resources/Private/Ass
 
 ``npm run build`` produces the minified ``main.css`` (all 35 daisyUI themes) and ``rte.css``. Dynamic class names used by the Fluid components are safelisted in ``main.css`` - keep the theme list in ``Resources/Private/Assets/Css/main.css``, ``Configuration/Sets/ThemeDaisy/settings.definitions.yaml`` and ``Resources/Private/Components/Actions/ThemeSwitcher.fluid.html`` in sync when adding themes.
 
+.. _slimming-themes:
+
+Slimming the theme catalogue
+----------------------------
+
+The extension ships with all 35 daisyUI themes compiled into ``main.css`` so
+the theme switcher works out of the box. That costs less than it sounds: the
+per-theme variable blocks make up roughly 37 KB of the ~263 KB stylesheet
+(about 5 KB compressed) - the bulk of the file is component CSS and Tailwind
+utilities, which no theme list touches. Trimming is therefore an optional
+optimisation for projects that want a smaller file or a reduced palette.
+
+Three lists define the catalogue and must move together:
+
+1. ``Resources/Private/Assets/Css/main.css`` - the ``@plugin "daisyui"``
+   themes block decides what is compiled into CSS.
+2. ``Configuration/Sets/ThemeDaisy/settings.definitions.yaml`` - the
+   ``theme.daisy.defaultTheme`` enum (a default outside the compiled set
+   would break the site settings form).
+3. ``Resources/Private/Components/Actions/ThemeSwitcher.fluid.html`` - the
+   fallback menu list; entries without a compiled theme block render with
+   the default theme's variables.
+
+Example rebuild with four themes:
+
+.. code-block:: sh
+
+   # 1. main.css - keep the default/prefers-dark pair, then your choice
+   #    themes: light --default, dark --prefersdark, cupcake, dracula;
+   # 2. settings.definitions.yaml - reduce the enum to the same values
+   #    (light must stay, it is the labelled fallback for unknown values);
+   # 3. ThemeSwitcher.fluid.html - mirror the same names in the list.
+   cd packages/theme_daisy
+   npm run build
+   ddev typo3 cache:flush
+
+If you do not want the switcher in the navbar at all, override the
+``Components/Navigation/Navbar.fluid.html`` template from your sitepackage
+instead of editing the theme - the component chain (navbar → switcher)
+stays updatable then.
+
 .. _license:
 
 License
