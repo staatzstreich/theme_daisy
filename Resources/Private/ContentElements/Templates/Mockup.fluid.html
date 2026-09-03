@@ -9,7 +9,7 @@
 <f:switch expression="{record.tx_themedaisy_mockup_type}">
     <f:case value="code">
         <my:mockup.codeMockup>
-            <pre data-prefix="$"><code><f:format.raw>{record.bodytext}</f:format.raw></code></pre>
+            <pre data-prefix="$"><code>{record.bodytext}</code></pre>
         </my:mockup.codeMockup>
     </f:case>
     <f:case value="phone">
