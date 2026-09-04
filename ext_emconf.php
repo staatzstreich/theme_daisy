@@ -28,4 +28,9 @@ $EM_CONF[$_EXTKEY] = [
             'typo3' => '14.3.0-14.99.99',
         ],
     ],
+    'autoload' => [
+        'psr-4' => [
+            'Michaelstaatz\\ThemeDaisy\\' => 'Classes/',
+        ],
+    ],
 ];
