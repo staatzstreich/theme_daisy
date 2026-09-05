@@ -71,4 +71,4 @@ All 35 built-in daisyUI themes are compiled into `main.css`; the source lists ar
 
 ## License
 
-GPL-2.0-or-later
+GPL-2.0-or-later. See `LICENSE.txt`.
