@@ -166,5 +166,3 @@ License
 =======
 
 GPL-2.0-or-later. See the ``LICENSE.txt`` distributed with the package.
-
-*Index · :ref:`Introduction <introduction>`*
